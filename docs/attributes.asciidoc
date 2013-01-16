@@ -1,4 +1,4 @@
-:revnumber:   1.1.0
+:revnumber:   1.2.0
 :toc:
 :brand:       Bootstrap-Asciidoc
 :doctitle:    {title} - Bootstrap-Asciidoc {revnumber}

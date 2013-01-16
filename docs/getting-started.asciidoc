@@ -17,7 +17,7 @@ $ asciidoc --backend install bootstrap-<version>.zip
 ----
 NOTE: `<version>` is to be replaced by the latest version available of the backend.
 
-NOTE: The Asciidoc bootstrap backend basic version (1.1.0) included 
+NOTE: The Asciidoc bootstrap backend basic version (1.1.0) included
 the compiled version of bootstrap 2.2.2.
 
 If you want later to upgrade the bootstrap compiled version, be sure to follow instructions below:
@@ -27,9 +27,9 @@ If you want later to upgrade the bootstrap compiled version, be sure to follow i
 http://twitter.github.com/bootstrap/assets/bootstrap.zip[]
 
 By default backends plugins are installed in `$HOME/.asciidoc/backends/<backend>`
-where `<backend>` is the backend name. 
+where `<backend>` is the backend name.
 
-So extract the content of `bootstrap.zip` 
+So extract the content of `bootstrap.zip`
 ----
  bootstrap/  <1>
   ├── css/
@@ -47,12 +47,12 @@ So extract the content of `bootstrap.zip`
 
 == File structure
 
-When you will installed the asciidoc bootstrap backend, you will find the following 
+When you will installed the asciidoc bootstrap backend, you will find the following
 file structure and contents.
 
 ----
- bootstrap/  
-  ├── bootstrap/ 
+ bootstrap/
+  ├── bootstrap/
   │   ├── css/
   │   ├── js/
   │   └── img/
@@ -65,7 +65,7 @@ file structure and contents.
   │   │   ├── apple-touch-icon-114-precomposed.png
   │   │   ├── apple-touch-icon-144-precomposed.png
   │   │   └── favicon.ico
-  │   └── bs-docs-masthead-pattern.png  
+  │   └── bs-docs-masthead-pattern.png
   ├── javascripts/
   │   ├── asciidoc.js
   │   ├── jquery.min.js
@@ -91,7 +91,7 @@ Specifics bootstrap backend attributes
 
 == Your own theme
 
-The AsciiDoc theme attribute is used to select an alternative CSS stylesheet 
+The AsciiDoc theme attribute is used to select an alternative CSS stylesheet
 and to optionally include additional JavaScript code.
 
 * Theme files reside in an AsciiDoc configuration directory named `themes/<theme>/`
@@ -108,10 +108,17 @@ Head to the docs sections for more information and examples.
 
 Bootstrap Docs Base CSS examples
 
-=== link:text-formatting.html[Text Formatting] 
+=== link:text-formatting.html[Text Formatting]
 
 Words and phrases can be formatted by enclosing inline text with quote characters.
 
 === link:delimited-blocks.html[Delimited Blocks]
 
 Delimited blocks are blocks of text enveloped by leading and trailing delimiter lines
+
+=== link:paragraphs.html[Paragraphs]
+
+Paragraphs are blocks of text terminated by a blank line, the end of file,
+or the start of a delimited block or a list. There are three paragraph syntaxes:
+normal, indented (literal) and admonition which are rendered, by default,
+with the corresponding paragraph style.
