@@ -1,0 +1,828 @@
+Base · Bootstrap
+================
+Twitter
+:title: Base CSS
+:description: Fundamental HTML elements styled and enhanced with extensible classes.
+:footer: Designed and built with all the love in the world by @mdo and @fat.
+:brand: Bootstrap
+:doctype: book
+:toc:
+:glyphicons: http://glyphicons.com[Glyphicons]
+
+= Typography
+
+== Headings
+
+All HTML headings, `<h1>` through `<h6>` are available.
+
+==========
+[float]
+= h1. Heading 1
+[float]
+== h2. Heading 2
+[float]
+=== h3. Heading 3
+[float]
+==== h4. Heading 4
+[float]
+===== h5. Heading 5
+==========
+
+[caption="Heads up!", name="info"]
+NOTE: AsciiDoc only supports headings through `<h5>`.
+
+== Body copy
+
+Bootstrap's global default `font-size` is *14px*, with a `line-height` of *20px*. This is applied to the `<body>` and all paragraphs. In addition, `<p>` (paragraphs) receive a bottom margin of half their line-height (10px by default).
+
+====
+Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+
+Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+====
+
+[listing]
+<p>...</p>
+
+=== Lead body copy
+
+Make a paragraph stand out by adding `.lead`.
+
+====
+[role="lead"]
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+====
+
+[listing]
+<p class="lead">...</p>
+
+=== Built with Less
+
+The typographic scale is based on two LESS variables in *variables.less*: `@baseFontSize` and `@baseLineHeight`. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.
+
+''''
+
+== Emphasis
+
+Make use of HTML's default emphasis tags with lightweight styles.
+
+=== `small`
+
+For de-emphasizing inline or blocks of text, _use the small tag._
+
+====
+_This line of text is meant to be treated as fine print._
+====
+
+[listing]
+<p>
+  <small>This line of text is meant to be treated as fine print.</small>
+</p>
+
+=== Bold
+
+For emphasizing a snippet of text with a heavier font-weight.
+
+====
+The following snippet of text is *rendered as bold text*.
+====
+
+[listing]
+<strong>rendered as bold text</strong>
+
+=== Italics
+
+For emphasizing a snippet of text with italics.
+
+====
+The following snippet of text is 'rendered as italicized text'.
+====
+
+[listing]
+<em>rendered as italicized text</em>
+
+[caption="Heads up!", name="info"]
+NOTE: Feel free to use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc.
+
+=== Emphasis classes
+
+Convey meaning through color with a handful of emphasis utility classes.
+
+====
+[role="muted"]
+Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+[role="text-warning"]
+Etiam porta sem malesuada magna mollis euismod.
+[role="text-error"]
+Donec ullamcorper nulla non metus auctor fringilla.
+[role="text-info"]
+Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+[role="text-success"]
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+====
+
+[options="linenums"]
+----
+<p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+<p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+----
+
+''''
+
+== Abbreviations
+
+Stylized implemenation of HTML's `<abbr>` element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a `title` attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.
+
+=== `<abbr>`
+
+For expanded text on long hover of an abbreviation, include the `title` attribute.
+
+====
+An abbreviation of the word attribute is abbr:attr[attribute].
+====
+
+[listing]
+<abbr title="attribute">attr</abbr>
+
+=== `<abbr class="initialism">`
+
+Add `.initialism` to an abbreviation for a slightly smaller font-size.
+
+====
+abbr:HTML[title="HyperText Markup Language", role="initialism"] is the best thing since sliced bread.
+====
+
+[listing]
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+
+''''
+
+== Addresses
+
+Present contact information for the nearest ancestor or the entire body of work.
+
+=== `<address>`
+
+Preserve formatting by ending all lines with `<br>`.
+
+====
+[address]
+----
+*Twitter, Inc.* +
+795 Folsom Ave, Suite 600 +
+San Francisco, CA 94107 +
+abbr:P[Phone]: (123) 456-7890
+----
+[address]
+----
+*Full Name* +
+first.last@gmail.com
+----
+====
+
+[options="linenums"]
+----
+<address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P</abbr>: (123) 456-7890
+</address>
+
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:first.last@gmail.com">first.last@gmail.com</a>
+</address>
+----
+
+''''
+
+== Blockquotes
+
+For quoting blocks of content from another source within your document.
+
+=== Default blockquote
+
+Wrap `<blockquote>` around any abbr:HTML[HyperText Markup Language] as the quote. For straight quotes we recommend a `<p>`.
+
+====
+[quote]
+----
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+----
+====
+
+[options="linenums"]
+----
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+----
+
+=== Blockquote options
+
+Style and content changes for simple variations on a standard blockquote.
+
+==== Naming a source
+
+Add `<small>` tag for identifying the source. Wrap the name of the source work in `<cite>`.
+
+[attribution="Someone famous in", citetitle="Source Title", options="exampleblock"]
+____
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+____
+
+[options="linenums"]
+----
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+</blockquote>
+----
+
+==== Alternate displays
+
+Use `.pull-right` for a floated, right-aligned blockquote.
+
+[attribution="Someone famous in", citetitle="Source Title", options="exampleblock", role="pull-right"]
+____
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+____
+
+[options="linenums"]
+----
+<blockquote class="pull-right">
+  ...
+</blockquote>
+----
+
+''''
+
+== Lists
+
+=== Unordered
+
+A list of items in which the order does 'not' explicitly matter.
+
+====
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit
+- Integer molestie lorem at massa
+- Facilisis in pretium nisl aliquet
+- Nulla volutpat aliquam velit
+** Phasellus iaculis neque
+** Purus sodales ultricies
+** Vestibulum laoreet porttitor sem
+** Ac tristique libero volutpat at
+- Faucibus porta lacus fringilla vel
+- Aenean sit amet erat nunc
+- Eget porttitor lorem
+====
+
+[options="linenums"]
+----
+<ul>
+  <li>...</li>
+</ul>
+----
+
+=== Ordered
+
+A list of items in which the order 'does' explicitly matter.
+
+====
+. Lorem ipsum dolor sit amet
+. Consectetur adipiscing elit
+. Integer molestie lorem at massa
+. Facilisis in pretium nisl aliquet
+. Nulla volutpat aliquam velit
+. Faucibus porta lacus fringilla vel
+. Aenean sit amet erat nunc
+. Eget porttitor lorem
+====
+
+[options="linenums"]
+----
+<ol>
+  <li>...</li>
+</ol>
+----
+
+=== Unstyled
+
+A list of items with no `list-style` or additional left padding.
+
+====
+[role="unstyled"]
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit
+- Integer molestie lorem at massa
+- Facilisis in pretium nisl aliquet
+- Nulla volutpat aliquam velit
+** Phasellus iaculis neque
+** Purus sodales ultricies
+** Vestibulum laoreet porttitor sem
+** Ac tristique libero volutpat at
+- Faucibus porta lacus fringilla vel
+- Aenean sit amet erat nunc
+- Eget porttitor lorem
+====
+
+[options="linenums"]
+----
+<ul class="unstyled">
+  <li>...</li>
+</ul>
+----
+
+=== Description
+
+A list of terms with their associated descriptions.
+
+====
+Description lists:: A description list is perfect for defining terms.
+Euismod:: Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. +
+Donec id elit non mi porta gravida at eget metus.
+Malesuada porta:: Etiam porta sem malesuada magna mollis euismod.
+====
+
+[options="linenums"]
+----
+<dl>
+  <dt>...</dt>
+  <dd>...</dd>
+</dl>
+----
+
+==== Horizontal description
+
+Make terms and descriptions in `<dl>` line up side-by-side.
+
+====
+[horizontal]
+Description lists:: A description list is perfect for defining terms.
+Euismod:: Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. +
+Donec id elit non mi porta gravida at eget metus.
+Malesuada porta:: Etiam porta sem malesuada magna mollis euismod.
+Felis euismod semper eget lacinia:: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+====
+
+[options="linenums"]
+----
+<dl class="horizontal">
+  <dt>...</dt>
+  <dd>...</dd>
+</dl>
+----
+
+[caption="Heads up!", name="info"]
+NOTE: Horizontal description lists will truncate terms that are too long to fit in the left column fix `text-overflow`. In narrower viewports, they will change to the default stacked layout.
+
+= Code
+
+== Inline
+
+Wrap inline snippets of code with `<code>`.
+
+[quote]
+For example, `<section>` should be wrapped as inline.
+
+[options="linenums"]
+----
+For example, <code><section></code> should be wrapped as inline.
+----
+
+== Basic block
+
+Use `<pre>` for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.
+
+====
+----
+<p>Sample text here...</p>
+----
+====
+
+[options="linenums"]
+----
+<pre>
+  <p>Sample text here...</p>
+</pre>
+----
+
+[caption="Heads up!", name="info"]
+NOTE: Be sure to keep code within `<pre>` tags as close to the left as possible; it will render all tabs.
+
+You may optionally add the `.pre-scrollable` class which will set a max-height of 350px and provide a y-axis scrollbar.
+
+= Tables
+
+== Default styles
+
+For basic styling--light padding and only horizontal dividers--add the base class `.table` to any `<table>`.
+
+====
+[format="csv", options="header,autowidth", role="table"]
+|==============================
+#,First Name,Last Name,Username
+1,Mark,Otto,@mdo
+2,Jacob,Thornton,@fat
+3,Larry,the Bird,@twitter
+|==============================
+====
+
+[options="linenums"]
+----
+<table class="table">
+  ...
+</table>
+----
+
+''''
+
+== Optional classes
+
+Add any of the following classes to the `.table` base class.
+
+=== `.table-striped`
+
+Adds zebra-striping to any table row within the `<tbody>` via the `:nth-child` CSS selector (not available in IE7-IE8).
+
+====
+[format="csv", options="header,autowidth", role="table table-striped"]
+|==============================
+#,First Name,Last Name,Username
+1,Mark,Otto,@mdo
+2,Jacob,Thornton,@fat
+3,Larry,the Bird,@twitter
+|==============================
+====
+
+[options="linenums"]
+----
+<table class="table table-striped">
+  ...
+</table>
+----
+
+=== `.table-bordered`
+
+Add borders and rounded corners to the table.
+
+====
+[options="header,autowidth", role="table table-bordered"]
+|==============================
+|#|First Name|Last Name|Username
+.2+|1 |Mark |Otto |@mdo
+|Mark |Otto |@TwBootstrap
+|2 |Jacob |Thornton |@fat
+|3 2+|Larry the Bird |@twitter
+|==============================
+====
+
+[options="linenums"]
+----
+<table class="table table-bordered">
+  ...
+</table>
+----
+
+=== `.table-hover`
+
+Enable a hover state on table rows within a `<tbody>`.
+
+====
+[options="header,autowidth", role="table table-hover"]
+|==============================
+|#|First Name|Last Name|Username
+|1 |Mark |Otto |@TwBootstrap
+|2 |Jacob |Thornton |@fat
+|3 2+|Larry the Bird |@twitter
+|==============================
+====
+
+[options="linenums"]
+----
+<table class="table table-hover">
+  ...
+</table>
+----
+
+=== `.table-condensed`
+
+Makes tables more compact by cutting cell padding in half.
+
+====
+[options="header,autowidth", role="table table-condensed"]
+|==============================
+|#|First Name|Last Name|Username
+|1 |Mark |Otto |@TwBootstrap
+|2 |Jacob |Thornton |@fat
+|3 2+|Larry the Bird |@twitter
+|==============================
+====
+
+[options="linenums"]
+----
+<table class="table table-condensed">
+  ...
+</table>
+----
+
+''''
+
+== Optional row classes
+
+Use contextual classes to color table rows.
+
+[format="csv", options="header", cols="1,7", role="table table-bordered table-striped"]
+|==============================
+Class,Description
+`.success`, Indicates a successful or positive action.
+`.error`, Indicates a dangerous or potentially negative action.
+`.warning`,Indicates a warning that might need attention.
+`.info`,Used as an alternative to the default styles.
+|==============================
+
+// can't do this one, asciidoc doesn't support it
+====
+[options="header,autowidth", role="table", bodyrows="success,error,warning,info"]
+|=============================
+|# |Product |Payment Taken |Status
+|{counter:payments} |TB - Monthly |01/04/2012 |Approved
+|{counter:payments} |TB - Monthly |02/04/2012 |Declined
+|{counter:payments} |TB - Monthly |03/04/2012 |Pending
+|{counter:payments} |TB - Monthly |04/04/2012 |Call in to confirm
+|=============================
+====
+
+[options="linenums"]
+----
+...
+  <tr class="success">
+    <td>1</td>
+    <td>TB - Monthly</td>
+    <td>01/04/2012</td>
+    <td>Approved</td>
+  </tr>
+...
+----
+
+''''
+
+== Supported table markup
+
+List of supported table HTML elements and how they should be used.
+
+[options="header", cols="1,7", role="table table-bordered table-striped"]
+|================
+|Tag |Description
+|`table` |Wrapping element for displaying data in a tabular format
+|`thead` |Container element for table header rows (`<tr>`) to label table columns
+|`tbody` |Container element for table rows (`<tr>`) in the body of the table
+|`tr` |Container element for a set of table cells (`<td>` or `<th>`) that appears on a single row
+|`td` |Default table cell
+|`th` |Special table cell for column (or row, depending on scope and placement) labels +
+Must be used within a `<thead>`
+|`caption` |Description or summary of what the table holds, especially useful for screen readers
+|================
+
+[options="linenums"]
+----
+<table>
+  <caption>...</caption>
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+----
+
+''''
+
+= Forms
+
+Not applicable to AsciiDoc.
+
+= Buttons
+
+Not applicable to AsciiDoc.
+
+[id="icons"]
+= Icons _by http://glyphicons.com[Glyphicons]_
+
+== Icon glyphs
+
+140 icons in sprite form, available in dark gray (default) and white, provided by {glyphicons}.
+
+[role="the-icons clearfix"]
+- [icon-glass]#{empty}# icon-glass
+- [icon-music]#{empty}# icon-music
+- [icon-search]#{empty}# icon-search
+- [icon-envelope]#{empty}# icon-envelope
+- [icon-heart]#{empty}# icon-heart
+- [icon-star]#{empty}# icon-star
+- [icon-star-empty]#{empty}# icon-star-empty
+- [icon-user]#{empty}# icon-user
+- [icon-film]#{empty}# icon-film
+- [icon-th-large]#{empty}# icon-th-large
+- [icon-th]#{empty}# icon-th
+- [icon-th-list]#{empty}# icon-th-list
+- [icon-ok]#{empty}# icon-ok
+- [icon-remove]#{empty}# icon-remove
+- [icon-zoom-in]#{empty}# icon-zoom-in
+- [icon-zoom-out]#{empty}# icon-zoom-out
+- [icon-off]#{empty}# icon-off
+- [icon-signal]#{empty}# icon-signal
+- [icon-cog]#{empty}# icon-cog
+- [icon-trash]#{empty}# icon-trash
+- [icon-home]#{empty}# icon-home
+- [icon-file]#{empty}# icon-file
+- [icon-time]#{empty}# icon-time
+- [icon-road]#{empty}# icon-road
+- [icon-download-alt]#{empty}# icon-download-alt
+- [icon-download]#{empty}# icon-download
+- [icon-upload]#{empty}# icon-upload
+- [icon-inbox]#{empty}# icon-inbox
+// break 
+- [icon-play-circle]#{empty}# icon-play-circle
+- [icon-repeat]#{empty}# icon-repeat
+- [icon-refresh]#{empty}# icon-refresh
+- [icon-list-alt]#{empty}# icon-list-alt
+- [icon-lock]#{empty}# icon-lock
+- [icon-flag]#{empty}# icon-flag
+- [icon-headphones]#{empty}# icon-headphones
+- [icon-volume-off]#{empty}# icon-volume-off
+- [icon-volume-down]#{empty}# icon-volume-down
+- [icon-volume-up]#{empty}# icon-volume-up
+- [icon-qrcode]#{empty}# icon-qrcode
+- [icon-barcode]#{empty}# icon-barcode
+- [icon-tag]#{empty}# icon-tag
+- [icon-tags]#{empty}# icon-tags
+- [icon-book]#{empty}# icon-book
+- [icon-bookmark]#{empty}# icon-bookmark
+- [icon-print]#{empty}# icon-print
+- [icon-camera]#{empty}# icon-camera
+- [icon-font]#{empty}# icon-font
+- [icon-bold]#{empty}# icon-bold
+- [icon-italic]#{empty}# icon-italic
+- [icon-text-height]#{empty}# icon-text-height
+- [icon-text-width]#{empty}# icon-text-width
+- [icon-align-left]#{empty}# icon-align-left
+- [icon-align-center]#{empty}# icon-align-center
+- [icon-align-right]#{empty}# icon-align-right
+- [icon-align-justify]#{empty}# icon-align-justify
+- [icon-list]#{empty}# icon-list
+// break 
+- [icon-indent-left]#{empty}# icon-indent-left
+- [icon-indent-right]#{empty}# icon-indent-right
+- [icon-facetime-video]#{empty}# icon-facetime-video
+- [icon-picture]#{empty}# icon-picture
+- [icon-pencil]#{empty}# icon-pencil
+- [icon-map-marker]#{empty}# icon-map-marker
+- [icon-adjust]#{empty}# icon-adjust
+- [icon-tint]#{empty}# icon-tint
+- [icon-edit]#{empty}# icon-edit
+- [icon-share]#{empty}# icon-share
+- [icon-check]#{empty}# icon-check
+- [icon-move]#{empty}# icon-move
+- [icon-step-backward]#{empty}# icon-step-backward
+- [icon-fast-backward]#{empty}# icon-fast-backward
+- [icon-backward]#{empty}# icon-backward
+- [icon-play]#{empty}# icon-play
+- [icon-pause]#{empty}# icon-pause
+- [icon-stop]#{empty}# icon-stop
+- [icon-forward]#{empty}# icon-forward
+- [icon-fast-forward]#{empty}# icon-fast-forward
+- [icon-step-forward]#{empty}# icon-step-forward
+- [icon-eject]#{empty}# icon-eject
+- [icon-chevron-left]#{empty}# icon-chevron-left
+- [icon-chevron-right]#{empty}# icon-chevron-right
+- [icon-plus-sign]#{empty}# icon-plus-sign
+- [icon-minus-sign]#{empty}# icon-minus-sign
+- [icon-remove-sign]#{empty}# icon-remove-sign
+- [icon-ok-sign]#{empty}# icon-ok-sign
+// break 
+- [icon-question-sign]#{empty}# icon-question-sign
+- [icon-info-sign]#{empty}# icon-info-sign
+- [icon-screenshot]#{empty}# icon-screenshot
+- [icon-remove-circle]#{empty}# icon-remove-circle
+- [icon-ok-circle]#{empty}# icon-ok-circle
+- [icon-ban-circle]#{empty}# icon-ban-circle
+- [icon-arrow-left]#{empty}# icon-arrow-left
+- [icon-arrow-right]#{empty}# icon-arrow-right
+- [icon-arrow-up]#{empty}# icon-arrow-up
+- [icon-arrow-down]#{empty}# icon-arrow-down
+- [icon-share-alt]#{empty}# icon-share-alt
+- [icon-resize-full]#{empty}# icon-resize-full
+- [icon-resize-small]#{empty}# icon-resize-small
+- [icon-plus]#{empty}# icon-plus
+- [icon-minus]#{empty}# icon-minus
+- [icon-asterisk]#{empty}# icon-asterisk
+- [icon-exclamation-sign]#{empty}# icon-exclamation-sign
+- [icon-gift]#{empty}# icon-gift
+- [icon-leaf]#{empty}# icon-leaf
+- [icon-fire]#{empty}# icon-fire
+- [icon-eye-open]#{empty}# icon-eye-open
+- [icon-eye-close]#{empty}# icon-eye-close
+- [icon-warning-sign]#{empty}# icon-warning-sign
+- [icon-plane]#{empty}# icon-plane
+- [icon-calendar]#{empty}# icon-calendar
+- [icon-random]#{empty}# icon-random
+- [icon-comment]#{empty}# icon-comment
+- [icon-magnet]#{empty}# icon-magnet
+// break 
+- [icon-chevron-up]#{empty}# icon-chevron-up
+- [icon-chevron-down]#{empty}# icon-chevron-down
+- [icon-retweet]#{empty}# icon-retweet
+- [icon-shopping-cart]#{empty}# icon-shopping-cart
+- [icon-folder-close]#{empty}# icon-folder-close
+- [icon-folder-open]#{empty}# icon-folder-open
+- [icon-resize-vertical]#{empty}# icon-resize-vertical
+- [icon-resize-horizontal]#{empty}# icon-resize-horizontal
+- [icon-hdd]#{empty}# icon-hdd
+- [icon-bullhorn]#{empty}# icon-bullhorn
+- [icon-bell]#{empty}# icon-bell
+- [icon-certificate]#{empty}# icon-certificate
+- [icon-thumbs-up]#{empty}# icon-thumbs-up
+- [icon-thumbs-down]#{empty}# icon-thumbs-down
+- [icon-hand-right]#{empty}# icon-hand-right
+- [icon-hand-left]#{empty}# icon-hand-left
+- [icon-hand-up]#{empty}# icon-hand-up
+- [icon-hand-down]#{empty}# icon-hand-down
+- [icon-circle-arrow-right]#{empty}# icon-circle-arrow-right
+- [icon-circle-arrow-left]#{empty}# icon-circle-arrow-left
+- [icon-circle-arrow-up]#{empty}# icon-circle-arrow-up
+- [icon-circle-arrow-down]#{empty}# icon-circle-arrow-down
+- [icon-globe]#{empty}# icon-globe
+- [icon-wrench]#{empty}# icon-wrench
+- [icon-tasks]#{empty}# icon-tasks
+- [icon-filter]#{empty}# icon-filter
+- [icon-briefcase]#{empty}# icon-briefcase
+- [icon-fullscreen]#{empty}# icon-fullscreen
+
+=== Glyphicons attribution
+
+{glyphicons} Halflings are normally not available for free, but an arrangement between Bootstrap and the Glyphicons creators have made this possible at no cost to you as developers. As a thank you, we ask you to include an optional link back to {glyphicons} whenever practical.
+
+''''
+
+== How to use
+
+All icons require an `<i>` tag with a unique class, prefixed with `icon-`. To use, place the following code just about anywhere:
+
+[options="linenums"]
+----
+<i class="icon-search"></i>
+----
+
+There are also styles available for inverted (white) icons, made ready with one extra class. We will specifically enforce this class on hover and active states for nav and dropdown links.
+
+[options="linenums"]
+----
+<i class="icon-search icon-white"></i>
+----
+
+[caption="Heads up!", name="info"]
+When using beside strings of text, as in buttons or nav links, be sure to leave a space after the `<i>` tag for proper spacing.
+
+''''
+
+== Icon examples
+
+Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.
+
+=== Buttons
+
+==== Button group in a button toolbar
+
+...
+
+[options="linenums"]
+----
+<div class="btn-toolbar">
+  <div class="btn-group">
+
+    <a class="btn" href="#"><i class="icon-align-left"></i></a>
+    <a class="btn" href="#"><i class="icon-align-center"></i></a>
+    <a class="btn" href="#"><i class="icon-align-right"></i></a>
+    <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+  </div>
+</div>
+----
+
+==== Dropdown in a button group
+
+...

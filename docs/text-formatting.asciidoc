@@ -1,0 +1,21 @@
+= {title}
+:title:       Text Formatting
+:description: 
+include::attributes.asciidoc[]
+
+== Quoted text
+
+[role="lead"]
+Asciidoc quoted text attributes and Bootstrap labels
+
+====
+----
+[red]#Obvious# and [big red yellow-background]*very obvious*.
+----
+[red]#Obvious# and [big red yellow-background]*very obvious*.
+
+----
+A bootstrap [label label-warning]#warning# label.
+----
+A bootstrap [label label-warning]#warning# label.
+====

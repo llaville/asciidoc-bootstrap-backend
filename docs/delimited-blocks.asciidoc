@@ -1,0 +1,64 @@
+= {title}
+:title:       Delimited Blocks
+:description: 
+include::attributes.asciidoc[]
+
+== Sidebar blocks
+
+[role="lead"]
+A sidebar is a short piece of text presented outside the narrative flow of the main text. 
+The sidebar is normally presented inside a bordered box to set it apart from the main text.
+
+====
+----
+.An Example Sidebar
+************************************************
+Any AsciiDoc SectionBody element (apart from
+SidebarBlocks) can be placed inside a sidebar.
+************************************************
+----
+.An Example Sidebar
+************************************************
+Any AsciiDoc SectionBody element (apart from
+SidebarBlocks) can be placed inside a sidebar.
+************************************************
+====
+
+You may also used the attribute `role` with values *well-small* or *well-large*
+to control padding and rounded corners.
+
+With `role` set to *well-small* value
+====
+----
+.An Example Sidebar
+[role="well-small"]
+****
+Any AsciiDoc SectionBody element (apart from
+SidebarBlocks) can be placed inside a sidebar.
+****
+----
+.An Example Sidebar
+[role="well-small"]
+****
+Any AsciiDoc SectionBody element (apart from
+SidebarBlocks) can be placed inside a sidebar.
+****
+====
+
+With `role` set to *well-large* value
+====
+----
+.An Example Sidebar
+[role="well-large"]
+****
+Any AsciiDoc SectionBody element (apart from
+SidebarBlocks) can be placed inside a sidebar.
+****
+----
+.An Example Sidebar
+[role="well-large"]
+****
+Any AsciiDoc SectionBody element (apart from
+SidebarBlocks) can be placed inside a sidebar.
+****
+====

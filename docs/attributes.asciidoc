@@ -1,0 +1,5 @@
+:revnumber:   1.1.0
+:toc:
+:brand:       Bootstrap-Asciidoc
+:doctitle:    {title} - Bootstrap-Asciidoc {revnumber}
+:sidebar:     right

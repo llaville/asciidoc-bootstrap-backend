@@ -1,0 +1,117 @@
+= {title}
+:title:       Getting Started
+:description: Overview of the project, its contents, and how to get started with your own theme.
+include::attributes.asciidoc[]
+//:github:      link:https://github.com/llaville/pirus/issues[Github]
+//:footer:      Bugs and feature requests are tracked on {github}
+
+== Download
+
+=== Download the asciidoc backend
+
+http://laurent-laville.org/asciidoc/bootstrap/bootstrap-{revnumber}.zip[]
+
+Install as any other plugins:
+----
+$ asciidoc --backend install bootstrap-<version>.zip
+----
+NOTE: `<version>` is to be replaced by the latest version available of the backend.
+
+NOTE: The Asciidoc bootstrap backend basic version (1.1.0) included 
+the compiled version of bootstrap 2.2.2.
+
+If you want later to upgrade the bootstrap compiled version, be sure to follow instructions below:
+
+=== Download the compiled version of bootstrap
+
+http://twitter.github.com/bootstrap/assets/bootstrap.zip[]
+
+By default backends plugins are installed in `$HOME/.asciidoc/backends/<backend>`
+where `<backend>` is the backend name. 
+
+So extract the content of `bootstrap.zip` 
+----
+ bootstrap/  <1>
+  ├── css/
+  │   ├── bootstrap.css
+  │   ├── bootstrap.min.css
+  ├── js/
+  │   ├── bootstrap.js
+  │   ├── bootstrap.min.js
+  └── img/
+      ├── glyphicons-halflings.png
+      └── glyphicons-halflings-white.png
+----
+
+<1> to its destination `$HOME/.asciidoc/backends/bootstrap/bootstrap`
+
+== File structure
+
+When you will installed the asciidoc bootstrap backend, you will find the following 
+file structure and contents.
+
+----
+ bootstrap/  
+  ├── bootstrap/ 
+  │   ├── css/
+  │   ├── js/
+  │   └── img/
+  ├── docs/
+  ├── examples/
+  ├── images/
+  │   ├── icons/
+  │   │   ├── apple-touch-icon-57-precomposed.png
+  │   │   ├── apple-touch-icon-72-precomposed.png
+  │   │   ├── apple-touch-icon-114-precomposed.png
+  │   │   ├── apple-touch-icon-144-precomposed.png
+  │   │   └── favicon.ico
+  │   └── bs-docs-masthead-pattern.png  
+  ├── javascripts/
+  │   ├── asciidoc.js
+  │   ├── jquery.min.js
+  │   └── bsdocs.js
+  └── stylesheets/
+      ├── bsdocs.css
+      └── pygments.css
+----
+
+NOTE: The main theme named *bsdocs* follow the look and feel of bootstrap 2.2
+
+== Attributes
+
+[role="lead"]
+Specifics bootstrap backend attributes
+
+[options="header", cols="1,7", role="table table-bordered"]
+|===========================
+| Name | Description
+| bootstrapdir | The name of the directory containing the boostrap compiled version resources.
+| sidebar | The TOC can be place on a sidebar on _left_ (default value) or _right_ of the main document body.
+|===========================
+
+== Your own theme
+
+The AsciiDoc theme attribute is used to select an alternative CSS stylesheet 
+and to optionally include additional JavaScript code.
+
+* Theme files reside in an AsciiDoc configuration directory named `themes/<theme>/`
+(where `<theme>` is the the theme name set by the theme attribute)
+* The `<theme>.css` file replaces the default `bsdocs.css` CSS file.
+* The `<theme>.js` file is included in addition to the default `bsdocs.js` JavaScript file.
+
+== What is next?
+
+[role="lead"]
+Head to the docs sections for more information and examples.
+
+=== link:base-css-book.html[Base CSS]
+
+Bootstrap Docs Base CSS examples
+
+=== link:text-formatting.html[Text Formatting] 
+
+Words and phrases can be formatted by enclosing inline text with quote characters.
+
+=== link:delimited-blocks.html[Delimited Blocks]
+
+Delimited blocks are blocks of text enveloped by leading and trailing delimiter lines
