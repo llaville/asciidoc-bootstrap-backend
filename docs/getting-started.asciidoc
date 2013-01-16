@@ -17,7 +17,7 @@ $ asciidoc --backend install bootstrap-<version>.zip
 ----
 NOTE: `<version>` is to be replaced by the latest version available of the backend.
 
-NOTE: The Asciidoc bootstrap backend basic version (1.1.0) included
+NOTE: The Asciidoc bootstrap backend basic version (1.2.0) included
 the compiled version of bootstrap 2.2.2.
 
 If you want later to upgrade the bootstrap compiled version, be sure to follow instructions below:
