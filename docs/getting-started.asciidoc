@@ -5,6 +5,14 @@ include::attributes.asciidoc[]
 //:github:      link:https://github.com/llaville/pirus/issues[Github]
 //:footer:      Bugs and feature requests are tracked on {github}
 
+.{revdate}: AsciiDoc-Bootstrap-Backend {revnumber} Released
+************************************************************************
+Read the link:CHANGELOG.html[CHANGELOG] for a full list of all
+additions, changes and bug fixes.
+
+'Laurent Laville'
+************************************************************************
+
 == Download
 
 === Download the asciidoc backend
