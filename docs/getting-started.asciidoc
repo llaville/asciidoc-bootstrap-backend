@@ -2,8 +2,8 @@
 :title:       Getting Started
 :description: Overview of the project, its contents, and how to get started with your own theme.
 include::attributes.asciidoc[]
-//:github:      link:https://github.com/llaville/pirus/issues[Github]
-//:footer:      Bugs and feature requests are tracked on {github}
+:navinfo2:
+
 
 .{revdate}: AsciiDoc-Bootstrap-Backend {revnumber} Released
 ************************************************************************
@@ -94,7 +94,13 @@ Specifics bootstrap backend attributes
 |===========================
 | Name | Description
 | bootstrapdir | The name of the directory containing the boostrap compiled version resources.
-| sidebar | The TOC can be place on a sidebar on _left_ (default value) or _right_ of the main document body.
+| sidebar      | The TOC can be place on a sidebar on _left_ (default value) or _right_ of the main document body.
+| brand        | A simple link to show your brand or project name
+| brandref     | A link to the main page of your project. By default it's a simple anchor #
+| navinfo,
+navinfo1,
+navinfo2
+| Control which navigation information files will be included in the output file.
 |===========================
 
 == Your own theme
@@ -130,3 +136,11 @@ Paragraphs are blocks of text terminated by a blank line, the end of file,
 or the start of a delimited block or a list. There are three paragraph syntaxes:
 normal, indented (literal) and admonition which are rendered, by default,
 with the corresponding paragraph style.
+
+=== link:document-structure.html[Document Structure]
+
+AsciiDoc has two mechanisms for optionally including additional meta-data
+in the header of the output document.
+
+Like the `docinfo` attribute, bootstrap backend add support to Twitter Dropdowns
+navigation bar with to new `navinfo` attribute.

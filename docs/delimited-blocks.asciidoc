@@ -1,7 +1,9 @@
 = {title}
 :title:       Delimited Blocks
-:description: 
+:description: http://www.methods.co.nz/asciidoc/userguide.html#X104
 include::attributes.asciidoc[]
+:navinfo2:
+
 
 == Sidebar blocks
 
@@ -17,12 +19,14 @@ Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ************************************************
 ----
+====
+Renders:
+
 .An Example Sidebar
 ************************************************
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ************************************************
-====
 
 You may also used the attribute `role` with values *well-small* or *well-large*
 to control padding and rounded corners.
@@ -37,13 +41,15 @@ Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
 ----
+====
+Renders:
+
 .An Example Sidebar
 [role="well-small"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
-====
 
 With `role` set to *well-large* value
 ====
@@ -55,10 +61,12 @@ Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
 ----
+====
+Renders:
+
 .An Example Sidebar
 [role="well-large"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
-====

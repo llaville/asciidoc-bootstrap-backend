@@ -1,7 +1,9 @@
 = {title}
 :title:       Text Formatting
-:description: 
+:description: http://www.methods.co.nz/asciidoc/userguide.html#_text_formatting
 include::attributes.asciidoc[]
+:navinfo2:
+
 
 == Quoted text
 
@@ -12,10 +14,16 @@ Asciidoc quoted text attributes and Bootstrap labels
 ----
 [red]#Obvious# and [big red yellow-background]*very obvious*.
 ----
+====
+Renders:
+
 [red]#Obvious# and [big red yellow-background]*very obvious*.
 
-----
-A bootstrap [label label-warning]#warning# label.
-----
-A bootstrap [label label-warning]#warning# label.
 ====
+----
+A bootstrap [label label-warning]#warning# label.
+----
+====
+Renders:
+
+A bootstrap [label label-warning]#warning# label.
