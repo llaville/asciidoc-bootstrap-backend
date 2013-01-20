@@ -1,4 +1,4 @@
-= bootstrap backend for AsciiDoc
+= Bootstrap backend for AsciiDoc
 
 An AsciiDoc backend that renders the AsciiDoc source as HTML5
 in the style of the http://twitter.github.com/bootstrap[Twitter Bootstrap docs].
@@ -6,7 +6,7 @@ in the style of the http://twitter.github.com/bootstrap[Twitter Bootstrap docs].
 == Installation
 
 To install the bootstrap backend, follow instructions
-on http://laurent-laville.org/asciidoc/bootstrap/getting-started.html[Getting Started] page.
+on http://laurent-laville.org/asciidoc/bootstrap/index.html[Getting Started] page.
 
 == Usage
 
