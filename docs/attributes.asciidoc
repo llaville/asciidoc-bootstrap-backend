@@ -5,3 +5,4 @@
 :brandref:    http://laurent-laville.org/asciidoc/bootstrap/
 :doctitle:    {title} - Bootstrap-Asciidoc {revnumber}
 :sidebar:     right
+:footer:

@@ -29,10 +29,24 @@ This next example will include `navinfo.html` and `mydoc-navinfo.html`
 navinfo files in the HTML output file:
 
   $ asciidoc -a navinfo2 -b bootstrap mydoc.txt
-  
+
+| footer |
+This attribute control which footer informations
+will be included in the output file:
+
+If not defined, then it will be the default footer with a link back to top,
+the version and last updated informations.
+
+footer:: Include `footer.html`
+
+The following example will include the `footer.html` file
+in the HTML output file:
+
+  $ asciidoc -a footer -b bootstrap mydoc.txt
+
 |====================================================================
 
-.Example of left navigation menu: _document-structure-navinfo.html_ 
+.Example of left navigation menu: _document-structure-navinfo.html_
 [source,html]
 ----
 include::document-structure-navinfo.html[]
@@ -42,4 +56,10 @@ include::document-structure-navinfo.html[]
 [source,html]
 ----
 include::navinfo.html[]
+----
+
+.Example of footer file: _footer.html_
+[source,html]
+----
+include::footer.html[]
 ----

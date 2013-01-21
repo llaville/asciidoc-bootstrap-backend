@@ -101,6 +101,7 @@ Specifics bootstrap backend attributes
 navinfo1,
 navinfo2
 | Control which navigation information files will be included in the output file.
+| footer       | Control which footer informations will be included in the output file.
 |===========================
 
 == Your own theme

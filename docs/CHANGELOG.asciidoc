@@ -11,6 +11,8 @@ include::attributes.asciidoc[]
 * Support three attributes `navinfo`, `navinfo1`, `navinfo2` to control which
 navigation information files will be included in the the header of the output file.
 See link:document-structure.html[Document Structure] chapter.
+* Support `footer` attribute to control which informations will be included in the output file.
+See link:document-structure.html[Document Structure] chapter.
 * The Brand link may be configure with the new `brandref` attribute.
 
 .Bug fixes:
