@@ -2,7 +2,7 @@
 :revdate:     2013-01-21
 :toc:
 :brand:       Bootstrap-Asciidoc
-:brandref:    http://laurent-laville.org/asciidoc/bootstrap/
+:brandref:    https://github.com/llaville/asciidoc-bootstrap-backend
 :doctitle:    {title} - Bootstrap-Asciidoc {revnumber}
 :sidebar:     right
 :footer:
