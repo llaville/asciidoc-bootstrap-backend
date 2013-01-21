@@ -1,5 +1,107 @@
 /* Add additional stylesheets below
 -------------------------------------------------- */
+
+/*
+   Asciidoc styles
+*/
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+/*
+  Asciidoc special styles
+*/
+div.sidebarblock div.title {
+  color: #527bbd;
+}
+
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+pre {
+    background-color: #333;
+    color: #EEE;
+}
+pre.well {
+    color: #333;
+}
+
+table.highlighttable {
+    width: 100%;
+}
+
+div.linenodiv pre {
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+.plantuml {
+    border: 1px solid #000;
+    margin: 0 0 2em 0;
+    padding: 0.2em;
+}
+div.plantuml div.title {
+    margin: 0;
+    background-color: #AFD5DF;
+    padding-left: 5em;
+}
+
+/*
+  Bootsrap's overloaded standard styles
+*/
+blockquote {
+    margin: 14px 40px 14px 40px;
+}
+
+blockquote cite {
+  display: block;
+  line-height: 20px;
+  color: #444;
+}
+
+
 /*
   Bootstrap's documentation styles
   Special styles for presenting Bootstrap's documentation and examples
@@ -289,7 +391,7 @@ hr.soften {
 -------------------------------------------------- */
 
 .footer {
-  padding: 70px 0;
+  padding: 30px 0;
   margin-top: 70px;
   border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
@@ -445,19 +547,6 @@ hr.soften {
 /* Giant download button */
 .download-btn {
   margin: 36px 0 108px;
-}
-#download p,
-#download h4 {
-  max-width: 50%;
-  margin: 0 auto;
-  color: #999;
-  text-align: center;
-}
-#download h4 {
-  margin-bottom: 0;
-}
-#download p {
-  margin-bottom: 18px;
 }
 .download-btn .btn {
   display: block;
@@ -783,6 +872,12 @@ form.bs-docs-example {
           box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
 }
 /* Chevrons */
+.bs-docs-sidenav .icon-chevron-left {
+  float: left;
+  margin-top: 2px;
+  margin-right: 6px;
+  opacity: .25;
+}
 .bs-docs-sidenav .icon-chevron-right {
   float: right;
   margin-top: 2px;
@@ -792,11 +887,14 @@ form.bs-docs-example {
 .bs-docs-sidenav > li > a:hover {
   background-color: #f5f5f5;
 }
-.bs-docs-sidenav a:hover .icon-chevron-right {
+.bs-docs-sidenav a:hover .icon-chevron-right,
+.bs-docs-sidenav a:hover .icon-chevron-left {
   opacity: .5;
 }
 .bs-docs-sidenav .active .icon-chevron-right,
-.bs-docs-sidenav .active a:hover .icon-chevron-right {
+.bs-docs-sidenav .active .icon-chevron-left,
+.bs-docs-sidenav .active a:hover .icon-chevron-right
+.bs-docs-sidenav .active a:hover .icon-chevron-left {
   background-image: url(../img/glyphicons-halflings-white.png);
   opacity: 1;
 }
