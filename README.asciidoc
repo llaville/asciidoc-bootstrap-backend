@@ -1,7 +1,10 @@
 = Bootstrap backend for AsciiDoc
 
 An AsciiDoc backend that renders the AsciiDoc source as HTML5
-in the style of the http://twitter.github.com/bootstrap[Twitter Bootstrap docs].
+in the style of the http://getbootstrap.com/[Twitter Bootstrap docs].
+
+NOTE: The latest distribution 2.0.0 support http://getbootstrap.com/2.3.2[Bootstrap 2].
+A future major version 3.0.0 should come to support http://getbootstrap.com[Bootstrap 3].
 
 == Installation
 
@@ -16,7 +19,7 @@ Use the 'bootstrap' backend as you would the built-in backends.
 
 As you would expect, the rendered output looks shockingly similar to the Twitter Bootstrap documentation.
 
-Compare the original http://twitter.github.com/bootstrap/base-css.html[Base CSS] chapter
+Compare the original http://getbootstrap.com/2.3.2/base-css.html[Base CSS] chapter
 with this http://laurent-laville.org/asciidoc/base-css-book/base-css-book.html[HTML output],
 from this https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/base-css-book.asciidoc[source file].
 
