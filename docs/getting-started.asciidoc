@@ -25,33 +25,11 @@ $ asciidoc --backend install bootstrap-<version>.zip
 ----
 NOTE: `<version>` is to be replaced by the latest version available of the backend.
 
-NOTE: The Asciidoc bootstrap backend basic version (1.2.0) included
-the compiled version of bootstrap 2.2.2.
+NOTE: The Asciidoc bootstrap backend standard version (2.0.0) included
+the latest compiled version of bootstrap 2 (2.3.2).
 
-If you want later to upgrade the bootstrap compiled version, be sure to follow instructions below:
-
-=== Download the compiled version of bootstrap
-
-http://twitter.github.com/bootstrap/assets/bootstrap.zip[]
-
-By default backends plugins are installed in `$HOME/.asciidoc/backends/<backend>`
-where `<backend>` is the backend name.
-
-So extract the content of `bootstrap.zip`
-----
- bootstrap/  <1>
-  ├── css/
-  │   ├── bootstrap.css
-  │   ├── bootstrap.min.css
-  ├── js/
-  │   ├── bootstrap.js
-  │   ├── bootstrap.min.js
-  └── img/
-      ├── glyphicons-halflings.png
-      └── glyphicons-halflings-white.png
-----
-
-<1> to its destination `$HOME/.asciidoc/backends/bootstrap/bootstrap`
+CAUTION: The Asciidoc bootstrap backend next version (3.0.0) will include and support
+the latest compiled version of bootstrap 3 (3.0.0).
 
 == File structure
 
@@ -102,6 +80,7 @@ navinfo1,
 navinfo2
 | Control which navigation information files will be included in the output file.
 | footer       | Control which footer informations will be included in the output file.
+| totop        | Control which _back to top_ system you want to include in the output file.
 |===========================
 
 == Your own theme

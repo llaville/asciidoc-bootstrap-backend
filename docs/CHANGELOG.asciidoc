@@ -5,6 +5,19 @@ include::attributes.asciidoc[]
 :navinfo2:
 
 
+== Version 2.0.0 _(2013-10-14)_
+
+.Additions and changes:
+* Support the latest Bootstrap 2.x version (2.3.2).
+Included in this distribution.
+* Support the latest jQuery 1.x version (1.10.2).
+Included in this distribution.
+* Support http://mattvarone.com/web-design/uitotop-jquery-plugin/[UItoTop jQuery plugin].
+Included in this distribution.
+
+.Bug fixes:
+* none
+
 == Version 1.3.0 _(2013-01-21)_
 
 .Additions and changes:
