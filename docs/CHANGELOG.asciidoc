@@ -5,6 +5,14 @@ include::attributes.asciidoc[]
 :navinfo2:
 
 
+== Version 2.1.0 _(2013-10-15)_
+
+.Additions and changes:
+* Add new `brandver` attribute to support a versions dropdown menu in the navinfo.html
+
+.Bug fixes:
+* none
+
 == Version 2.0.0 _(2013-10-14)_
 
 .Additions and changes:
