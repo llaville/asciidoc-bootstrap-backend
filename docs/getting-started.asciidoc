@@ -75,6 +75,7 @@ Specifics bootstrap backend attributes
 | sidebar      | The TOC can be place on a sidebar on _left_ (default value) or _right_ of the main document body.
 | brand        | A simple link to show your brand or project name
 | brandref     | A link to the main page of your project. By default it's a simple anchor #
+| brandver     | Control display of a dynamic versions list of your project.
 | navinfo,
 navinfo1,
 navinfo2

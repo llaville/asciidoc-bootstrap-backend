@@ -60,6 +60,20 @@ in the HTML output file:
 
   $ asciidoc -a totop=ui -b bootstrap mydoc.txt
 
+| brandver |
+This attribute control whether you want to include a dynamic versions list in the output file.
+A `versions.html` file must exists.
+
+The following example will include a dynamic versions list, located in the navinfo.html,
+in the HTML output file:
+
+  $ asciidoc -a brandver -b bootstrap mydoc.txt
+
+The following example will remove a dynamic versions list, located in the navinfo.html,
+and won't be shown in the final HTML output file (defautl behavior):
+
+  $ asciidoc -a brandver! -b bootstrap mydoc.txt
+
 |====================================================================
 
 .Example of left navigation menu: _document-structure-navinfo.html_
