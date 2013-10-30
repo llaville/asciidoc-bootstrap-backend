@@ -1,0 +1,21 @@
+= {title}
+:title:       Example Templates for Asciidoc-Bootstrap
+:description: Gallery of useful examples to easily get started with and extend Bootstrap backend for Asciidoc
+
+
+== Navbar examples
+
+[role="lead"]
+Basic templates for showcasing how the navbar works.
+
+image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default-sample.html",title="Default",style="thumbnail span3"]
+image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static-sample.html",title="Static",style="thumbnail span3 offset1"]
+image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed-sample.html",title="Fixed",style="thumbnail span3 offset1"]
+
+== Table Of Contents examples
+
+[role="lead"]
+Basic templates for showcasing how the TOC (Table Of Contents) works.
+
+image::images/screenshots/bs2default-toc1-hero.png[link="toc1-sample.html",title="TOC 1",style="thumbnail span5"]
+image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2-sample.html",title="TOC 2",style="thumbnail span5 offset1"]

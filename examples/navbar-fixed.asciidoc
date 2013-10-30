@@ -1,0 +1,29 @@
+= {title}
+:title:       Fixed Navbar
+:description: In this tutorial, we will learn how to add a fixed navbar with your Asciidoc document
+:doctitle:    Example Template for Asciidoc-Bootstrap - {title}
+
+
+== Fixed navbar
+
+[role="lead"]
+While a static navbar scrolls away with the page, a fixed navbar is pinned at top and do not move.
+
+.Example of Asciidoc document 
+..........................
+= My Document
+
+== Here are my first fixed navbar
+
+Have a look on this raw but fixed navbar at top of this document. 
+..........................
+
+Enter the new command:
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a navbar=fixed -a brand="Project name"
+----
+
+Have a look on the final result.
+
+image::images/screenshots/first-navbar-fixed.png[title="My first fixed navbar",style="thumbnail span9 offset1"]
