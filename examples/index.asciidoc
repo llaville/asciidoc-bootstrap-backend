@@ -8,9 +8,9 @@
 [role="lead"]
 Basic templates for showcasing how the navbar works.
 
-image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default-sample.html",title="Default",style="thumbnail span3"]
-image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static-sample.html",title="Static",style="thumbnail span3 offset1"]
-image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed-sample.html",title="Fixed",style="thumbnail span3 offset1"]
+image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default.html",title="Default",style="thumbnail span3"]
+image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static.html",title="Static",style="thumbnail span3 offset1"]
+image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed.html",title="Fixed",style="thumbnail span3 offset1"]
 
 == Table Of Contents examples
 

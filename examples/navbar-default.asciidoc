@@ -9,16 +9,16 @@
 [role="lead"]
 To start, navbars are static (not fixed at the top) and include project name and basic navigation.
 
-[CAUTION] 
+[CAUTION]
 =====================================================================
-You have to provide a `brand` and `navinfo` (or `navinfo1` or `navinfo2`) attributes to see something.  
+You have to provide a `brand` and `navinfo` (or `navinfo1` or `navinfo2`) attributes to see something.
 
 Otherwise you will see an empty navbar like this one :
 
-image:images/screenshots/empty-navbar-defaut.png[title="Empty default navbar"]
+image:images/screenshots/bs2default-empty-navbar-defaut.png[title="Empty default navbar"]
 =====================================================================
 
-.Example of Asciidoc document 
+.Example of Asciidoc document
 ..........................
 = My Document
 
@@ -26,27 +26,49 @@ image:images/screenshots/empty-navbar-defaut.png[title="Empty default navbar"]
 
 === Why not another chapter
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum dui id lectus viverra placerat. 
-Sed arcu ipsum, posuere et scelerisque ac, eleifend id turpis. Ut vitae velit congue, 
-sollicitudin nisi eu, vestibulum lorem. Praesent lectus turpis, ullamcorper vehicula volutpat interdum, 
-vestibulum condimentum elit. Aliquam erat volutpat. Donec vulputate, dolor vitae molestie convallis, 
-lacus elit auctor ipsum, sed pharetra augue justo id nisl. Vivamus imperdiet neque ac nunc malesuada, 
-nec semper mauris viverra. Morbi venenatis ornare dictum. In pulvinar pellentesque felis, 
-a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt consequat. 
-Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor. 
-Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum. 
-Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum dui id lectus viverra placerat.
+Sed arcu ipsum, posuere et scelerisque ac, eleifend id turpis. Ut vitae velit congue,
+sollicitudin nisi eu, vestibulum lorem. Praesent lectus turpis, ullamcorper vehicula volutpat interdum,
+vestibulum condimentum elit. Aliquam erat volutpat. Donec vulputate, dolor vitae molestie convallis,
+lacus elit auctor ipsum, sed pharetra augue justo id nisl. Vivamus imperdiet neque ac nunc malesuada,
+nec semper mauris viverra. Morbi venenatis ornare dictum. In pulvinar pellentesque felis,
+a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt consequat.
+Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
+Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
+Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
 ..........................
 
-== Result with flatly theme
+== Result with default theme
 
-Enter the following command: 
+Enter the following command:
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a theme=bs2flatly -a navbar=default -a brand="My Project" /path/to/document/demo.asciidoc
+$ asciidoc -b bootstrap -a theme=bs2default -a navbar=default -a brand="My Project" -a jumbotron -a toc -a numbered /path/to/document/demo.asciidoc
 ----
 NOTE: A navbar without links is useless. It's for demo purpose only.
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2flatly-navbar-default.png[title="My first navbar",style="thumbnail span9 offset1"]
+image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default-sample.html",title="My first navbar",style="thumbnail span9 offset1"]
+
+== How to build this document
+
+This document +navbar-default.asciidoc+
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-default.asciidoc]
+was generated with the following command:
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a linkcss -a theme=bs2flatly -a navbar=fixed -a navinfo2 -a hero -a toc -a totop=ui /path/to/examples/navbar-default.asciidoc
+----
+[NOTE]
+=====================================================================
+.Some explanations
+* `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
+``stylesheets and scripts are automatically embedded in the output document``.
+* `theme` bs2flatly is the standard Flatly http://bootswatch.com/[Bootswatch] theme for Bootstrap 2.
+* `navbar` used a top fixed navbar style.
+* `navinfo2` allow to customize the navbar content, with specific menus +navbar-default-navinfo.html+ and common menus +navinfo.html+.
+* `hero` used a full-width jumbotron in all resolution.
+* `toc` procude a standard Table Of Contents at start of the document.
+* `totop` with *ui* value use a jQuery plugin to allow to easily scroll back to top of the document.
+=====================================================================
