@@ -83,7 +83,7 @@ $ asciidoc -b bootstrap -a linkcss -a theme=bs2flatly -a navbar=fixed -a navinfo
 ``stylesheets and scripts are automatically embedded in the output document``.
 * `theme` bs2flatly is the standard Flatly http://bootswatch.com/[Bootswatch] theme for Bootstrap 2.
 * `navbar` used a top fixed navbar style.
-* `navinfo2` allow to customize the navbar content, with specific menus +toc1-navinfo.html+ and common menus +navinfo.html+.
+* `navinfo2` allow to customize the navbar content, with specific menus +toc2-navinfo.html+ and common menus +navinfo.html+.
 * `hero` used a full-width jumbotron in all resolution.
 * `toc` procude a standard Table Of Contents at start of the document.
 * `totop` with *ui* value use a jQuery plugin to allow to easily scroll back to top of the document.
