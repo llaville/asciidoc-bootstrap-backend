@@ -17,5 +17,5 @@ image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navba
 [role="lead"]
 Basic templates for showcasing how the TOC (Table Of Contents) works.
 
-image::images/screenshots/bs2default-toc1-hero.png[link="toc1-sample.html",title="TOC 1",style="thumbnail span5"]
-image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2-sample.html",title="TOC 2",style="thumbnail span5 offset1"]
+image::images/screenshots/bs2default-toc1-hero.png[link="toc1.html",title="TOC 1",style="thumbnail span5"]
+image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2.html",title="TOC 2",style="thumbnail span5 offset1"]

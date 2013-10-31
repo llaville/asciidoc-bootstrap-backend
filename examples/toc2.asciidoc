@@ -9,7 +9,7 @@
 [role="lead"]
 This TOC is located in the left or right side of the main content of the document.
 
-.Example of Asciidoc document 
+.Example of Asciidoc document
 ..........................
 = My Document
 
@@ -17,19 +17,19 @@ This TOC is located in the left or right side of the main content of the documen
 
 === Why not another chapter
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum dui id lectus viverra placerat. 
-Sed arcu ipsum, posuere et scelerisque ac, eleifend id turpis. Ut vitae velit congue, 
-sollicitudin nisi eu, vestibulum lorem. Praesent lectus turpis, ullamcorper vehicula volutpat interdum, 
-vestibulum condimentum elit. Aliquam erat volutpat. Donec vulputate, dolor vitae molestie convallis, 
-lacus elit auctor ipsum, sed pharetra augue justo id nisl. Vivamus imperdiet neque ac nunc malesuada, 
-nec semper mauris viverra. Morbi venenatis ornare dictum. In pulvinar pellentesque felis, 
-a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt consequat. 
-Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor. 
-Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum. 
-Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum dui id lectus viverra placerat.
+Sed arcu ipsum, posuere et scelerisque ac, eleifend id turpis. Ut vitae velit congue,
+sollicitudin nisi eu, vestibulum lorem. Praesent lectus turpis, ullamcorper vehicula volutpat interdum,
+vestibulum condimentum elit. Aliquam erat volutpat. Donec vulputate, dolor vitae molestie convallis,
+lacus elit auctor ipsum, sed pharetra augue justo id nisl. Vivamus imperdiet neque ac nunc malesuada,
+nec semper mauris viverra. Morbi venenatis ornare dictum. In pulvinar pellentesque felis,
+a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt consequat.
+Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
+Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
+Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
 ..........................
 
-You will used the standard `toc2` attribute of AsciiDoc. 
+You will used the standard `toc2` attribute of AsciiDoc.
 See http://www.methods.co.nz/asciidoc/userguide.html#X91[]
 
 == Result with flatly theme
@@ -37,32 +37,54 @@ See http://www.methods.co.nz/asciidoc/userguide.html#X91[]
 [role="lead"]
 With this theme we will put a TOC in right margin of the document
 
-Enter the following command: 
+Enter the following command:
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a theme=bs2flatly -a toc2 -a sidebar=right -a hero /path/to/document/demo.asciidoc
+$ asciidoc -b bootstrap -a theme=bs2flatly -a toc2 -a numbered -a sidebar=right -a hero /path/to/document/demo.asciidoc
 ----
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2flatly-toc2-hero.png[title="My first TOC2 with flatly theme",style="thumbnail span8 offset1"]
+image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2-sample.html",title="My first TOC2 with flatly theme",style="thumbnail span8 offset1"]
 
 == Result with default theme
 
 [role="lead"]
 With this theme we will put a TOC in left margin of the document (default behavior).
 
-Enter the following command: 
+Enter the following command:
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a theme=bs2default -a toc2 -a sidebar=left -a hero /path/to/document/demo.asciidoc
+$ asciidoc -b bootstrap -a theme=bs2default -a toc2 -a numbered -a sidebar=left -a hero /path/to/document/demo.asciidoc
 ----
 [NOTE]
 =====================================================================
-* `sidebar` attribute is optional in this situation (left margin). 
+* `sidebar` attribute is optional in this situation (left margin).
 * `theme` attribute is optional in this situation (default theme is always bs2default).
 =====================================================================
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2default-toc2-hero.png[title="My first TOC2 with default theme",style="thumbnail span8 offset1"]
+image::images/screenshots/bs2default-toc2-hero.png[link="toc2-sample2.html",title="My first TOC2 with default theme",style="thumbnail span8 offset1"]
+
+== How to build this document
+
+This document +toc2.asciidoc+
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/toc2.asciidoc]
+was generated with the following command:
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a linkcss -a theme=bs2flatly -a navbar=fixed -a navinfo2 -a hero -a toc -a totop=ui /path/to/examples/toc2.asciidoc
+----
+[NOTE]
+=====================================================================
+.Some explanations
+* `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
+``stylesheets and scripts are automatically embedded in the output document``.
+* `theme` bs2flatly is the standard Flatly http://bootswatch.com/[Bootswatch] theme for Bootstrap 2.
+* `navbar` used a top fixed navbar style.
+* `navinfo2` allow to customize the navbar content, with specific menus +toc1-navinfo.html+ and common menus +navinfo.html+.
+* `hero` used a full-width jumbotron in all resolution.
+* `toc` procude a standard Table Of Contents at start of the document.
+* `totop` with *ui* value use a jQuery plugin to allow to easily scroll back to top of the document.
+=====================================================================
