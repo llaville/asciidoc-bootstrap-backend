@@ -64,7 +64,7 @@ $ asciidoc -b bootstrap -a bsver=2 -a theme=flatly -a toc2 -a numbered -a sideba
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2-sample.html",title="My first TOC2 with flatly theme",style="thumbnail span8 offset1"]
+image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2-sample.html",title="My first TOC2 with flatly theme",role="thumbnail",style="{span11}",options="{options}"]
 
 == Result with default theme
 
