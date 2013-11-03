@@ -1,0 +1,143 @@
+= {title}
+:title:       Macros
+:description: http://www.methods.co.nz/asciidoc/userguide.html#_macros
+include::attributes.asciidoc[]
+:navinfo2:
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:icon-prefix: icon-
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:icon-prefix: glyphicon-
+endif::[]
+
+
+== Linking to Local Documents
+
+[role="lead"]
+Hypertext links to files on the local file system are specified using the link inline macro.
+
+  link:<target>[<caption>]
+
+The 'link' macro generates relative URLs. The link macro `<target>` is
+the target file name (relative to the file system location of the
+referring document). The optional `<caption>` is the link's displayed
+text. If `<caption>` is not specified then `<target>` is displayed.
+
+====
+----
+link:get-started.html[]
+----
+====
+Renders:
+
+link:get-started.html[]
+
+====
+----
+link:get-started.html[Start]
+----
+====
+Renders:
+
+link:get-started.html[Start]
+
+If you want more enhancement and focus on specific link, you want probably to use buttons links
+as provided by Bootstrap.
+
+It's now possible with this major version 3 of AsciiDoc-Bootstrap backend.
+
+Let's restart our example, with the single link, and apply it a button style.
+
+====
+----
+link:get-started.html[role="primary"]
+----
+====
+Renders:
+
+link:get-started.html[role="primary"]
+
+Change the text
+
+====
+----
+link:get-started.html["Start Tour",role="primary"]
+----
+or with alternative
+----
+link:get-started.html[caption="Start Tour",role="primary"]
+----
+====
+Renders:
+
+link:get-started.html["Start Tour",role="primary"]
+
+NOTE: You have certainly understood that all button color style may be applied with the `role` attribute.
+(*inverse*, *default*, *primary*, *info*, *success*, *warning*, *danger*).
+
+You want probably more than just a button. Adding an icon will improve again more the look and feel !
+
+====
+----
+link:get-started.html["Start Tour",role="info",icon="glyphicon-play-circle"]
+----
+====
+Renders:
+
+link:get-started.html["Start Tour",role="info",icon="{icon-prefix}play-circle"]
+
+WARNING: Icons are named with prefix *glyphicon* on [label label-info]#Bootstrap 3#,
+and with prefix *icon* on [label label-info]#Bootstrap 2#.
+
+And finally, choose what side you want to put your icon.
+
+====
+----
+link:get-started.html["Whats wrong",role="danger",icon="glyphicon-remove-circle",options="right,white"]
+----
+====
+Renders:
+
+link:get-started.html["Whats wrong",role="danger",icon="{icon-prefix}remove-circle",options="right,white"]
+
+IMPORTANT: On [label label-info]#Bootstrap 2# icon color are black by default.
+So add *white* option to change it. This option is useless on [label label-info]#Bootstrap 3#.
+
+== Images
+
+[role="lead"]
+Inline images are inserted into the output document using the 'image' macro.
+
+  image:<target>[<attributes>]
+
+The contents of the image file `<target>` is displayed.
+
+.Image macro attributes
+- The optional 'options' attribute with value *responsive* provides a way for [label label-info]#Bootstrap 3# 
+to fluid IMG size. Images are not responsive by default.
+
+NOTE: It was not the case in [label label-info]#Bootstrap 2#. So this attribute is useless for this version.
+
+====
+----
+image:images/screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+----
+====
+Renders:
+
+image:images/screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+
+Try several resolution and see what happens with or without responsive option.
+
+
+== About _this document_
+link:howto.html#how_to_build_internal_pages[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/macros.asciidoc].

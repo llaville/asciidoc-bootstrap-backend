@@ -3,6 +3,7 @@
 :description: http://www.methods.co.nz/asciidoc/userguide.html#_paragraphs
 include::attributes.asciidoc[]
 :navinfo2:
+:icons:
 
 
 == Admonition paragraphs
@@ -98,3 +99,7 @@ adolescens.
 . Donec eget arcu bibendum
   nunc consequat lobortis.
 =====================================================================
+
+== About _this document_
+link:howto.html#how_to_build_internal_pages[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/paragraphs.asciidoc].

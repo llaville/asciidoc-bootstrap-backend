@@ -5,6 +5,17 @@ include::attributes.asciidoc[]
 :navinfo2:
 
 
+== Version 3.0.0 _(2013-11-03)_
+
+.Additions and changes:
+* First version to support both Bootstrap 2 and 3 and template theme system.
+* badges and footnotes are back 
+* table of contents used the default _asciidoc.js_ file and allow start and side positionment
+* add links button support
+
+.Bug fixes:
+* none
+
 == Version 2.1.0 _(2013-10-15)_
 
 .Additions and changes:

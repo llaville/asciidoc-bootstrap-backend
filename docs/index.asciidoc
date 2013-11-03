@@ -1,0 +1,63 @@
+= {title}
+:title:       Asciidoc-Bootstrap
+:description: An AsciiDoc backend that renders the AsciiDoc source as HTML5 in the style of Bootstrap
+:boostrap2:   2.3.2
+:boostrap3:   3.0.1
+
+
+== Features
+
+[role="lead"]
+Since the version 1
+
+[horizontal]
+[label label-success]#Fixed Navbar#:: is always pinned at top of the output file (even if empty).
+[label label-success]#Brand#:: is configurable.
+[label label-success]#Dynamic Navbar#:: control which navigation information files will be included in the output file.
+[label label-success]#Dynamic Footer#:: control which footer information file will be included in the output file.
+[label label-success]#TOC position#:: can be place on a sidebar on left or right of the main document.
+[label label-success]#Themes#:: support AsciiDoc themes plugin.
+
+[role="lead"]
+Since the version 2
+
+[horizontal]
+[label label-success]#Dynamic Navbar#:: add optional dropdown menu of a static versions list. An easy available documents switcher.
+[label label-success]#Back to top#:: system allow to choose between standard text html link and UItoTop jQuery plugin
+
+[role="lead"]
+Since the version 3
+
+[horizontal]
+
+[label label-success]#TOC position#:: can be place either on start or on a sidebar (left or right) of the main document.
+[label label-success]#Themes#:: support Bootstrap themes v2 and v3.
+[label label-success]#Links#:: buttons support was added.
+
+
+== Examples
+
+[role="lead"]
+Visit our expo to learn in minutes the basic templates for showcasing how the navbar and toc works.
+
+image::images/screenshots/expo.png[link="../../../examples/index.html",role="thumbnail",options="responsive"]
+
+
+== Get Started
+
+[role="lead"]
+Overview of the project, its contents, and how to get started with your own theme.
+
+No need to be a Bootstrap Jedi Master to add your own template that will look like your documents so professional.
+You can find some free Bootstrap template providers. http://bootswatch.com/[Bootswatch] is one of them.
+
+The standard distribution of AsciiDoc-Bootstrap included the default Bootstrap theme
+for versions [label label-default]#{boostrap2}# and [label label-primary]#{boostrap3}#.
+
+You have also ability to install additional themes without effort or few.
+
+link:get-started.html[caption="Start and enjoy your new adventure",role="warning",icon="glyphicon-play-circle"]
+
+== About _this document_
+link:howto.html#how_to_build_the_landing_page[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/index.asciidoc].

@@ -4,6 +4,22 @@
 include::attributes.asciidoc[]
 :navinfo2:
 
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:well-small: well-small
+:well-large: well-large
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:well-small: well-sm
+:well-large: well-lg
+endif::[]
+
 
 == Sidebar blocks
 
@@ -28,10 +44,9 @@ Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ************************************************
 
-You may also used the attribute `role` with values *well-small* or *well-large*
-to control padding and rounded corners.
+You may also used the attribute `role` to control padding and rounded corners.
 
-With `role` set to *well-small* value
+With `role` set to value *well-small* [label label-info]#Bootstrap 2#, or *well-sm* [label label-info]#Bootstrap 3#
 ====
 ----
 .An Example Sidebar
@@ -45,13 +60,13 @@ SidebarBlocks) can be placed inside a sidebar.
 Renders:
 
 .An Example Sidebar
-[role="well-small"]
+[role="{well-small}"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
 
-With `role` set to *well-large* value
+With `role` set to value *well-large* [label label-info]#Bootstrap 2#, or *well-lg* [label label-info]#Bootstrap 3#
 ====
 ----
 .An Example Sidebar
@@ -65,8 +80,12 @@ SidebarBlocks) can be placed inside a sidebar.
 Renders:
 
 .An Example Sidebar
-[role="well-large"]
+[role="{well-large}"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
+
+== About _this document_
+link:howto.html#how_to_build_internal_pages[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/delimited-blocks.asciidoc].
