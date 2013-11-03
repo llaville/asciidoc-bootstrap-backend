@@ -8,8 +8,7 @@ var asciidoc = {  // Namespace.
  * http://students.infoiasi.ro/~mishoo
  *
  * Table Of Content generator
- * Version: 0.6
- * Modified to accomodate the bootstrap backend with themes
+ * Version: 0.4
  *
  * Feel free to use this script under the terms of the GNU General Public
  * License, as long as you do not remove or alter this notice.
@@ -17,8 +16,6 @@ var asciidoc = {  // Namespace.
 
  /* modified by Troy D. Hanson, September 2006. License: GPL */
  /* modified by Stuart Rackham, 2006, 2009. License: GPL */
- /* modified by Dan Allen, 2012. License: GPL */
- /* modified by Laurent Laville, 2012. License: GPL */
 
 // toclevels = 1..4.
 toc: function (toclevels) {
@@ -42,7 +39,7 @@ toc: function (toclevels) {
 
   function tocEntries(el, toclevels) {
     var result = new Array;
-    var re = new RegExp('[hH]([1-'+(toclevels)+'])');
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
     // Function that scans the DOM tree for header elements (the DOM2
     // nodeIterator API would be a better technique but not supported by all
     // browsers).
@@ -50,7 +47,7 @@ toc: function (toclevels) {
       for (var i = el.firstChild; i != null; i = i.nextSibling) {
         if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
           var mo = re.exec(i.tagName);
-          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "loose") {
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
             result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
           }
           iterate(i);
@@ -84,33 +81,15 @@ toc: function (toclevels) {
   var entries = tocEntries(document.getElementById("content"), toclevels);
   for (var i = 0; i < entries.length; ++i) {
     var entry = entries[i];
-    if (entry.element.id == "") {
-      var sec = entry.element.parentNode;
-      if (sec.nodeName.toLowerCase() != 'section') {
-        sec = sec.parentNode;
-      }
-      if (sec.nodeName.toLowerCase() == 'section' && sec.id != "") {
-        entry.element.id = sec.id;
-      }
-      else {
-        entry.element.id = "toc_" + i;
-      }
-    }
-    var sidebar = document.getElementById("sidebar");
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
     var a = document.createElement("a");
     a.href = "#" + entry.element.id;
-    var img = document.createElement("i");
-    if (sidebar.getAttribute('class').match(/pull-right/)) {
-        img.className = 'icon-chevron-left';
-    } else {
-        img.className = 'icon-chevron-right';
-    }
-    a.appendChild(img);
     a.appendChild(document.createTextNode(entry.text));
-    var li = document.createElement("li");
-    li.appendChild(a);
-    //li.className = "toclevel" + entry.toclevel;
-    toc.appendChild(li);
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
   }
   if (entries.length == 0)
     toc.parentNode.removeChild(toc);
