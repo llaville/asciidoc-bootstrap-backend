@@ -1,0 +1,24 @@
+/*
+   Bootstrap backend styles shared with Bootswatch Readable theme
+*/
+
+.jumbotron-fullwidth   {
+    background-color: #eee;
+    margin-bottom: 30px;
+    padding: 2em;
+}
+
+dt .label {
+    display: block;
+    text-align: right;
+}
+
+.imageblock .title {
+    background-color: #222;
+    color: inherit;
+}
+
+div.imageblock {
+    margin-left: 4%;
+    margin-right: 4%;
+}
