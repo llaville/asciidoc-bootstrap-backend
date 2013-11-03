@@ -1,0 +1,50 @@
+= {title}
+:title:       How To
+:description: Build pages of this documentation.
+include::../docs/attributes.asciidoc[]
+:footer!:
+:navinfo1:
+
+
+== How to build examples pages
+
+[options="header", cols="1,7", role="table table-bordered"]
+|===========================
+| Filename | Description
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-default.asciidoc] navbar-default.asciidoc
+| Standard & Default Navbar
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-static.asciidoc] navbar-static.asciidoc
+| Static Navbar
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-fixed.asciidoc] navbar-fixed.asciidoc
+| Fixed Navbar
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/toc1.asciidoc] toc1.asciidoc
+| Default TOC
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/toc2.asciidoc] toc2.asciidoc
+| Left or Right margin TOC
+|===========================
+
+*Boostrap 2 Version* :
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a linkcss -a theme=flatly -a themedir=themes/2 -a bsver=2 -a navbar=fixed -a jumbotron -a toc -a totop=ui /path/to/docs/filename
+----
+
+*Boostrap 3 Version* :
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a linkcss -a theme=flatly -a themedir=themes/3 -a bsver=3 -a navbar=fixed -a jumbotron -a toc -a totop=ui /path/to/docs/filename
+----
+
+[NOTE]
+=====================================================================
+.Some explanations
+* `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
+``stylesheets and scripts are automatically embedded in the output document``.
+* `theme` is the standard [label label-default]#flatly# Bootswatch theme for Bootstrap 2 or 3.
+* `themedir` theme is loaded from local folder +(outdir)/themes/2/+ ([label label-info]#Bootstrap 2#) and +(outdir)/themes/3/+ ([label label-info]#Bootstrap 3#).
+* `bsver` used the Bootstrap template 2 or 3.
+* `navbar` used a top fixed navbar style.
+* `jumbotron` used a jumbotron to enhance main title.
+* `toc` used the standard Table Of Contents at start of the document.
+* `totop` used a jQuery plugin to allow to easily scroll back to top of the document.
+=====================================================================

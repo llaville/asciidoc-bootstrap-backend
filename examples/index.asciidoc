@@ -2,20 +2,39 @@
 :title:       Example Templates for Asciidoc-Bootstrap
 :description: Gallery of useful examples to easily get started with and extend Bootstrap backend for Asciidoc
 
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:span3:   span3
+:span5:   span5
+:options:
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:span3:   col-md-3
+:span5:   col-md-5
+:options: responsive
+endif::[]
+
 
 == Navbar examples
 
 [role="lead"]
 Basic templates for showcasing how the navbar works.
 
-image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default.html",title="Default",style="thumbnail span3"]
-image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static.html",title="Static",style="thumbnail span3 offset1"]
-image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed.html",title="Fixed",style="thumbnail span3 offset1"]
+image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default.html",title="Default",role="thumbnail",style="{span3}",options="{options}"]
+image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static.html",title="Static",role="thumbnail",style="{span3}",options="{options}"]
+image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed.html",title="Fixed",role="thumbnail",style="{span3}",options="{options}"]
+
 
 == Table Of Contents examples
 
 [role="lead"]
 Basic templates for showcasing how the TOC (Table Of Contents) works.
 
-image::images/screenshots/bs2default-toc1-hero.png[link="toc1.html",title="TOC 1",style="thumbnail span5"]
-image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2.html",title="TOC 2",style="thumbnail span5 offset1"]
+image::images/screenshots/bs2default-toc1-hero.png[link="toc1.html",title="TOC 1",role="thumbnail",style="{span5}",options="{options}"]
+image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2.html",title="TOC 2",role="thumbnail",style="{span5}",options="{options}"]

@@ -2,6 +2,25 @@
 :title:       Fixed Navbar
 :description: In this tutorial, we will learn how to add a fixed navbar with your Asciidoc document
 :doctitle:    Example Template for Asciidoc-Bootstrap - {title}
+include::../docs/attributes.asciidoc[]
+:footer!:
+:navinfo2:
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:span11:  span11
+:options:
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:span11:  col-md-11
+:options: responsive
+endif::[]
 
 
 == Fixed navbar
@@ -34,31 +53,13 @@ Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ul
 Enter the new command:
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a theme=bs2default -a navbar=fixed -a navbar-inverse -a brand="My Project" -a jumbotron -a toc2 -a numbered -a sidebar=right /path/to/examples/navbar-fixed.asciidoc
+$ asciidoc -b bootstrap -a bsver=2 -a theme=default -a navbar=fixed -a navbar-inverse -a brand="My Project" -a jumbotron -a toc2 -a numbered -a sidebar=right /path/to/examples/navbar-fixed.asciidoc
 ----
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed-sample.html",title="My first fixed navbar",style="thumbnail span9 offset1"]
+image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed-sample.html",title="My first fixed navbar",role="thumbnail",style="{span11}",options="{options}"]
 
-== How to build this document
-
-This document +navbar-fixed.asciidoc+
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-fixed.asciidoc]
-was generated with the following command:
-[role="ssh"]
-----
-$ asciidoc -b bootstrap -a linkcss -a theme=bs2flatly -a navbar=fixed -a navinfo2 -a hero -a toc -a totop=ui /path/to/examples/navbar-fixed.asciidoc
-----
-[NOTE]
-=====================================================================
-.Some explanations
-* `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
-``stylesheets and scripts are automatically embedded in the output document``.
-* `theme` bs2flatly is the standard Flatly http://bootswatch.com/[Bootswatch] theme for Bootstrap 2.
-* `navbar` used a top fixed navbar style.
-* `navinfo2` allow to customize the navbar content, with specific menus +navbar-fixed-navinfo.html+ and common menus +navinfo.html+.
-* `hero` used a full-width jumbotron in all resolution.
-* `toc` procude a standard Table Of Contents at start of the document.
-* `totop` with *ui* value use a jQuery plugin to allow to easily scroll back to top of the document.
-=====================================================================
+== About _this document_
+link:howto.html[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-fixed.asciidoc].

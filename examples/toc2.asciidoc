@@ -2,6 +2,25 @@
 :title:       Left or Right margin TOC
 :description: In this tutorial, we will learn how to add a table of contents in the left/right hand margin of an article or book document.
 :doctitle:    Example Template for Asciidoc-Bootstrap - {title}
+include::../docs/attributes.asciidoc[]
+:footer!:
+:navinfo2:
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:span11:  span11
+:options:
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:span11:  col-md-11
+:options: responsive
+endif::[]
 
 
 == Left/Right margin Table Of Contents (TOC)
@@ -40,7 +59,7 @@ With this theme we will put a TOC in right margin of the document
 Enter the following command:
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a theme=bs2flatly -a toc2 -a numbered -a sidebar=right -a hero /path/to/document/demo.asciidoc
+$ asciidoc -b bootstrap -a bsver=2 -a theme=flatly -a toc2 -a numbered -a sidebar=right -a jumbotron-fullwidth /path/to/document/demo.asciidoc
 ----
 
 And here are the final result that you should get.
@@ -55,7 +74,7 @@ With this theme we will put a TOC in left margin of the document (default behavi
 Enter the following command:
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a theme=bs2default -a toc2 -a numbered -a sidebar=left -a hero /path/to/document/demo.asciidoc
+$ asciidoc -b bootstrap -a bsver=2 -a theme=default -a toc2 -a numbered -a sidebar=left -a jumbotron-fullwidth /path/to/document/demo.asciidoc
 ----
 [NOTE]
 =====================================================================
@@ -65,26 +84,8 @@ $ asciidoc -b bootstrap -a theme=bs2default -a toc2 -a numbered -a sidebar=left 
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2default-toc2-hero.png[link="toc2-sample2.html",title="My first TOC2 with default theme",style="thumbnail span8 offset1"]
+image::images/screenshots/bs2default-toc2-hero.png[link="toc2-sample2.html",title="My first TOC2 with default theme",role="thumbnail",style="{span11}",options="{options}"]
 
-== How to build this document
-
-This document +toc2.asciidoc+
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/toc2.asciidoc]
-was generated with the following command:
-[role="ssh"]
-----
-$ asciidoc -b bootstrap -a linkcss -a theme=bs2flatly -a navbar=fixed -a navinfo2 -a hero -a toc -a totop=ui /path/to/examples/toc2.asciidoc
-----
-[NOTE]
-=====================================================================
-.Some explanations
-* `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
-``stylesheets and scripts are automatically embedded in the output document``.
-* `theme` bs2flatly is the standard Flatly http://bootswatch.com/[Bootswatch] theme for Bootstrap 2.
-* `navbar` used a top fixed navbar style.
-* `navinfo2` allow to customize the navbar content, with specific menus +toc2-navinfo.html+ and common menus +navinfo.html+.
-* `hero` used a full-width jumbotron in all resolution.
-* `toc` procude a standard Table Of Contents at start of the document.
-* `totop` with *ui* value use a jQuery plugin to allow to easily scroll back to top of the document.
-=====================================================================
+== About _this document_
+link:howto.html[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/toc2.asciidoc].
