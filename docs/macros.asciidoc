@@ -4,6 +4,8 @@
 include::attributes.asciidoc[]
 :navinfo2:
 
+ifdef::basebackend-bootstrap[]
+
 //////////////////////////
    Bootstrap 2 syntax
 //////////////////////////
@@ -16,6 +18,8 @@ endif::[]
 //////////////////////////
 ifeval::["{bsver}"=="3"]
 :icon-prefix: glyphicon-
+endif::[]
+
 endif::[]
 
 

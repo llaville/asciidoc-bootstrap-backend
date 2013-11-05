@@ -4,6 +4,8 @@
 include::attributes.asciidoc[]
 :navinfo2:
 
+ifdef::basebackend-bootstrap[]
+
 //////////////////////////
    Bootstrap 2 syntax
 //////////////////////////
@@ -18,6 +20,8 @@ endif::[]
 ifeval::["{bsver}"=="3"]
 :span5:   col-md-5
 :options: responsive
+endif::[]
+
 endif::[]
 
 
