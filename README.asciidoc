@@ -1,27 +1,27 @@
 = Bootstrap backend for AsciiDoc
 
 An AsciiDoc backend that renders the AsciiDoc source as HTML5
-in the style of the http://getbootstrap.com/[Twitter Bootstrap docs].
+in the style of http://getbootstrap.com/[Bootstrap].
 
-NOTE: The latest distribution 2.0.0 support http://getbootstrap.com/2.3.2[Bootstrap 2].
-A future major version 3.0.0 should come to support http://getbootstrap.com[Bootstrap 3].
+NOTE: The latest distribution 3.0.0 support both http://getbootstrap.com/2.3.2[Bootstrap 2],
+and http://getbootstrap.com[Bootstrap 3].
 
 == Installation
 
-To install the bootstrap backend, follow instructions
-on http://laurent-laville.org/asciidoc/bootstrap/index.html[Getting Started] page.
+Install as any other plugins:
+----
+$ asciidoc --backend install bootstrap-<version>.zip
+----
++<version>+ is to be replaced by the latest version available of the backend.
 
-== Usage
+== Examples
 
-Use the 'bootstrap' backend as you would the built-in backends.
+Visit our http://laurent-laville.org/asciidoc/bootstrap/examples/index.html[expo] 
+to learn in minutes the basic templates for showcasing how the navbar and toc works.
 
-== Example
+== Get Started
 
-As you would expect, the rendered output looks shockingly similar to the Twitter Bootstrap documentation.
-
-Compare the original http://getbootstrap.com/2.3.2/base-css.html[Base CSS] chapter
-with this http://laurent-laville.org/asciidoc/base-css-book/base-css-book.html[HTML output],
-from this https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/base-css-book.asciidoc[source file].
+All you've to know begins by this http://laurent-laville.org/asciidoc/bootstrap/manual/current/en/[page].
 
 == Credits
 
