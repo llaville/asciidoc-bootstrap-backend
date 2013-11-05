@@ -26,6 +26,12 @@ endif::[]
 
 endif::[]
 
+ifndef::basebackend-bootstrap[]
+:span5:
+:options:
+:icon-prefix:
+endif::[]
+
 
 == Download
 

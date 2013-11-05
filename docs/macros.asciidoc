@@ -22,6 +22,10 @@ endif::[]
 
 endif::[]
 
+ifndef::basebackend-bootstrap[]
+:icon-prefix:
+endif::[]
+
 
 == Linking to Local Documents
 
