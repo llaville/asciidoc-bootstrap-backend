@@ -12,6 +12,7 @@ ifdef::basebackend-bootstrap[]
 ifeval::["{bsver}"=="2"]
 :span5:   span5
 :options:
+:icon-prefix: icon-
 endif::[]
 
 //////////////////////////
@@ -20,6 +21,7 @@ endif::[]
 ifeval::["{bsver}"=="3"]
 :span5:   col-md-5
 :options: responsive
+:icon-prefix: glyphicon-
 endif::[]
 
 endif::[]
@@ -29,7 +31,7 @@ endif::[]
 
 === Download the asciidoc backend
 
-http://laurent-laville.org/asciidoc/bootstrap/bootstrap-{revnumber}.zip[]
+link:http://laurent-laville.org/asciidoc/bootstrap/bootstrap-{revnumber}.zip["Download version {revnumber}",role="success",icon="{icon-prefix}download",options="block,white"]
 
 Install as any other plugins:
 ----
