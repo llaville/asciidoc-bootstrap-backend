@@ -4,6 +4,24 @@
 :boostrap2:   2.3.2
 :boostrap3:   3.0.1
 
+ifdef::basebackend-bootstrap[]
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:icon-prefix: icon-
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:icon-prefix: glyphicon-
+endif::[]
+
+endif::[]
+
 
 == Features
 
@@ -38,7 +56,8 @@ Since the version 3
 == Examples
 
 [role="lead"]
-Visit our expo to learn in minutes the basic templates for showcasing how the navbar and toc works.
+Visit our link:../../../examples/index.html["expo",role="info",icon="{icon-prefix}tint",options="right,white"]
+to learn in minutes the basic templates for showcasing how the navbar and toc works.
 
 image::images/screenshots/expo.png[link="../../../examples/index.html",role="thumbnail",options="responsive"]
 
