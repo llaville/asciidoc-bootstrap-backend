@@ -22,10 +22,6 @@ endif::[]
 
 endif::[]
 
-ifndef::basebackend-bootstrap[]
-:icon-prefix:
-endif::[]
-
 
 == Features
 
@@ -79,7 +75,7 @@ for versions [label label-default]#{boostrap2}# and [label label-primary]#{boost
 
 You have also ability to install additional themes without effort or few.
 
-link:get-started.html[caption="Start and enjoy your new adventure",role="warning",icon="{icon-prefix}-play-circle"]
+link:get-started.html[caption="Start and enjoy your new adventure",role="warning",icon="{icon-prefix}play-circle"]
 
 == About _this document_
 link:howto.html#how_to_build_the_landing_page[How to] build the source code
