@@ -47,10 +47,10 @@ NOTE: `<version>` is to be replaced by the latest version available of the backe
 
 [NOTE]
 =====================================================================
-The Asciidoc bootstrap backend standard version (3.0.0) included :
+The Asciidoc bootstrap backend standard version (3.0.1) included :
 
-* version 2.3.2 and 3.0.1 of the default theme from http://bootswatch.com/[Bootswatch] template provider.
-* version 3.0.1 of Bootstrap.
+* version 2.3.2 ( +themes/2+ ) and 3.0.1 ( +themes/3+ ) of the default theme from http://bootswatch.com/[Bootswatch] template provider.
+* version 2.3.2 ( +bootstrap/2+ ) and 3.0.1 ( +bootstrap/3+ ) of Bootstrap.
 =====================================================================
 
 You can download additional themes AsciiDoc-Bootstrap backend 3.0 ready.
@@ -59,12 +59,12 @@ image::images/flatly.png[link="http://bootswatch.com/flatly",title="Flatly theme
 image::images/readable.png[link="http://bootswatch.com/readable",title="Readable theme for Bootstrap 3",role="thumbnail",style="{span5}",options="{options}"]
 
 .For Bootstrap 3
-* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme3-{revnumber}.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/readable-theme3-{revnumber}.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme3-3.0.0.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/readable-theme3-3.0.0.zip[]
 
 .For Bootstrap 2
-* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme2-{revnumber}.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/readable-theme2-{revnumber}.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme2-3.0.0.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/readable-theme2-3.0.0.zip[]
 
 Extract archive contents in +themes/2/+ or +themes/3/+ folder of the backend distribution.
 
@@ -76,9 +76,14 @@ file structure and contents.
 ----
  bootstrap/
   ├── bootstrap/
-  │   ├── css/
-  │   ├── js/
-  │   └── fonts/
+  │   ├── 2/
+  │   │   ├── css/
+  │   │   ├── js/
+  │   │   └── img/
+  │   └── 3/
+  │       ├── css/
+  │       ├── js/
+  │       └── fonts/
   ├── docs/
   ├── examples/
   ├── images/
