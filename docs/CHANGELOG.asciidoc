@@ -5,6 +5,14 @@ include::attributes.asciidoc[]
 :navinfo2:
 
 
+== Version 3.1.0 _(2013-12-dd)_
+
+.Additions and changes:
+* CSS signature, AsciiDoc feature, is now available with the bootstrap backend.
+
+.Bug fixes:
+* none
+
 == Version 3.0.1 _(2013-11-14)_
 
 .Additions and changes:
