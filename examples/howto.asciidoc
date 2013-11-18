@@ -21,6 +21,12 @@ include::../docs/attributes.asciidoc[]
 | Default TOC
 | footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/toc2.asciidoc] toc2.asciidoc
 | Left or Right margin TOC
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/blog1.asciidoc] blog1.asciidoc
+| Basic Blog page
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/blog2.asciidoc] blog2.asciidoc
+| Blog Panel
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/release1.asciidoc] release1.asciidoc
+| Basic Releases page 
 |===========================
 
 *Boostrap 2 Version* :

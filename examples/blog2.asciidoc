@@ -1,0 +1,82 @@
+= {title}
+:title:       Blog Panel
+:description: In this tutorial, we will learn how to implement a design that look like a blog panel
+:doctitle:    Example Template for Asciidoc-Bootstrap - {title}
+include::../docs/attributes.asciidoc[]
+:footer!:
+:navinfo2:
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:span11:  span11
+:options:
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:span11:  col-md-11
+:options: responsive
+endif::[]
+
+
+== Blog Panel Design 
+
+[role="lead"]
+A blog panel design is an advanced layout with two columns.
+
+Example of Asciidoc document. See source text
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/demo3.asciidoc].
+
+In this design, we used :
+
+* `css-signature` attribute to customize only the blog page colors (background)
+* `role` attribute to customize css rules
+* `cols` attribute to specify columns width
+* `halign` attribute to specify main content on left, and intro title (post dates) on right side   
+
+We used additional css rules added to +themes/2/flatly/user.css+ to give such design.
+
+[source,css]
+----
+body#blog {
+    background-color: #d3d3d3;
+}
+
+.blog  > .title {
+    margin: 0;
+}
+.blog > .content {
+  /* .panel */
+  margin-bottom: 21px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  /* .panel-body */
+  padding: 15px;
+}
+.blog > .content > p > strong {
+  color: #ff0000;
+}
+----
+
+== Result with flatly theme
+
+Enter the following command:
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a bsver=2 -a theme=flatly -a jumbotron-fullwidth -a css-signature=blog /path/to/document/demo3.asciidoc
+----
+
+And here are the final result that you should get.
+
+image::images/screenshots/bs2flatly-blog2.png[link="blog2-sample.html",title="My Blog panel with flatly theme",role="thumbnail",style="{span11}",options="{options}"]
+
+== About _this document_
+link:howto.html[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/blog2.asciidoc].

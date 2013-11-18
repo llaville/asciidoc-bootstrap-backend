@@ -25,10 +25,10 @@ endif::[]
 endif::[]
 
 
-== Sidebar blocks
+== Sidebar Blocks
 
 [role="lead"]
-A sidebar is a short piece of text presented outside the narrative flow of the main text. 
+A sidebar is a short piece of text presented outside the narrative flow of the main text.
 The sidebar is normally presented inside a bordered box to set it apart from the main text.
 
 ====
@@ -89,6 +89,177 @@ Renders:
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
+
+== Open Blocks
+
+[role="lead"]
+Open blocks are special: they are used to generate document abstracts,
+book part introductions and more.
+
+Here we will used it to display a very simple two columns layout.
+
+[TIP]
+.Focus on openblock
+=====================================================================
+For demonstration purpose only, and to understand where are the visual limit
+of open block, we used these css rules :
+
+[source,css]
+----
+.openblock {
+    border: 1px dashed;
+    height: 200px;
+    background-color: #fff;
+    padding: 0.2em;
+}
+----
+=====================================================================
+
+====
+----
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+----
+====
+Renders:
+
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+
+=== Design under control
+
+A bit ugly, but may be improved with css rules. Set a CSS *class* (timeline for example)
+to the `role` attribute, with following definitions :
+
+[source,css]
+----
+.timeline > .title {
+    background-color: blue;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 0;
+}
+.timeline > .content  {
+    padding: 40px 20px;
+}
+.timeline > .content > p > strong {
+    font-size: 30px;
+    color: navy;
+}
+----
+
+====
+----
+[role="timeline"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+----
+====
+Renders:
+
+[role="timeline"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+
+=== Choose side of main content
+
+You can also change the side of intro title (default is left), by adding
+the `halign` attribute with *right* value.
+
+====
+----
+[role="timeline",halign="right"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+----
+====
+Renders:
+
+[role="timeline",halign="right"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+
+=== Width of two columns
+
+You can control width of both columns with the `cols` attribute.
+Default values are *3,9*. That means col-md-3 or span3 for intro title,
+and col-md-9 or span9 for main content.
+
+====
+----
+[role="timeline",halign="left",cols="4,8"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+----
+====
+Renders:
+
+[role="timeline",halign="left",cols="4,8"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+
+=== Blog signature
+
+On blog, we used also a signature to identify origin of an article and its author.
+Optional attributes `citetitle` and `attribution` are there for that.
+
+NOTE: You may also used these attributes to display other informations.
+
+====
+----
+[role="timeline",citetitle="from http://example.com",attribution="Author's name"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+----
+====
+Renders:
+
+[role="timeline",citetitle="from http://example.com",attribution="Author's name"]
+.A side intro title
+--
+*The main title*
+
+And the content, what could be whatever you want: table, image, listing, ...
+--
+
+Visit our link:../../../examples/index.html["expo"] for other concrete examples.
 
 == About _this document_
 link:howto.html#how_to_build_internal_pages[How to] build the source code

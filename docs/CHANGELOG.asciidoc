@@ -9,6 +9,8 @@ include::attributes.asciidoc[]
 
 .Additions and changes:
 * CSS signature, AsciiDoc feature, is now available with the bootstrap backend.
+* TIP admonition is now designed as Bootstrap alert-info block.
+* Open Blocks allows to write blog, releases or features pages.
 
 .Bug fixes:
 * none
@@ -17,7 +19,7 @@ include::attributes.asciidoc[]
 
 .Additions and changes:
 * add new attribute `bootstrap-backend-version` (latest version) and include it in the generator meta tag
-* uses Bootstrap 3 template as default engine (attribute `bsver` sets on value 3) 
+* uses Bootstrap 3 template as default engine (attribute `bsver` sets on value 3)
 
 .Bug fixes:
 * better alignement between text and badges on default footer.
@@ -28,7 +30,7 @@ include::attributes.asciidoc[]
 
 .Additions and changes:
 * First version to support both Bootstrap 2 and 3 and template theme system.
-* badges and footnotes are back 
+* badges and footnotes are back
 * table of contents used the default _asciidoc.js_ file and allow start and side positionment
 * add links button support
 

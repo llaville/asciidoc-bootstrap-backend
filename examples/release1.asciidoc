@@ -1,0 +1,69 @@
+= {title}
+:title:       Release
+:description: In this tutorial, we will learn how to display content like GitHub project releases 
+:doctitle:    Example Template for Asciidoc-Bootstrap - {title}
+include::../docs/attributes.asciidoc[]
+:footer!:
+:navinfo2:
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:span11:  span11
+:options:
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:span11:  col-md-11
+:options: responsive
+endif::[]
+
+
+== Basic Releases
+
+[role="lead"]
+A basic releases layout with two columns: on left the versions, and on right the changelog content.
+
+Example of Asciidoc document. See source text
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/releases.asciidoc].
+
+We used additional css rules added to +themes/2/flatly/user.css+ to give such design.
+
+[source,css]
+----
+span.medium { font-size: 1.4em; }
+
+.title .label-warning, .title .label-success {
+    padding: 10px;
+}
+
+.timeline > .title {
+    padding: 20px 20px;
+    text-align: right;
+    margin: 0;
+}
+.timeline > .content {
+    padding: 20px 20px;
+    border-left: 3px solid #EEE;
+}
+----
+
+== Result with flatly theme
+
+Enter the following command:
+[role="ssh"]
+----
+$ asciidoc -b bootstrap -a bsver=2 -a theme=flatly -a jumbotron-fullwidth /path/to/document/releases.asciidoc
+----
+
+And here are the final result that you should get.
+
+image::images/screenshots/bs2flatly-release1.png[link="release1-sample.html",title="My Releases with flatly theme",role="thumbnail",style="{span11}",options="{options}"]
+
+== About _this document_
+link:howto.html[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/release1.asciidoc].

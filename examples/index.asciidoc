@@ -38,3 +38,13 @@ Basic templates for showcasing how the TOC (Table Of Contents) works.
 
 image::images/screenshots/bs2default-toc1-hero.png[link="toc1.html",title="TOC 1",role="thumbnail",style="{span5}",options="{options}"]
 image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2.html",title="TOC 2",role="thumbnail",style="{span5}",options="{options}"]
+
+
+== Open Blocks examples
+
+[role="lead"]
+Basic templates for showcasing how the open blocks can be used to display a blog page or a releases list.
+
+image::images/screenshots/bs2flatly-blog1.png[link="blog1.html",title="Blog",role="thumbnail",style="{span3}",options="{options}"]
+image::images/screenshots/bs2flatly-blog2.png[link="blog2.html",title="Blog Panel",role="thumbnail",style="{span3}",options="{options}"]
+image::images/screenshots/bs2flatly-release1.png[link="release1.html",title="Release",role="thumbnail",style="{span3}",options="{options}"]
