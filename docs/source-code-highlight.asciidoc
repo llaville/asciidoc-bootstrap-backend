@@ -49,3 +49,7 @@ include::source.asciidoc[]
 Renders
 
 include::source.asciidoc[]
+
+== About _this document_
+link:howto.html#how_to_build_internal_pages[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/source-code-highlight.asciidoc].
