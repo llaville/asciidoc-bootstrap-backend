@@ -1,0 +1,32 @@
+== Alternate Pygments Theme
+:source-highlighter: pygments
+:pygments-style: monokai
+
+[source,php,numbered]
+.Using global theme [label label-default]#{pygments-style}#
+----
+<?php
+use Symfony\Component\Finder\Finder;
+
+$finder = new Finder();
+$finder->files()->in(__DIR__);
+
+foreach ($finder as $file) {
+    // affiche le chemin absolu
+    print $file->getRealpath()."\n";
+    // affiche le chemin relatif d'un fichier, sans le nom du fichier
+    print $file->getRelativePath()."\n";
+    // affiche le chemin relatif du fichier
+    print $file->getRelativePathname()."\n";
+}
+----
+
+ifeval::["{source-highlighter}"=="pygments"]
+:local-css-style: pastie
+[args="-O style={local-css-style},noclasses=True"]
+endif::[]
+[source,css]
+.Usign local theme [label label-default]#{local-css-style}#
+----
+include::../stylesheets/pygments-bootstrap.css[]
+----

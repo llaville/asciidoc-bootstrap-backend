@@ -101,6 +101,7 @@ file structure and contents.
   ├── stylesheets/
   │   ├── asciidoc-bootstrap.css
   │   ├── ui.totop.css
+  │   ├── pygments-bootstrap.css
   │   └── pygments.css
   └── themes
       ├── 2/
@@ -148,6 +149,8 @@ navinfo2
 | navbar       | Define the style of navigation bar: _default_ (default value), _fixed_ or _static_.
 | navbar-inverse
 | Inverted variation of the basic navbar.
+| pygments-style
+| Change the Pygments style. Default theme is `emacs` with a variant background: the one provided by AsciiDoc.
 |===========================
 
 == Your own theme
@@ -169,6 +172,14 @@ Head to the docs sections for more information and examples.
 === link:base-css-book.html[Base CSS]
 
 Bootstrap Docs Base CSS examples
+
+=== link:source-code-highlight.html[Source Code Highlight]
+
+The http://pygments.org[Pygments] syntax highlighter can be used
+for xhtml11, html5 and bootstrap outputs.
+
+NOTE: Since version 3.1.0 you have ability to use any of the Pygments 1.5 themes
+provided at document build time.
 
 === link:text-formatting.html[Text Formatting]
 

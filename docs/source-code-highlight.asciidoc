@@ -1,0 +1,51 @@
+= {title}
+:title:       Source Code Highlight
+:description: http://asciidoc.org/source-highlight-filter.html
+include::attributes.asciidoc[]
+:navinfo2:
+
+
+== Pygments
+
+[role="lead"]
+The http://pygments.org[Pygments] syntax highlighter can be used
+for xhtml11, html5 and bootstrap outputs (set the `source-highlighter` attribute to pygments).
+
+Until now, AsciiDoc allow only to use Pygments with a default theme that look like to `emacs` theme.
+We have no way to customize this at document build time, unless editing contents of +./stylesheets/pygments.css+ file.
+
+AsciiDoc-Bootstrap backend introduce in version 3.1.0 the new attribute `pygments-style`
+to change Pygments stylesheet at document build time.
+
+NOTE: Credit to AsciiDoctor https://github.com/asciidoctor/asciidoctor/issues/637[GH-637 issue].
+
+By default, AsciiDoc-Bootstrap used the AsciiDoc pygments theme. To change the style,
+set the `pygments-style` attribute and assign it the alternate style's name.
+
+[TIP]
+=====================================================================
+To see what pygments styles you have available, open a terminal and type:
+----
+$ pygmentize -L styles
+----
+It will output the style names and brief descriptions.
+
+Pygments 1.5 provides 19 themes.
+=====================================================================
+
+In the example document below, we used the `monokai` style as main theme, 
+and `pastie` as local theme to highlight a block of CSS code.
+
+CAUTION: Pygments token +<span>+ tags will not use CSS classes, but inline styles. 
+This is not recommended for larger pieces of code since it increases output size by quite a bit. 
+
+NOTE: The source-highlighter `args` attribute allows the inclusion of arbitrary 
+(highlighter dependent) command options.
+
+..........................
+include::source.asciidoc[]
+..........................
+
+Renders
+
+include::source.asciidoc[]
