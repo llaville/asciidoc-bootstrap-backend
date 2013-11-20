@@ -45,6 +45,8 @@ $ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3.0.1 -a
 | Filename | Description
 | footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/getting-started.asciidoc] getting-started.asciidoc
 | Getting Started
+| footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/source-code-highlight.asciidoc] source-code-highlight.asciidoc
+| Source Code Highlight
 | footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/text-formatting.asciidoc] text-formatting.asciidoc
 | Text Formatting
 | footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/delimited-blocks.asciidoc] delimited-blocks.asciidoc
