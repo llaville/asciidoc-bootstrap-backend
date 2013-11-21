@@ -12,6 +12,7 @@ include::attributes.asciidoc[]
 * TIP admonition is now designed as Bootstrap alert-info block.
 * Open Blocks allows to write blog, releases or features pages.
 * Ability to use all Pygments styles (globally or locally).
+* Add an inline macro to represent an icon.
 
 .Bug fixes:
 * none

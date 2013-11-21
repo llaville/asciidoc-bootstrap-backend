@@ -129,7 +129,7 @@ Inline images are inserted into the output document using the 'image' macro.
 The contents of the image file `<target>` is displayed.
 
 .Image macro attributes
-- The optional 'options' attribute with value *responsive* provides a way for [label label-info]#Bootstrap 3# 
+- The optional 'options' attribute with value *responsive* provides a way for [label label-info]#Bootstrap 3#
 to fluid IMG size. Images are not responsive by default.
 
 NOTE: It was not the case in [label label-info]#Bootstrap 2#. So this attribute is useless for this version.
@@ -145,6 +145,114 @@ image:images/screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="r
 
 Try several resolution and see what happens with or without responsive option.
 
+== Icons
+
+[role="lead"]
+AsciiDoc-Bootstrap backend 3.1.0 introduces a new inline macro
+for inserting an icon at an arbitrary place in paragraph content.
+
+NOTE: Credit to AsciiDoctor https://github.com/asciidoctor/asciidoctor/issues/529[GH-529 issue].
+
+Right now we are blessed with many icon fonts that continue to grow with every release,
+like http://glyphicons.com/[Glyphicons], http://fontawesome.io[Font-Awesome],
+http://ionicons.com/[Ionicons], http://icomoon.io/[IcoMoon] and more again ...
+
+AsciiDoc-Bootstrap backend 3.1.0 support these four icon fonts.
+Valid `iconsfont` attribute values are : *glyphicon*, *font-awesome*, *ionicons* and *icomoon*.
+
+NOTE: A good location for `iconsfontdir` could be +(outdir)/fonts+.
+See also the link:get-started.html#file_structure[File Structure] of AsciiDoc-Bootstrap distribution.
+
+[CAUTION]
+=====================================================================
+The inline icon macro is similar to the inline image macro with two exceptions:
+
+* If the `icons` attribute has the value *font*, the macro will translated to a font-based icon.
++
+e.g: [label label-default]#<span class="glyphicon glyphicon-calendar"></span>#,
+[label label-default]#<span class="fa fa-calendar"></span>#,
+[label label-default]#<span class="icon ion-calendar"></span>#,
+or [label label-default]#<span class="icomoon icon-calendar"></span>#
+
+* If the `icons` attribute is not set or has the value *image*, the macro will insert
+an image (PNG format) into the document that resolves to a file in the `iconsdir` directory.
++
+e.g: [label label-default]#<span class="image"><img width="48" height="48" alt="calendar" src="./images/icons/calendar.png"></span>#
+=====================================================================
+
+  icon:<target>[<attributes>]
+
+The contents of the icon `<target>` is displayed.
+
+.Icon macro attributes
+- The optional 'size' attribute scales the icon.
+Possible values are : *lg* (33% increase), *2x*, *3x*, *4x*, *5x*.
+
+.Icon macro attributes when `icons` attribute is not set or has the value *image*
+- The optional 'title' attribute provides a title for the icon.
+- The optional 'width' and 'height' attributes scale the icon (image in png format)
+size and can be used in any combination. The units are pixels and default values are 48.
+
+Here is an example that inserts a calendar icon in front of a blog entry and its published date.
+====
+----
+icon:calendar[] by Laurent Laville, published on November 21, 2013
+----
+
+With `icons` attribute set to *font*, and `iconsfontdir` set to
+location of http://fontawesome.io[Font-Awesome 4] distribution (+css/+ and +fonts/+ folders).
+====
+Renders:
+
+icon:calendar[] by Laurent Laville, published on November 21, 2013
+
+Here is another example that used link:delimited-blocks.html#open_blocks[Open Blocks]
+design to display a simple blog. More concrete examples on our link:../../../examples/index.html["expo"].
+====
+----
+[role="timeline",citetitle="http://glyphsearch.com/"]
+.icon:mobile[size="lg"] icon:tablet[size="2x"]
+--
+*GlyphSearch: Improving the Search for Icon Fonts*
+
+http://glyphsearch.com/[GlyphSearch] is a site that allows you to search
+Font Awesome, Glyphicons, and Ionicons simultaneously.
+--
+[role="timeline",citetitle="http://fontello.com/"]
+.[yellow]#icon:font[size="5x"]#
+--
+*Fontello - icon font scissors*
+
+This http://fontello.com/[tool] lets you combine icon webfonts for your own project. With fontello you can:
+
+* shrink glyph collections, minimizing font size
+* merge symbols from several fonts into a single file
+* access large sets of professional-grade open source icons
+--
+----
+====
+
+[role="timeline",citetitle="http://glyphsearch.com/"]
+.icon:mobile[size="lg"] icon:tablet[size="2x"]
+--
+*GlyphSearch: Improving the Search for Icon Fonts*
+
+http://glyphsearch.com/[GlyphSearch] is a site that allows you to search
+Font Awesome, Glyphicons, and Ionicons simultaneously.
+--
+[role="timeline",citetitle="http://fontello.com/"]
+.[yellow]#icon:font[size="5x"]#
+--
+*Fontello - icon font scissors*
+
+This http://fontello.com/[tool] lets you combine icon webfonts for your own project. With fontello you can:
+
+* shrink glyph collections, minimizing font size
+* merge symbols from several fonts into a single file
+* access large sets of professional-grade open source icons
+--
+
+WARNING: All icon fonts that not support same icon names. Be advised that switching icon fonts may results of unexpected values.
 
 == About _this document_
 link:howto.html#how_to_build_internal_pages[How to] build the source code
