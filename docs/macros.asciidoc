@@ -186,7 +186,7 @@ The contents of the icon `<target>` is displayed.
 
 .Icon macro attributes
 - The optional 'size' attribute scales the icon.
-Possible values are : *lg* (33% increase), *2x*, *3x*, *4x*, *5x*.
+Possible values are : *lg* (33% increase), *2x*, *3x*, *4x*, *5x*, *6x*, *7x*, *8x*, *9x*.
 
 .Icon macro attributes when `icons` attribute is not set or has the value *image*
 - The optional 'title' attribute provides a title for the icon.
