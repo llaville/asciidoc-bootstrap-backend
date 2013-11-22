@@ -1,0 +1,22 @@
+/*
+   Your custom preferences for this AsciiDoc shared with Bootswatch Cerulean theme
+*/
+
+/* Illustrate Blog examples */
+span.medium { font-size: 1.4em; }
+
+.timeline > .title {
+    padding: 20px 20px;
+    text-align: right;
+    margin: 0;
+}
+.timeline > .content {
+    padding: 20px 20px;
+    border-left: 3px solid #eee;
+}
+
+.attribution {
+    float: right;
+    text-align: right;
+    color: #999;
+}

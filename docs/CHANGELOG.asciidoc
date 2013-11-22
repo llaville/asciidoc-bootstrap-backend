@@ -13,6 +13,7 @@ include::attributes.asciidoc[]
 * Open Blocks allows to write blog, releases or features pages.
 * Ability to use all Pygments styles (globally or locally).
 * Add an inline macro to represent an icon.
+* Add Cerulean theme from Bootswatch template provider.
 
 .Bug fixes:
 * none

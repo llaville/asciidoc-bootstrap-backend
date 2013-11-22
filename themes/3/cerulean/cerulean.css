@@ -1,0 +1,26 @@
+/*
+   Bootstrap backend styles shared with Bootswatch Cerulean theme
+*/
+
+.jumbotron-fullwidth   {
+    background-color: #eee;
+    margin-bottom: 30px;
+    padding: 2em;
+}
+
+dt .label {
+    display: block;
+    text-align: right;
+}
+
+.imageblock .title {
+    background-color: #033C73;
+    color: #fff;
+    padding: 2px;
+}
+
+div.imageblock {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+ 
