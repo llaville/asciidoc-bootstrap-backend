@@ -158,8 +158,9 @@ navinfo2
 | Inverted variation of the basic navbar.
 | pygments-style
 | Change the Pygments style. Default theme is `emacs` with a variant background: the one provided by AsciiDoc.
-| icons        | Choose representation of icon: png `image` or `font`
-| iconsfontdir | The name of the directory containing linked icons stylesheets and fonts files.  
+| icons        | Choose representation of icon: png `image` or `font`.
+| iconsfont    | The name of the icons font provider: either `glyphicon`, `font-awesome`, `ionicons` or `icomoon`.
+| iconsfontdir | The name of the directory containing linked icons stylesheets and fonts files.
 |===========================
 
 == Your own theme
