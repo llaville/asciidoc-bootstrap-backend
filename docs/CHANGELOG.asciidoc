@@ -14,6 +14,7 @@ include::attributes.asciidoc[]
 * Ability to use all Pygments styles (globally or locally).
 * Add an inline macro to represent an icon.
 * Add Cerulean theme from Bootswatch template provider.
+* Add backend build signature in text footer.
 
 .Bug fixes:
 * none
