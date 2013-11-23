@@ -26,7 +26,7 @@ ifeval::["{source-highlighter}"=="pygments"]
 [args="-O style={local-css-style},noclasses=True"]
 endif::[]
 [source,css]
-.Usign local theme [label label-default]#{local-css-style}#
+.Using local theme [label label-default]#{local-css-style}#
 ----
 include::../stylesheets/pygments-bootstrap.css[]
 ----
