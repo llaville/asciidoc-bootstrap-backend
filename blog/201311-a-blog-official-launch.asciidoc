@@ -1,0 +1,18 @@
+:css-signature: blog
+:imagesdir: ./images
+:author: Laurent Laville
+:revdate: 2013-11-27
+:pubdate: Wed, 27 Nov 2013 11:03:57 +0100
+:summary: At one month of Christmas, I've decided to open officially the blog dedicated to AsciiDoc Bootstrap backend.
+
+== A blog official launch
+
+[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
+.Stay tuned image:1385439154_rss2_buttons-25.png[link="http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml"]
+--
+[role="lead"]
+{summary}
+
+With upcoming stable release 3.1.0, that will come with some new features and improvements,
+I think it's now time allow readers to follow my work.
+--

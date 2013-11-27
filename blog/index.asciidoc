@@ -1,0 +1,11 @@
+= Official Blog of AsciiDoc-Bootstrap backend
+:description: What's new on this project
+:brand: https://github.com/llaville/asciidoc-bootstrap-backend
+:jumbotron-fullwidth:
+:icons: font
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:css-signature: blog
+
+include::201311-a-blog-official-launch.asciidoc[]
