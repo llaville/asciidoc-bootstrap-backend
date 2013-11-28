@@ -54,21 +54,21 @@ The Asciidoc bootstrap backend standard version included :
 * version 4.0.3 ( +fonts/font-awesome/+ ) of Font-Awesome.
 =====================================================================
 
-You can download additional themes AsciiDoc-Bootstrap backend 3.0 ready.
+You can download additional themes AsciiDoc-Bootstrap backend v3 ready.
 
 image::images/flatly.png[link="http://bootswatch.com/flatly",title="Flatly theme for Bootstrap 3",role="thumbnail",style="{span3}",options="{options}"]
 image::images/readable.png[link="http://bootswatch.com/readable",title="Readable theme for Bootstrap 3",role="thumbnail",style="{span3}",options="{options}"]
 image::images/cerulean.png[link="http://bootswatch.com/cerulean",title="Cerulean theme for Bootstrap 3",role="thumbnail",style="{span3}",options="{options}"]
 
 .For Bootstrap 3
-* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme3-3.0.0.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/readable-theme3-3.0.0.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/cerulean-theme3-3.0.0.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme3-3.0.2.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/readable-theme3-3.0.2.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/cerulean-theme3-3.0.2.zip[]
 
 .For Bootstrap 2
-* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme2-3.0.0.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/readable-theme2-3.0.0.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/cerulean-theme2-3.0.0.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme2-3.0.2.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/readable-theme2-3.0.2.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/cerulean-theme2-3.0.2.zip[]
 
 Extract archive contents in +themes/2/+ or +themes/3/+ folder of the backend distribution.
 
