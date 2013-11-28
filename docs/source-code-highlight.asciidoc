@@ -30,16 +30,25 @@ $ pygmentize -L styles
 ----
 It will output the style names and brief descriptions.
 
-Pygments 1.5 provides 19 themes.
+Pygments 1.5 provides 19 themes, but only 3 pre-defined stylesheets are available
+in standard AsciiDoc-Bootstrap backend distribution (default, pastie, monokai).
+
+Here are how to setup other themes. Open a terminal and type:
+----
+$ pygmentize -f html -S <theme> -a .highlight
+----
+where +<theme>+ is one of those listed by Pygments (-L style).
+Copy output to the AsciiDoc-Bootstrap install dir +stylesheets+ folder in a file
+named +pygments.<theme>.css+. (e.g. pygments.tango.css)
 =====================================================================
 
-In the example document below, we used the `monokai` style as main theme, 
+In the example document below, we used the `monokai` style as main theme,
 and `pastie` as local theme to highlight a block of CSS code.
 
-CAUTION: Pygments token +<span>+ tags will not use CSS classes, but inline styles. 
-This is not recommended for larger pieces of code since it increases output size by quite a bit. 
+CAUTION: Pygments token +<span>+ tags will not use CSS classes, but inline styles.
+This is not recommended for larger pieces of code since it increases output size by quite a bit.
 
-NOTE: The source-highlighter `args` attribute allows the inclusion of arbitrary 
+NOTE: The source-highlighter `args` attribute allows the inclusion of arbitrary
 (highlighter dependent) command options.
 
 ..........................
