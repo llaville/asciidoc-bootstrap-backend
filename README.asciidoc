@@ -16,7 +16,7 @@ $ asciidoc --backend install bootstrap-<version>.zip
 
 == Examples
 
-Visit our http://laurent-laville.org/asciidoc/bootstrap/examples/index.html[expo] 
+Visit our http://laurent-laville.org/asciidoc/bootstrap/examples/index.html[expo]
 to learn in minutes the basic templates for showcasing how the navbar and toc works.
 
 == Get Started
@@ -26,3 +26,7 @@ All you've to know begins by this http://laurent-laville.org/asciidoc/bootstrap/
 == Credits
 
 Dan Allen wrote the first version, available at https://github.com/mojavelinux/asciidoc-bootstrap-docs-backend
+
+== Stay tuned
+
+Follow development of this backend on http://laurent-laville.org/asciidoc/bootstrap/blog/[official blog].
