@@ -107,6 +107,8 @@ file structure and contents.
   │   ├── ui.totop.css
   │   ├── iconfonts-bootstrap.css
   │   ├── pygments-bootstrap.css
+  │   └── pygments.monokai.css
+  │   └── pygments.pastie.css
   │   └── pygments.css
   ├── fonts/
   │   └── font-awesome/
