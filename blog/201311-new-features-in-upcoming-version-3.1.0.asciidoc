@@ -1,0 +1,27 @@
+:css-signature: blog
+:icons: font
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:author: Laurent Laville
+:revdate: 2013-11-28
+:pubdate: Thu, 28 Nov 2013 17:08:18 +0100
+:summary: Summary of new features in version 3.1.0 planned for December 3, 2013
+
+== New features in upcoming version 3.1.0
+
+[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
+.icon:check-square-o[size="4x"]
+--
+[role="lead"]
+{summary}
+
+* CSS signature, the AsciiDoc feature, is now available.
+* Open Blocks allows to write blog, releases or features pages.
+* Ability to use all Pygments styles (globally or locally).
+* Add an inline macro to represent an icon.
+* Add Cerulean theme from Bootswatch template provider (optional download).
+* Add backend build signature in default text footer.
+* Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.2
+* New `rssref` attribute to specify a RSS feed in output document.
+--
