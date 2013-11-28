@@ -161,6 +161,7 @@ navinfo2
 | icons        | Choose representation of icon: png `image` or `font`.
 | iconsfont    | The name of the icons font provider: either `glyphicon`, `font-awesome`, `ionicons` or `icomoon`.
 | iconsfontdir | The name of the directory containing linked icons stylesheets and fonts files.
+| rssref       | Specify an URL of RSS feed to be linked with output document.
 |===========================
 
 == Your own theme

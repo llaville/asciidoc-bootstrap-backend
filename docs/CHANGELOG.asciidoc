@@ -5,7 +5,7 @@ include::attributes.asciidoc[]
 :navinfo2:
 
 
-== Version 3.1.0 _(2013-12-dd)_
+== Version 3.1.0 _(2013-12-03)_
 
 .Additions and changes:
 * CSS signature, AsciiDoc feature, is now available with the bootstrap backend.
@@ -16,6 +16,7 @@ include::attributes.asciidoc[]
 * Add Cerulean theme from Bootswatch template provider.
 * Add backend build signature in text footer.
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.2
+* New `rssref` attribute to specify a RSS feed in output document.
 
 .Bug fixes:
 * none
