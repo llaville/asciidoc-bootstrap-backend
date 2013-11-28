@@ -49,8 +49,8 @@ NOTE: `<version>` is to be replaced by the latest version available of the backe
 =====================================================================
 The Asciidoc bootstrap backend standard version included :
 
-* version 2.3.2 ( +themes/2+ ) and 3.0.1 ( +themes/3+ ) of the default theme from http://bootswatch.com/[Bootswatch] template provider.
-* version 2.3.2 ( +bootstrap/2+ ) and 3.0.1 ( +bootstrap/3+ ) of Bootstrap.
+* version 2.3.2 ( +themes/2+ ) and 3.0.2 ( +themes/3+ ) of the default theme from http://bootswatch.com/[Bootswatch] template provider.
+* version 2.3.2 ( +bootstrap/2+ ) and 3.0.2 ( +bootstrap/3+ ) of Bootstrap.
 * version 4.0.3 ( +fonts/font-awesome/+ ) of Font-Awesome.
 =====================================================================
 

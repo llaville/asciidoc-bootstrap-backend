@@ -15,6 +15,7 @@ include::attributes.asciidoc[]
 * Add an inline macro to represent an icon.
 * Add Cerulean theme from Bootswatch template provider.
 * Add backend build signature in text footer.
+* Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.2
 
 .Bug fixes:
 * none

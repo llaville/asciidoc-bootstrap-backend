@@ -2,7 +2,7 @@
 :title:       Asciidoc-Bootstrap
 :description: An AsciiDoc backend that renders the AsciiDoc source as HTML5 in the style of Bootstrap
 :boostrap2:   2.3.2
-:boostrap3:   3.0.1
+:boostrap3:   3.0.2
 
 ifdef::basebackend-bootstrap[]
 
@@ -51,6 +51,9 @@ Since the version 3
 [label label-success]#TOC position#:: can be place either on start or on a sidebar (left or right) of the main document.
 [label label-success]#Themes#:: support Bootstrap themes v2 and v3.
 [label label-success]#Links#:: buttons support was added.
+[label label-success]#Open Blocks#:: allows you to write blog, releases or features pages. [label label-warning]#3.1.0#
+[label label-success]#Pygments styles#:: ability to use all styles globally or locally. [label label-warning]#3.1.0#
+[label label-success]#Icon Fonts#:: are accepted via the new icon inline macro. [label label-warning]#3.1.0#
 
 
 == Examples
