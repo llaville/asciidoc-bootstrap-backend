@@ -1,0 +1,29 @@
+= {title}
+:title:       Admonition Paragraphs
+:description: Using Font-Awesome Icons Font
+include::attributes.asciidoc[]
+:navinfo2:
+:icons!:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:stylesheet: handbook.css
+
+include::admonition-samples.asciidoc[]
+
+== Behind the scene
+
+Render is make with these CSS rules
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/handbook.css].
+
+[source,css]
+----
+include::../stylesheets/handbook.css[]
+----
+
+If you want to modify this render, copy at least the following CSS rules
+in your `user.css` theme stylesheet (e.g. readable/user.css) and apply all changes you want.
+
+* .admonition
+* .admonition .icon
+* .admonition .icon .title
+* .admonition .content
