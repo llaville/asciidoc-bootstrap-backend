@@ -9,7 +9,6 @@ include::attributes.asciidoc[]
 
 .Additions and changes:
 * CSS signature, AsciiDoc feature, is now available with the bootstrap backend.
-* TIP admonition is now designed as Bootstrap alert-info block.
 * Open Blocks allows to write blog, releases or features pages.
 * Ability to use all Pygments styles (globally or locally).
 * Add an inline macro to represent an icon.
@@ -17,6 +16,8 @@ include::attributes.asciidoc[]
 * Add backend build signature in text footer.
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.2
 * New `rssref` attribute to specify a RSS feed in output document.
+* Admonition Block support text, images and icons font.
+* Optional additional CSS stylesheet, AsciiDoc feature, is now available with the bootstrap backend.
 
 .Bug fixes:
 * none
