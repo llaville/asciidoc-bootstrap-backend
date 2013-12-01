@@ -53,8 +53,8 @@ NOTE: What lovely war.
 
 ====
 ----
-[NOTE]
-.A NOTE admonition block
+[TIP]
+.A TIP admonition block
 =====================================================================
 Qui in magna commodo, est labitur dolorum an. Est ne magna primis
 adolescens.
@@ -70,8 +70,8 @@ adolescens.
 ====
 Renders:
 
-[NOTE]
-.A NOTE admonition block
+[TIP]
+.A TIP admonition block
 =====================================================================
 Qui in magna commodo, est labitur dolorum an. Est ne magna primis
 adolescens.
