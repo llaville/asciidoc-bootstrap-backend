@@ -2,7 +2,7 @@
 :title:       Changelog
 :description: Summary of versions changes
 include::attributes.asciidoc[]
-:navinfo2:
+:navinfo1:
 
 
 == Version 3.1.0 _(2013-12-03)_
