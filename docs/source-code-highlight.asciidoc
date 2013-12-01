@@ -3,7 +3,10 @@
 :description: http://asciidoc.org/source-highlight-filter.html
 include::attributes.asciidoc[]
 :navinfo2:
-
+:icons!:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:stylesheet: admonition-iconsfont.css
 
 == Pygments
 
