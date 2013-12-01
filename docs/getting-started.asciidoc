@@ -185,10 +185,6 @@ and to optionally include additional JavaScript code.
 [role="lead"]
 Head to the docs sections for more information and examples.
 
-=== link:base-css-book.html[Base CSS]
-
-Bootstrap Docs Base CSS examples
-
 === link:source-code-highlight.html[Source Code Highlight]
 
 The http://pygments.org[Pygments] syntax highlighter can be used
