@@ -3,6 +3,10 @@
 :description: http://www.methods.co.nz/asciidoc/userguide.html#_macros
 include::attributes.asciidoc[]
 :navinfo1:
+:icons!:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:stylesheet: admonition-iconsfont.css
 
 ifdef::basebackend-bootstrap[]
 
