@@ -3,6 +3,10 @@
 :description: Build pages of this documentation.
 include::attributes.asciidoc[]
 :navinfo1:
+:icons!:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:stylesheet: admonition-iconsfont.css
 
 
 == How to build the landing page
