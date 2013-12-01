@@ -2,7 +2,7 @@
 :title:       Macros
 :description: http://www.methods.co.nz/asciidoc/userguide.html#_macros
 include::attributes.asciidoc[]
-:navinfo2:
+:navinfo1:
 
 ifdef::basebackend-bootstrap[]
 
