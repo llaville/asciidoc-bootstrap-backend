@@ -6,18 +6,18 @@ include::attributes.asciidoc[]
 :icons!:
 :iconsfont: font-awesome
 :iconsfontdir: ./fonts/font-awesome
-:stylesheet: handbook.css
+:stylesheet: admonition-iconsfont.css
 
 include::admonition-samples.asciidoc[]
 
 == Behind the scene
 
 Render is make with these CSS rules
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/handbook.css].
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/admonition-iconsfont.css].
 
 [source,css]
 ----
-include::../stylesheets/handbook.css[]
+include::../stylesheets/admonition-iconsfont.css[]
 ----
 
 If you want to modify this render, copy at least the following CSS rules

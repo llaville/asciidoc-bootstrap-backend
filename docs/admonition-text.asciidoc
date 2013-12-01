@@ -5,18 +5,18 @@ include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont!:
-:stylesheet: handbook2.css
+:stylesheet: admonition-text.css
 
 include::admonition-samples.asciidoc[]
 
 == Behind the scene
 
 Render is make with these CSS rules
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/handbook2.css].
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/admonition-text.css].
 
 [source,css]
 ----
-include::../stylesheets/handbook2.css[]
+include::../stylesheets/admonition-text.css[]
 ----
 
 If you want to modify this render, copy at least the following CSS rules 
