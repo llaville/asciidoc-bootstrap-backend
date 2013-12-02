@@ -1,0 +1,43 @@
+:css-signature: blog
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:author: Laurent Laville
+:revdate: 2013-12-02
+:pubdate: Mon, 02 Dec 2013 10:48:32 +0100
+:summary: Change admonition icons behavior and allow support of icons font.
+
+== Admonition Block behavior has changed
+
+[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
+.icon:check-square[size="4x"]
+--
+[role="lead"]
+{summary}
+
+11 months ago, when I decided to integrate the ShaKeSPeaR's request 
+https://github.com/mojavelinux/asciidoc-bootstrap-docs-backend/pull/5[change styles for admonitionblock],
+make it as bootstrap alert-block, I thought is was a very cool idea.
+
+Now that this backend support icons font such as Font-Awesome, the initial implementation is a bit restrict.
+
+So, I've added ability to use icons font to draw image of admonition block.
+You are free to use any icons you want.
+
+Of course, text captions and images standard behaviors are kept. 
+
+Here are some basic icons font examples :
+
+NOTE: A simple icons font NOTE, using the Font-Awesome icon `info-circle`.
+
+TIP: A simple icons font TIP, using the Font-Awesome icon `lightbulb-o`.
+
+WARNING: A simple icons font WARNING, using the Font-Awesome icon `exclamation-triangle`.
+
+CAUTION: A simple icons font CAUTION, using the Font-Awesome icon `exclamation-circle`.
+
+IMPORTANT: A simple icons font IMPORTANT, using the Font-Awesome icon `minus-circle`.
+
+All explanation, about three categories (text captions/images/icons font) can be found in 
+http://www.laurent-laville.org/asciidoc/bootstrap/manual/3.1/en/paragraphs.html[handbook].
+--

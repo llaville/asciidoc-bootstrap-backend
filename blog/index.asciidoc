@@ -3,12 +3,24 @@
 :brand: https://github.com/llaville/asciidoc-bootstrap-backend
 :rssref: http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
 :jumbotron-fullwidth:
-:icons: font
+:icons!: 
 :iconsfont: font-awesome
 :iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
 :css-signature: blog
 
-include::201311-new-features-in-upcoming-version-3.1.0.asciidoc[]
+[role="well-sm"]
+**********
+*Stay tuned*
 
-include::201311-a-blog-official-launch.asciidoc[]
+Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS feed].
+
+*Archives*
+
+[style="archives"]
+- 2013
+** link:201311.html[November] [badge pull-right]#2#
+**********
+
+include::201312-admonitions-behavior-has-changed.asciidoc[]
+
