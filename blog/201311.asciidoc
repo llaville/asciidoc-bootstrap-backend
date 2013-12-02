@@ -3,7 +3,7 @@
 :brand: https://github.com/llaville/asciidoc-bootstrap-backend
 :rssref: http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
 :jumbotron-fullwidth:
-:icons: font
+:icons!:
 :iconsfont: font-awesome
 :iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
