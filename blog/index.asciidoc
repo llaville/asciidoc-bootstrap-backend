@@ -3,7 +3,7 @@
 :brand: https://github.com/llaville/asciidoc-bootstrap-backend
 :rssref: http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
 :jumbotron-fullwidth:
-:icons!: 
+:icons!:
 :iconsfont: font-awesome
 :iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
@@ -21,6 +21,8 @@ Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS 
 - 2013
 ** link:201311.html[November] [badge pull-right]#2#
 **********
+
+include::201312-asciidoc-bootstrap-3.1.0-released.asciidoc[]
 
 include::201312-admonitions-behavior-has-changed.asciidoc[]
 
