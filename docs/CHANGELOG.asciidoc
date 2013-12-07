@@ -9,6 +9,7 @@ include::attributes.asciidoc[]
 
 .Additions and changes:
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.3
+* New `favicon` attribute to specify a favorite icon, if any.
 
 .Bug fixes:
 * none

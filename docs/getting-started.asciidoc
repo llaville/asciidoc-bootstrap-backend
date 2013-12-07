@@ -167,6 +167,7 @@ navinfo2
 | iconsfont    | The name of the icons font provider: either `glyphicon`, `font-awesome`, `ionicons` or `icomoon`.
 | iconsfontdir | The name of the directory containing linked icons stylesheets and fonts files.
 | rssref       | Specify an URL of RSS feed to be linked with output document.
+| favicon      | Add a link to your favorite icon
 |===========================
 
 == Your own theme
