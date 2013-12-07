@@ -5,6 +5,14 @@ include::attributes.asciidoc[]
 :navinfo1:
 
 
+== Version 3.2.0 _(2013-12-dd)_
+
+.Additions and changes:
+* Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.3
+
+.Bug fixes:
+* none
+
 == Version 3.1.0 _(2013-12-03)_
 
 .Additions and changes:
