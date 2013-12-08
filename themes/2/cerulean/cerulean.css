@@ -23,6 +23,20 @@ div.imageblock {
     margin-right: 4%;
 }
 
+/*
+    Callouts
+ */
+.callout {
+    background-color: #033C73;
+}
+.colist ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.colist ul li span {
+    margin-right: 0.5em;
+}
+
 @media (max-width: 1000px) {
     body {
         padding-top: 0;

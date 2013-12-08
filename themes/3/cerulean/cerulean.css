@@ -27,7 +27,7 @@ div.imageblock {
 /*
     Admonition Blocks
  */
- 
+
 .admonition {
     padding: 15px;
     margin-bottom: 21px;
@@ -64,4 +64,18 @@ div.imageblock {
 }
 .important .icon  .fa:before{
     content: "\f056";  /* fa-minus-circle */
+}
+
+/*
+    Callouts
+ */
+.callout {
+    background-color: #033C73;
+}
+.colist ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.colist ul li span {
+    margin-right: 0.5em;
 }

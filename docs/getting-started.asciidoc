@@ -217,6 +217,12 @@ in the header of the output document.
 Like the `docinfo` attribute, bootstrap backend add support to dropdowns
 navigation bar with to new `navinfo` attribute.
 
+=== link:callouts.html[Callouts]
+
+Callouts are a mechanism for annotating verbatim text (for example: source code,
+computer output and user input). Callout markers are placed inside the annotated text
+while the actual annotations are presented in a callout list after the annotated text.
+
 === link:macros.html[Macros]
 
 Macros are a mechanism for substituting parametrized text into output documents.

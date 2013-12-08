@@ -1,0 +1,94 @@
+= {title}
+:title:       Callouts
+:description: http://asciidoc.org/userguide.html#X105
+include::attributes.asciidoc[]
+:navinfo2:
+:icons:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:stylesheet: admonition-iconsfont.css
+
+ifdef::basebackend-bootstrap[]
+
+//////////////////////////
+   Bootstrap 2 syntax
+//////////////////////////
+ifeval::["{bsver}"=="2"]
+:icon-prefix: icon-
+endif::[]
+
+//////////////////////////
+   Bootstrap 3 syntax
+//////////////////////////
+ifeval::["{bsver}"=="3"]
+:icon-prefix: glyphicon-
+endif::[]
+
+endif::[]
+
+ifndef::basebackend-bootstrap[]
+:icon-prefix:
+endif::[]
+
+== Implementation
+[role="lead"]
+When the icons attribute is enabled, callouts list are rendered with the numbered bullet icons
+like AsciiDoc. But it will not using images in standard +images\icons+ directory.
+
+AsciiDoc-Bootstrap backend 3.2.0 by introducing this standard AsciiDoc feature will use
+the badge css rule look like to draw bullet icons (circles).
+
+NOTE: Credit to AsciiDoctor https://github.com/asciidoctor/asciidoctor/issues/114[GH-114 issue]
+for cool idea.
+
+Here is an example that don't use images but Bootstrap badges :
+
+====
+----
+ .MS-DOS directory listing
+ -----------------------------------------------------
+ 10/17/97   9:04         <DIR>    bin
+ 10/16/97  14:11         <DIR>    DOS            \<1>
+ 10/16/97  14:40         <DIR>    Program Files
+ 10/16/97  14:46         <DIR>    TEMP
+ 10/17/97   9:04         <DIR>    tmp
+ 10/16/97  14:37         <DIR>    WINNT
+ 10/16/97  14:25             119  AUTOEXEC.BAT   \<2>
+  2/13/94   6:21          54,619  COMMAND.COM    \<2>
+ 10/16/97  14:25             115  CONFIG.SYS     \<2>
+ 11/16/97  17:17      61,865,984  pagefile.sys
+  2/13/94   6:21           9,349  WINA20.386     \<3>
+ -----------------------------------------------------
+
+ \<1> This directory holds MS-DOS.
+ \<2> System startup code for DOS.
+ \<3> Some sort of Windows 3.1 hack.
+----
+====
+
+which renders:
+
+.MS-DOS directory listing
+----
+10/17/97   9:04         <DIR>    bin
+10/16/97  14:11         <DIR>    DOS            <1>
+10/16/97  14:40         <DIR>    Program Files
+10/16/97  14:46         <DIR>    TEMP
+10/17/97   9:04         <DIR>    tmp
+10/16/97  14:37         <DIR>    WINNT
+10/16/97  14:25             119  AUTOEXEC.BAT   <2>
+ 2/13/94   6:21          54,619  COMMAND.COM    <2>
+10/16/97  14:25             115  CONFIG.SYS     <2>
+11/16/97  17:17      61,865,984  pagefile.sys
+ 2/13/94   6:21           9,349  WINA20.386     <3>
+----
+<1> This directory holds MS-DOS.
+<2> System startup code for DOS.
+<3> Some sort of Windows 3.1 hack.
+
+TIP: If you want to customize this bullet icons look like, please add a `.callout`
+CSS rule in the `user.css` stylesheet of your favorite theme.
+
+== About _this document_
+link:howto.html#how_to_build_internal_pages[How to] build the source code
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/callouts.asciidoc].
