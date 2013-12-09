@@ -168,6 +168,7 @@ navinfo2
 | iconsfontdir | The name of the directory containing linked icons stylesheets and fonts files.
 | rssref       | Specify an URL of RSS feed to be linked with output document.
 | favicon      | Add a link to your favorite icon
+| tocaffix     | Use Bootstrap affix plugin to pin the TOC2 on left or right side triggered at offset specified.
 |===========================
 
 == Your own theme
