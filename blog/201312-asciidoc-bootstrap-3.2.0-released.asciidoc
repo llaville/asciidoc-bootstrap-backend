@@ -4,7 +4,7 @@
 :imagesdir: ./images
 :author: Laurent Laville
 :revdate: 2013-12-20
-:pubdate: Fri, 20 Dec 2013 11:58:10 +0100
+:pubdate: Fri, 20 Dec 2013 13:01:10 +0100
 :summary: AsciiDoc-Bootstrap 3.2.0 has been released.
 
 == AsciiDoc-Bootstrap 3.2.0 released
@@ -20,7 +20,9 @@ has just been released. This is the last version of year 2013.
 
 Behaviors changes :
 
-* AsciiDoc callouts feature used badges rather than images.
+* AsciiDoc
+http://www.laurent-laville.org/asciidoc/bootstrap/manual/3.2/en/callouts.html[callouts feature used badges]
+rather than images.
 * `totop` attribute does not have values anymore. Sets for UI behavior and unset for text behavior.
 
 New backend features :
