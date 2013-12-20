@@ -57,6 +57,8 @@ Since the version 3
 [label label-success]#Open Blocks#:: allows you to write blog, releases or features pages. [label label-warning]#3.1.0#
 [label label-success]#Pygments styles#:: ability to use all styles globally or locally. [label label-warning]#3.1.0#
 [label label-success]#Icon Fonts#:: are accepted via the new icon inline macro. [label label-warning]#3.1.0#
+[label label-success]#Affix plugin#:: from Bootstrap. [label label-warning]#3.2.0#
+[label label-success]#Favorite icon#:: is optional. [label label-warning]#3.2.0#
 
 
 == Examples
