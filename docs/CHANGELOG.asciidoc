@@ -5,11 +5,14 @@ include::attributes.asciidoc[]
 :navinfo1:
 
 
-== Version 3.2.0 _(2013-12-dd)_
+== Version 3.2.0 _(2013-12-20)_
 
 .Additions and changes:
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.3
 * New `favicon` attribute to specify a favorite icon, if any.
+* AsciiDoc callouts feature used badges rather than images.
+* `totop` attribute does not have values anymore. Sets for UI behavior and unset for text behavior.
+* New `tocaffix` attribute to use Bootstrap affix plugin.
 
 .Bug fixes:
 * none
