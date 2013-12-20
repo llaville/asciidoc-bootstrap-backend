@@ -1,6 +1,6 @@
 = {title}
 :title:       Text Formatting
-:description: http://www.methods.co.nz/asciidoc/userguide.html#_text_formatting
+:description: http://asciidoc.org/userguide.html#_text_formatting
 include::attributes.asciidoc[]
 :navinfo2:
 

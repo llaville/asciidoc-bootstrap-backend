@@ -1,6 +1,6 @@
 = {title}
 :title:       Paragraphs
-:description: http://www.methods.co.nz/asciidoc/userguide.html#_paragraphs
+:description: http://asciidoc.org/userguide.html#_paragraphs
 include::attributes.asciidoc[]
 :navinfo2:
 

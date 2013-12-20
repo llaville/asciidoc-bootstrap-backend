@@ -1,6 +1,6 @@
 = {title}
 :title:       Admonition Paragraphs
-:description: http://www.methods.co.nz/asciidoc/userguide.html#X28
+:description: http://asciidoc.org/userguide.html#X28
 include::attributes.asciidoc[]
 :navinfo2:
 :icons:

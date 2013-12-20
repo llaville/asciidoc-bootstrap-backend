@@ -1,6 +1,6 @@
 = {title}
 :title:       Document Structure
-:description: http://www.methods.co.nz/asciidoc/userguide.html#_document_structure
+:description: http://asciidoc.org/userguide.html#_document_structure
 include::attributes.asciidoc[]
 :navinfo2:
 
