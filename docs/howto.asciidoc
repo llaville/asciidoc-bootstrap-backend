@@ -68,13 +68,13 @@ $ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsv
 *Boostrap 2 Version* :
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/2 -a bsver=2 -a navbar=fixed -a jumbotron -a totop=ui /path/to/docs/filename
+$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/2 -a bsver=2 -a navbar=fixed -a jumbotron -a totop /path/to/docs/filename
 ----
 
 *Boostrap 3 Version* :
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsver=3 -a navbar=fixed -a jumbotron -a totop=ui /path/to/docs/filename
+$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsver=3 -a navbar=fixed -a jumbotron -a totop /path/to/docs/filename
 ----
 
 [NOTE]
