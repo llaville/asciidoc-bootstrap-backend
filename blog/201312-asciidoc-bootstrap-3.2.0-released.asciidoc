@@ -1,0 +1,34 @@
+:css-signature: blog
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:author: Laurent Laville
+:revdate: 2013-12-20
+:pubdate: Fri, 20 Dec 2013 11:58:10 +0100
+:summary: AsciiDoc-Bootstrap 3.2.0 has been released.
+
+== AsciiDoc-Bootstrap 3.2.0 released
+
+[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
+.icon:rocket[size="4x"]
+--
+[role="lead"]
+{summary}
+
+http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/[AsciiDoc-Bootstrap] 3.2.0
+has just been released. This is the last version of year 2013.
+
+Behaviors changes :
+
+* AsciiDoc callouts feature used badges rather than images.
+* `totop` attribute does not have values anymore. Sets for UI behavior and unset for text behavior.
+
+New backend features :
+
+* New `favicon` attribute to specify a favorite icon, if any.
+* New `tocaffix` attribute to use Bootstrap affix plugin.
+
+Upgrades :
+
+* Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.3
+--
