@@ -1,0 +1,16 @@
+= Official Blog of AsciiDoc-Bootstrap backend
+:description: Archives of December 2013
+:brand: https://github.com/llaville/asciidoc-bootstrap-backend
+:rssref: http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
+:jumbotron-fullwidth:
+:icons!:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:css-signature: blog
+
+include::201312-asciidoc-bootstrap-3.2.0-released.asciidoc[]
+
+include::201312-asciidoc-bootstrap-3.1.0-released.asciidoc[]
+
+include::201312-admonitions-behavior-has-changed.asciidoc[]
