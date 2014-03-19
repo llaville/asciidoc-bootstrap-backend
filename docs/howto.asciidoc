@@ -21,13 +21,13 @@ include::attributes.asciidoc[]
 *Boostrap 2 Version* :
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/2 -a bsver=2 -a jumbotron-fullwidth /path/to/docs/index.asciidoc
+$ asciidoc -b bootstrap -a linkcss -a theme=readable -a bsver=2 -a jumbotron-fullwidth /path/to/docs/index.asciidoc
 ----
 
 *Boostrap 3 Version* :
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsver=3 -a jumbotron-fullwidth /path/to/docs/index.asciidoc
+$ asciidoc -b bootstrap -a linkcss -a theme=readable -a bsver=3 -a jumbotron-fullwidth /path/to/docs/index.asciidoc
 ----
 
 [NOTE]
@@ -36,7 +36,6 @@ $ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsv
 * `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
 ``stylesheets and scripts are automatically embedded in the output document``.
 * `theme` is the standard Readable Bootswatch theme for Bootstrap 3.
-* `themedir` theme is loaded from local folder +(outdir)/themes/2+ ([label label-info]#Bootstrap 2#) and +(outdir)/themes/3+ ([label label-info]#Bootstrap 3#).
 * `jumbotron-fullwidth` used a full-width jumbotron in all resolution.
 * `bsver` used the Bootstrap 3 template.
 =====================================================================
@@ -68,13 +67,13 @@ $ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsv
 *Boostrap 2 Version* :
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/2 -a bsver=2 -a navbar=fixed -a jumbotron -a totop /path/to/docs/filename
+$ asciidoc -b bootstrap -a linkcss -a theme=readable -a bsver=2 -a navbar=fixed -a jumbotron -a totop /path/to/docs/filename
 ----
 
 *Boostrap 3 Version* :
 [role="ssh"]
 ----
-$ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsver=3 -a navbar=fixed -a jumbotron -a totop /path/to/docs/filename
+$ asciidoc -b bootstrap -a linkcss -a theme=readable -a bsver=3 -a navbar=fixed -a jumbotron -a totop /path/to/docs/filename
 ----
 
 [NOTE]
@@ -83,7 +82,6 @@ $ asciidoc -b bootstrap -a linkcss -a theme=readable -a themedir=themes/3 -a bsv
 * `linkcss` reduce the size of html document. Default AsciiDoc behavior is:
 ``stylesheets and scripts are automatically embedded in the output document``.
 * `theme` is the standard [label label-default]#{theme}# Bootswatch theme for Bootstrap 3.
-* `themedir` theme is loaded from local folder +(outdir)/themes/2+ ([label label-info]#Bootstrap 2#) and +(outdir)/themes/3+ ([label label-info]#Bootstrap 3#).
 * `bsver` used the Bootstrap 3 template.
 * `navbar` used a top fixed navbar style.
 * `jumbotron` used a jumbotron to enhance main title.
