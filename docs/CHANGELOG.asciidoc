@@ -5,6 +5,16 @@ include::attributes.asciidoc[]
 :navinfo1:
 
 
+== Version 3.3.0 _(2014-03-20)_
+
+.Additions and changes:
+* Upgrade Bootstrap and Bootswatch Themes to latest version 3.1.1
+* Enlarge main column (from 8 to 9)
+* Removed colgroup in table
+
+.Bug fixes:
+* none
+
 == Version 3.2.0 _(2013-12-20)_
 
 .Additions and changes:
