@@ -59,18 +59,18 @@ in the HTML output file:
 | totop |
 This attribute control which _back to top_ system you want to include in the output file.
 
-text:: Include a _Back to top_ standard html href link
-ui::   Used the http://mattvarone.com/web-design/uitotop-jquery-plugin/[UItoTop jQuery plugin].
+when attribute unset:: Include a _Back to top_ standard html href link
+when attribute set::   Used the http://mattvarone.com/web-design/uitotop-jquery-plugin/[UItoTop jQuery plugin].
 
 The following example will build a [label label-info]#Bootstrap 2# version and include the standard href link
 in the HTML output file:
 
-  $ asciidoc -b bootstrap -a bsver=2 -a totop=text mydoc.txt
+  $ asciidoc -b bootstrap -a bsver=2 -a totop! mydoc.txt
 
 The next example will build a [label label-info]#Bootstrap 3# and include a dynamic clickable area
 in the HTML output file:
 
-  $ asciidoc -b bootstrap -a bsver=3 -a totop=ui mydoc.txt
+  $ asciidoc -b bootstrap -a bsver=3 -a totop mydoc.txt
 
 | brandver |
 This attribute control whether you want to include a dynamic versions list in the output file.
