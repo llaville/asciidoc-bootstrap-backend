@@ -1,0 +1,26 @@
+:css-signature: blog
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:author: Laurent Laville
+:revdate: 2014-03-20
+:pubdate: Thu, 20 Mar 2014 23:38:52 +0100
+:summary: AsciiDoc-Bootstrap 3.3.0 has been released.
+
+== AsciiDoc-Bootstrap 3.3.0 released
+
+[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
+.icon:rocket[size="4x"]
+--
+[role="lead"]
+{summary}
+
+http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/[AsciiDoc-Bootstrap] 3.3.0
+has just been released.
+
+Minor changes
+
+Upgrades :
+
+* Upgrade Bootstrap and Bootswatch Themes to latest version 3.1.1
+--
