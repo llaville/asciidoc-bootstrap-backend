@@ -53,21 +53,21 @@ NOTE: `<version>` is to be replaced by the latest version available of the backe
 =====================================================================
 The Asciidoc bootstrap backend standard version included :
 
-* version 2.3.2 ( +themes/2+ ) and 3.0.3 ( +themes/3+ ) of the default theme from http://bootswatch.com/[Bootswatch] template provider.
-* version 2.3.2 ( +bootstrap/2+ ) and 3.0.3 ( +bootstrap/3+ ) of Bootstrap.
+* version 2.3.2 ( +themes/2+ ) and 3.1.0 ( +themes/3+ ) of the default theme from http://bootswatch.com/[Bootswatch] template provider.
+* version 2.3.2 ( +bootstrap/2+ ) and 3.1.1 ( +bootstrap/3+ ) of Bootstrap.
 * version 4.0.3 ( +fonts/font-awesome/+ ) of Font-Awesome.
 =====================================================================
 
 You can download additional themes AsciiDoc-Bootstrap backend v3 ready.
 
-image::images/flatly.png[link="http://bootswatch.com/flatly",title="Flatly theme for Bootstrap 3",role="thumbnail",style="{span3}",options="{options}"]
-image::images/readable.png[link="http://bootswatch.com/readable",title="Readable theme for Bootstrap 3",role="thumbnail",style="{span3}",options="{options}"]
-image::images/cerulean.png[link="http://bootswatch.com/cerulean",title="Cerulean theme for Bootstrap 3",role="thumbnail",style="{span3}",options="{options}"]
+image::images/flatly.png[link="http://bootswatch.com/flatly",title="Flatly theme",role="thumbnail",style="{span3}",options="{options}"]
+image::images/readable.png[link="http://bootswatch.com/readable",title="Readable theme",role="thumbnail",style="{span3}",options="{options}"]
+image::images/cerulean.png[link="http://bootswatch.com/cerulean",title="Cerulean theme",role="thumbnail",style="{span3}",options="{options}"]
 
 .For Bootstrap 3
-* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme3-3.0.3.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/readable-theme3-3.0.3.zip[]
-* http://laurent-laville.org/asciidoc/bootstrap/cerulean-theme3-3.0.3.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/flatly-theme3-3.1.0.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/readable-theme3-3.1.0.zip[]
+* http://laurent-laville.org/asciidoc/bootstrap/cerulean-theme3-3.1.0.zip[]
 
 .For Bootstrap 2
 * http://laurent-laville.org/asciidoc/bootstrap/flatly-theme2-3.0.2.zip[]
