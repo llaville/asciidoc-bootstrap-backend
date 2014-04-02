@@ -1,0 +1,12 @@
+= Official Blog of AsciiDoc-Bootstrap backend
+:description: Archives of Marth 2014
+:brand: https://github.com/llaville/asciidoc-bootstrap-backend
+:rssref: http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
+:jumbotron-fullwidth:
+:icons!:
+:iconsfont: font-awesome
+:iconsfontdir: ./fonts/font-awesome
+:imagesdir: ./images
+:css-signature: blog
+
+include::201403-asciidoc-bootstrap-3.3.0-released.asciidoc[]
