@@ -8,21 +8,7 @@
 :iconsfontdir: ./fonts/ionicons
 
 ifdef::basebackend-bootstrap[]
-
-//////////////////////////
-   Bootstrap 2 syntax
-//////////////////////////
-ifeval::["{bsver}"=="2"]
-:icon-prefix: icon-
-endif::[]
-
-//////////////////////////
-   Bootstrap 3 syntax
-//////////////////////////
-ifeval::["{bsver}"=="3"]
 :icon-prefix: glyphicon-
-endif::[]
-
 endif::[]
 
 

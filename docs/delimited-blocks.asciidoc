@@ -9,23 +9,8 @@ include::attributes.asciidoc[]
 :stylesheet: admonition-iconsfont.css
 
 ifdef::basebackend-bootstrap[]
-
-//////////////////////////
-   Bootstrap 2 syntax
-//////////////////////////
-ifeval::["{bsver}"=="2"]
-:well-small: well-small
-:well-large: well-large
-endif::[]
-
-//////////////////////////
-   Bootstrap 3 syntax
-//////////////////////////
-ifeval::["{bsver}"=="3"]
 :well-small: well-sm
 :well-large: well-lg
-endif::[]
-
 endif::[]
 
 
