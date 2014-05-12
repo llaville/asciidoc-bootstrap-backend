@@ -1,5 +1,5 @@
-:revnumber:   3.3.0
-:revdate:     2014-03-20
+:revnumber:   4.0.0
+:revdate:     2014-mm-dd
 :toc:
 :brand:       AsciiDoc-Bootstrap
 :brandref:    https://github.com/llaville/asciidoc-bootstrap-backend
