@@ -2,23 +2,9 @@
 :title:       Example Templates for Asciidoc-Bootstrap
 :description: Gallery of useful examples to easily get started with and extend Bootstrap backend for Asciidoc
 
-//////////////////////////
-   Bootstrap 2 syntax
-//////////////////////////
-ifeval::["{bsver}"=="2"]
-:span3:   span3
-:span5:   span5
-:options:
-endif::[]
-
-//////////////////////////
-   Bootstrap 3 syntax
-//////////////////////////
-ifeval::["{bsver}"=="3"]
 :span3:   col-md-3
 :span5:   col-md-5
 :options: responsive
-endif::[]
 
 
 == Navbar examples
