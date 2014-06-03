@@ -3,8 +3,10 @@
 An AsciiDoc backend that renders the AsciiDoc source as HTML5
 in the style of http://getbootstrap.com/[Bootstrap].
 
-NOTE: The latest distribution 3.x support both http://getbootstrap.com/2.3.2[Bootstrap 2],
+NOTE: The latest stable distribution 3.3 support both http://getbootstrap.com/2.3.2[Bootstrap 2],
 and http://getbootstrap.com[Bootstrap 3].
+
+NOTE: The future version 4.0 will drop support of Bootstrap 2, and will not be fully compatible with previous version 3.3
 
 == Installation
 
