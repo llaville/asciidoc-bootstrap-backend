@@ -1,0 +1,118 @@
+= {title}
+:title:       Icons Font
+:description: Using Icons Font
+include::attributes.asciidoc[]
+:navinfo2:
+:icons!:
+:iconsfont: glyphicon
+
+[role="lead"]
+When you want to use the same AsciiDoc source document with another backend than Bootstrap,
+previous version 3 with icon inline macro was a bad strategy.
+Version 4 uses now the standard image inline macro with additional attributes.
+
+== GlyphIcon usage
+
+E.g, this snippet code:
+====
+----
+image:./images/icons/glyphicon/glyphicons_045_calendar.png[alt="Calendar",icon="calendar"] 10:44 05/06/2014
+----
+====
+Renders:
+
+image:./images/icons/glyphicon/glyphicons_045_calendar.png[alt="Calendar",icon="calendar"] 10:44 05/06/2014
+
+
+== Font-Awesome usage
+
+E.g, this snippet code:
+====
+----
+image:./images/icons/font-awesome/calendar.png[alt="Calendar",icon="calendar",iconsfont="font-awesome"] 10:44 05/06/2014
+----
+====
+Renders:
+
+image:./images/icons/font-awesome/calendar.png[alt="Calendar",icon="calendar",iconsfont="font-awesome"] 10:44 05/06/2014
+
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value (glyphicon) in the header block. 
+
+== Ionicons usage
+
+E.g, this snippet code:
+====
+----
+image:./images/icons/ionicons/calendar.png[alt="Calendar",icon="calendar",iconsfont="ionicons",width=32,height=32] 10:44 05/06/2014
+----
+====
+Renders:
+
+image:./images/icons/ionicons/calendar.png[alt="Calendar",icon="calendar",iconsfont="ionicons",width=32,height=32] 10:44 05/06/2014
+
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value (glyphicon) in the header block. 
+
+WARNING: Do not forget attributes `width` and `height` with ionicons PNG images because they are defined in 512x512 pixels.
+
+
+== Read More
+
+.Behind the scene
+************************************************
+Be sure to have both glyphicon, font-awesome and ionicons font support in your `asciidoc-bootstrap.css` file.
+
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least these lines activated :
+----
+@import "font-awesome/font-awesome.less";
+@import "ionicons/ionicons.less";
+@import "asciidoc/iconsfont.less";
+----
+
+Build this `{docfile}` footnote:[https://raw.githubusercontent.com/llaville/asciidoc-bootstrap-backend/v4/docs/iconsfont.asciidoc] with :
+
+*html5* backend:: 
+----
+$ asciidoc.py 
+  -b html5 
+  -a linkcss 
+  -a numbered 
+  -a stylesdir=./stylesheets 
+  -a scriptsdir=./javascripts 
+  {docfile}
+----
+
+*bootstrap* backend:: 
+----
+$ asciidoc.py 
+  -b bootstrap 
+  -a linkcss 
+  -a numbered 
+  -a stylesdir=./stylesheets 
+  -a scriptsdir=./javascripts 
+  -a theme=readable 
+  -a navbar=default 
+  -a totop 
+  {docfile}
+----
+
+NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docfile` attribute.
+************************************************
+
+*Download PNG alternate images* :
+
+* With *Glyphicon*, extract contents of archive http://glyphicons.com/files/glyphicons_free.zip[] (`glyphicons/png` directory)
+to your `{iconsdir}/glyphicon` folder.
+
+* With *Font-Awesome*, use the Python script https://github.com/odyniec/font-awesome-to-png[Font Awesome to PNG] as follow:
++
+----
+$ font-awesome-to-png.py --font FONT --size 32 ALL
+----
++
+Where FONT is your local `fonts/fontawesome-webfont.ttf`, and copy results (all png files)
+to your `{iconsdir}/font-awesome` folder.
+
+* With *Ionicons*, extract contents of `png/512` directory of your https://github.com/driftyco/ionicons/releases[]
+to your `{iconsdir}/ionicons` folder.
+
+See footnote:[http://asciidoc.org/userguide.html#X88] for `iconsdir` attribute.
