@@ -1,4 +1,5 @@
 bootstrap/*
+themes/*
 Thumbs.db
 blog/vendor/*
 blog/rssbuilder.php
