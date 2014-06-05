@@ -1,0 +1,36 @@
+:css-signature: blog
+:stylesheet: asciidoc-bootstrap-theme.css
+:iconsfont: glyphicon
+:imagesdir: ./images
+:author: Laurent Laville
+:revdate: 2014-06-05
+:pubdate: Thu, 05 Jun 2014 14:12:27 +0200
+:summary: AsciiDoc-Bootstrap 4 has a new Icons Font Strategy.
+
+== AsciiDoc-Bootstrap 4.0.0 preview - Icons Font
+
+[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
+.image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=48]
+--
+[role="lead"]
+{summary}
+
+The next major version 4.0 will come with changes, as described below :
+
+* This is the end of compatibility with Bootstrap 2.
+* We will adopt http://lesscss.org[Less] to build all stylesheets. End of a CSS nightmare !
+* Accept only icons font that provide LESS source code. So we dropped IcoMoon support.
+* Icon inline macro was removed to a better compatibility with others backends.
+
+In this first preview, we will explain why icon inline macro has been removed.
+
+Want to see it (compare renders):
+
+* built with html5 backend, go to
++
+http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont.html5.html
+
+* built with bootstrap backend (and readable theme), go to
++
+http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont.html
+--

@@ -8,6 +8,7 @@
 :iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
 :css-signature: blog
+:stylesheet: asciidoc-bootstrap-theme.css
 
 [role="well-sm"]
 **********
@@ -24,3 +25,5 @@ Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS 
 - 2014
 ** link:201403.html[Marth] [badge pull-right]#1#
 **********
+
+include::201406-asciidoc-bootstrap-4.0.0-preview.asciidoc[]
