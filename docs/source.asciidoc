@@ -28,5 +28,5 @@ endif::[]
 [source,css]
 .Using local theme [label label-default]#{local-css-style}#
 ----
-include::../stylesheets/pygments-bootstrap.css[]
+include::../stylesheets/ui.totop.css[]
 ----
