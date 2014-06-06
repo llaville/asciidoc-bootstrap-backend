@@ -7,33 +7,17 @@ include::attributes.asciidoc[]
 
 include::admonition-samples.asciidoc[]
 
-== Behind the scene
+== Read More
 
-Default render, is make with these CSS rules, you can found on each `<theme>.css`
-stylesheet (e.g. readable.css).
-
-[source,css]
+.Behind the scene
+************************************************
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line *deactivated* :
 ----
-.admonition {
-    padding: 15px;
-    margin-bottom: 21px;
-    border: 0;
-}
-.admonition .icon {
-    float: left;
-    font-size: 3em;
-}
-.admonition .icon .title {
-    font-size: 1em;
-    margin: 0;
-}
-.admonition .content {
-    padding-left: 0.5em;
-    margin-left: 4em;
-    border-left: 3px solid #DDDDDD;
-    min-height: 4em;
-}
+@import "asciidoc/admonition-text.less";
 ----
 
-If you want to modify this render, copy one of both of these CSS rules
-in your `user.css` theme stylesheet (e.g. readable/user.css) and apply all changes you want.
+And this other line *activated* (if you want to use Icons Font feature) :
+----
+@import "asciidoc/admonition-iconsfont.less";
+----
+************************************************
