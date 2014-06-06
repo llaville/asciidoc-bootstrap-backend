@@ -9,20 +9,39 @@ include::attributes.asciidoc[]
 
 include::admonition-samples.asciidoc[]
 
-== Behind the scene
+== Read More
 
-Render is make with these CSS rules
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/admonition-text.css].
+.Behind the scene
+************************************************
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line activated 
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/less/asciidoc/admonition-text.less] :
+----
+@import "asciidoc/admonition-text.less";
+----
 
-[source,css]
+And this other line deactivated (if you don't want to use Icons Font feature) :
+----
+@import "asciidoc/admonition-iconsfont.less";
+----
+************************************************
+
+If you want to modify the default render, either change the `less/asciidoc/admonition-text.less` source file,
+and rebuild the `asciidoc-bootstrap.css` file,  
+or copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`. 
+
+IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
+
+E.g:
+
+----
+$ asciidoc.py 
+  -b bootstrap
+  -a stylesheet=admonition-text.css
+  my_page.asciidoc
+----
+
+[source,css] 
+.Content of `admonition-text.css`
 ----
 include::../stylesheets/admonition-text.css[]
 ----
-
-If you want to modify this render, copy at least the following CSS rules 
-in your `user.css` theme stylesheet (e.g. readable/user.css) and apply all changes you want.
-
-* .admonition
-* .admonition .icon
-* .admonition .icon .title 
-* .admonition .content
