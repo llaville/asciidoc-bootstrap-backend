@@ -21,3 +21,25 @@ And this other line *activated* (if you want to use Icons Font feature) :
 @import "asciidoc/admonition-iconsfont.less";
 ----
 ************************************************
+
+If you want to modify the default render, 
+copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`. 
+
+IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
+
+E.g:
+
+----
+$ asciidoc.py 
+  -b bootstrap
+  -a stylesheet=admonition-images.css
+  my_page.asciidoc
+----
+
+[source,css] 
+.Content of `admonition-images.css`
+----
+include::../stylesheets/admonition-images.css[]
+----
+
+See results in link:admonition-images.custom.html[LIVE] !
