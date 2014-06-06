@@ -47,7 +47,6 @@ Remember that you can use any of icons font support by the backend.
 * http://glyphicons.com/[Glyphicons] - use +-a iconsfont=glyphicon+
 * http://fontawesome.io[Font-Awesome] - use +-a iconsfont=font-awesome+
 * http://ionicons.com/[Ionicons] - use +-a iconsfont=ionicons+
-* http://icomoon.io/[IcoMoon] - use +-a iconsfont=icomoon+
 
 
 == About _this document_

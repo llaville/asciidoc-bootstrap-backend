@@ -5,8 +5,7 @@ include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:stylesheet: admonition-iconsfont.css
+:pygments-style: monokai
 
 == Pygments
 
