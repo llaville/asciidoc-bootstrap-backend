@@ -45,3 +45,5 @@ $ asciidoc.py
 ----
 include::../stylesheets/admonition-text.css[]
 ----
+
+See results in link:admonition-text.custom.html[LIVE] !
