@@ -26,4 +26,6 @@ Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS 
 ** link:201403.html[Marth] [badge pull-right]#1#
 **********
 
+include::201406-asciidoc-bootstrap-4.0.0-preview-2.asciidoc[]
+
 include::201406-asciidoc-bootstrap-4.0.0-preview.asciidoc[]
