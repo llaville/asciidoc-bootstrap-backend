@@ -1,13 +1,16 @@
 = {title}
 :title:       Admonition Paragraphs
 :description: http://asciidoc.org/userguide.html#X28
+:doctitle:    AsciiDoc standard behavior - {title}
 include::attributes.asciidoc[]
 :navinfo2:
 :icons:
+:jumbotron:
+:footer!:
 
 include::admonition-samples.asciidoc[]
 
-== Read More
+== Learn More
 
 .Behind the scene
 ************************************************
@@ -22,24 +25,35 @@ And this other line *activated* (if you want to use Icons Font feature) :
 ----
 ************************************************
 
-If you want to modify the default render, 
-copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`. 
+If you want to modify the default render,
+copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`.
 
 IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
 
 E.g:
 
 ----
-$ asciidoc.py 
+$ asciidoc.py
   -b bootstrap
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  -a theme=flatly
   -a stylesheet=admonition-images.css
-  my_page.asciidoc
+  -a navbar=fixed
+  -a totop
+  {docfile}
 ----
 
-[source,css] 
+[source,css]
 .Content of `admonition-images.css`
 ----
 include::../stylesheets/admonition-images.css[]
 ----
 
-See results in link:admonition-images.custom.html[LIVE] !
+See results in live with :
+
+* standard  link:admonition-images-custom.html5.html[AsciiDoc] html5 backend.
+* Bootstrap link:admonition-images-custom.default.html[default] theme.
+* Bootswatch link:admonition-images-custom.flatly.html[flatly] theme.
+* Bootstrap link:admonition-images-custom.readable.html[readable] theme.
