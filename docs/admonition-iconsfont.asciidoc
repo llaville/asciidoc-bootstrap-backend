@@ -1,29 +1,27 @@
 = {title}
 :title:       Admonition Paragraphs
 :description: Using Font-Awesome Icons Font
+:doctitle:    Icons Font for Asciidoc-Bootstrap - {title}
 include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
-:iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:stylesheet: admonition-iconsfont.css
+:iconsfont:   font-awesome
+:jumbotron:
+:footer!:
+
+[role="lead"]
+To use http://fontawesome.io[Font-Awesome] icons font rather than PNG images,
+build your AsciiDoc source files with attribute `iconsfont` - use +-a iconsfont=font-awesome+
 
 include::admonition-samples.asciidoc[]
 
-== Behind the scene
+== Learn More
 
-Render is make with these CSS rules
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/admonition-iconsfont.css].
-
-[source,css]
+.Behind the scene
+************************************************
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line *activated*
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/less/asciidoc/admonition-iconsfont.less] :
 ----
-include::../stylesheets/admonition-iconsfont.css[]
+@import "asciidoc/admonition-iconsfont.less";
 ----
-
-If you want to modify this render, copy at least the following CSS rules
-in your `user.css` theme stylesheet (e.g. readable/user.css) and apply all changes you want.
-
-* .admonition
-* .admonition .icon
-* .admonition .icon .title
-* .admonition .content
+************************************************
