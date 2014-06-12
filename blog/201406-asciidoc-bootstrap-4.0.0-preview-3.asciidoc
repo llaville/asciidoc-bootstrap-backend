@@ -1,0 +1,29 @@
+:doctitle:    AsciiDoc-Bootstrap 4.0.0 preview
+:description: Part 3
+:iconsfont:   glyphicon
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-06-12
+:pubdate:     Thu, 12 Jun 2014 15:41:26 +0200
+:summary:     Add support for Bootstrap Panel Component.
+:jumbotron:
+:jumbotron-fullwidth:
+
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
+
+Today, I've added support of http://getbootstrap.com/components/#panels[Bootstrap Panel Component].
+
+To celebrate this new AsciiDoc-Bootstrap backend feature, I've also begun to add
+user guide pages related to
+http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/panels.default.html[Panels] support
+with a Themes menu to easily compare renders with :
+
+* standard *AsciiDoc* html5 backend
+* Bootstrap *Default* theme
+* Bootswatch *Flatly* theme
+* Bootswatch *Readable* theme
+____
