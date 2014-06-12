@@ -1,19 +1,19 @@
-:css-signature: blog
-:stylesheet: asciidoc-bootstrap-theme.css
-:iconsfont: glyphicon
-:imagesdir: ./images
-:author: Laurent Laville
-:revdate: 2014-06-05
-:pubdate: Thu, 05 Jun 2014 14:12:27 +0200
-:summary: AsciiDoc-Bootstrap 4 has a new Icons Font Strategy.
+:doctitle:    AsciiDoc-Bootstrap 4.0.0 preview
+:description: Part 1
+:iconsfont:   glyphicon
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-06-05
+:pubdate:     Thu, 05 Jun 2014 14:12:27 +0200
+:summary:     AsciiDoc-Bootstrap 4 has a new Icons Font Strategy.
+:jumbotron:
+:jumbotron-fullwidth:
 
-== AsciiDoc-Bootstrap 4.0.0 preview - Icons Font
+== {summary}
 
-[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
-.image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=48]
---
-[role="lead"]
-{summary}
+[quote,Published by {author} on {revdate}]
+____
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
 
 The next major version 4.0 will come with changes, as described below :
 
@@ -33,4 +33,4 @@ http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont.html5.html
 * built with bootstrap backend (and readable theme), go to
 +
 http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont.html
---
+____

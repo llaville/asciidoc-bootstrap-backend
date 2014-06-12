@@ -1,19 +1,19 @@
-:css-signature: blog
-:stylesheet: asciidoc-bootstrap-theme.css
-:iconsfont: glyphicon
-:imagesdir: ./images
-:author: Laurent Laville
-:revdate: 2014-06-06
-:pubdate: Fri, 06 Jun 2014 10:11:24 +0200
-:summary: Examples of AsciiDoc-Bootstrap 4 Icons Font uses.
+:doctitle:    AsciiDoc-Bootstrap 4.0.0 preview
+:description: Part 2
+:iconsfont:   glyphicon
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-06-06
+:pubdate:     Fri, 06 Jun 2014 10:11:24 +0200
+:summary:     Examples of AsciiDoc-Bootstrap 4 Icons Font uses.
+:jumbotron:
+:jumbotron-fullwidth:
 
-== AsciiDoc-Bootstrap 4.0.0 preview - part 2
+== {summary}
 
-[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
-.image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
---
-[role="lead"]
-{summary}
+[quote,Published by {author} on {revdate}]
+____
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
 
 Yesterday, I've introduced the new Icons Font Strategy.
 Today it's time to see more examples in action.
@@ -27,4 +27,4 @@ http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont-samples.ht
 * built with bootstrap backend (and readable theme), go to
 +
 http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont-samples.html
---
+____
