@@ -1,0 +1,312 @@
+= {title}
+:title:       Panels
+:description: http://getbootstrap.com/components/#panels
+:doctitle:    Bootstrap Panel Component for Asciidoc-Bootstrap - {title}
+include::attributes.asciidoc[]
+:iconsfont: font-awesome
+:jumbotron:
+:footer!:
+
+[role="lead"]
+While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.
+
+== Basic example
+
+By default, all the `.panel` does is apply some basic border and padding to contain some content.
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel]
+--
+Basic panel example
+--
+....
+
+[role="col-md-3"]
+.Panel without heading
+====
+[panel]
+--
+Basic panel example
+--
+====
+
+
+== Panel with heading
+
+Easily add a heading container to your panel with `.panel-heading`
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Panel title
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel]
+.Panel title
+--
+Panel content
+--
+....
+
+[role="col-md-3"]
+.Panel with heading
+====
+[panel]
+.Panel title
+--
+Panel content
+--
+====
+
+
+== Contextual alternatives
+
+Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel,primary]
+.Panel title
+--
+Panel content
+--
+....
+
+[role="col-md-3"]
+.Panel with primary contextual state class
+====
+[panel,primary]
+.Panel title
+--
+Panel content
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel,success]
+.Panel title
+--
+Panel content
+--
+....
+
+[role="col-md-3"]
+.Panel with success contextual state class
+====
+[panel,success]
+.Panel title
+--
+Panel content
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel,info]
+.Panel title
+--
+Panel content
+--
+....
+
+[role="col-md-3"]
+.Panel with info contextual state class
+====
+[panel,info]
+.Panel title
+--
+Panel content
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel,warning]
+.Panel title
+--
+Panel content
+--
+....
+
+[role="col-md-3"]
+.Panel with warning contextual state class
+====
+[panel,warning]
+.Panel title
+--
+Panel content
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.Html Code
+....
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+....
+
+[role="col-md-3"]
+.AsciiDoc Code
+....
+[panel,danger]
+.Panel title
+--
+Panel content
+--
+....
+
+[role="col-md-3"]
+.Panel with danger contextual state class
+====
+[panel,danger]
+.Panel title
+--
+Panel content
+--
+====
+
+
+== Learn More
+
+.Behind the scene
+************************************************
+Build this `{docfile}` footnote:[https://raw.githubusercontent.com/llaville/asciidoc-bootstrap-backend/v4/docs/panels.asciidoc]
+
+NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docfile` attribute.
+
+with :
+
+*html5* backend::
+----
+$ asciidoc.py
+  -b html5
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  {docfile}
+----
+
+WARNING: You will have tons of WARNING because AsciiDoc does not support the `panel-style` open block.
+But the result is not so bad. Check yourself: select the *AsciiDoc* entry in *Themes* menu.
+----
+asciidoc: WARNING: panels.asciidoc: line 40: missing style: [blockdef-open]: panel
+asciidoc: WARNING: panels.asciidoc: line 78: missing style: [blockdef-open]: panel
+asciidoc: WARNING: panels.asciidoc: line 116: missing style: [blockdef-open]: panel
+asciidoc: WARNING: panels.asciidoc: line 151: missing style: [blockdef-open]: panel
+asciidoc: WARNING: panels.asciidoc: line 186: missing style: [blockdef-open]: panel
+asciidoc: WARNING: panels.asciidoc: line 221: missing style: [blockdef-open]: panel
+asciidoc: WARNING: panels.asciidoc: line 256: missing style: [blockdef-open]: panel
+----
+
+*bootstrap* backend::
+----
+$ asciidoc.py
+  -b bootstrap
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  -a theme=flatly
+  -a navbar=fixed
+  -a totop
+  {docfile}
+----
+
+WARNING: You will have a WARNING because the theme used (e.g. flatly) is a Bootswatch theme,
+and not a AsciiDoc Theme.
+----
+asciidoc: WARNING: missing theme: flatly
+----
+************************************************
