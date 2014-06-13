@@ -4,14 +4,9 @@
 include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
-:iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:stylesheet: admonition-iconsfont.css
-
-ifdef::basebackend-bootstrap[]
-:well-small: well-sm
-:well-large: well-lg
-endif::[]
+:iconsfont:   font-awesome
+:jumbotron:
+:footer!:
 
 
 == Sidebar Blocks
@@ -39,11 +34,11 @@ SidebarBlocks) can be placed inside a sidebar.
 
 You may also used the attribute `role` to control padding and rounded corners.
 
-With `role` set to value *well-small* [label label-info]#Bootstrap 2#, or *well-sm* [label label-info]#Bootstrap 3#
+With *well-sm* role:
 ====
 ----
 .An Example Sidebar
-[role="well-small"]
+[role="well-sm"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
@@ -53,17 +48,17 @@ SidebarBlocks) can be placed inside a sidebar.
 Renders:
 
 .An Example Sidebar
-[role="{well-small}"]
+[role="well-sm"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
 
-With `role` set to value *well-large* [label label-info]#Bootstrap 2#, or *well-lg* [label label-info]#Bootstrap 3#
+With *well-lg* role:
 ====
 ----
 .An Example Sidebar
-[role="well-large"]
+[role="well-lg"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
@@ -73,7 +68,7 @@ SidebarBlocks) can be placed inside a sidebar.
 Renders:
 
 .An Example Sidebar
-[role="{well-large}"]
+[role="well-lg"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
@@ -85,171 +80,41 @@ SidebarBlocks) can be placed inside a sidebar.
 Open blocks are special: they are used to generate document abstracts,
 book part introductions and more.
 
-Here we will used it to display a very simple two columns layout.
+WARNING: Previous version 3, used it to simulate multi columns. Version 4 dropped this behavior.
+Don't be afraid, this feature is still possible using the standard Bootstrap classes like `.col-md-*` and so on.
 
-[TIP]
-.Focus on openblock
-=====================================================================
-For demonstration purpose only, and to understand where are the visual limit
-of open block, we used these css rules :
+First open block structure is used to implement the Bootstrap Panel Component.
 
-[source,css]
-----
-.openblock {
-    border: 1px dashed;
-    height: 300px;
-    background-color: #fff;
-    padding: 0.2em;
-}
-----
-=====================================================================
-
+[role="col-md-4"]
+.Panel with primary contextual state class
 ====
-----
-.A side intro title
+[panel,primary]
+.Panel title
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Panel content
 --
-----
 ====
-Renders:
 
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Design under control
-
-A bit ugly, but may be improved with css rules. Set a CSS *class* (timeline for example)
-to the `role` attribute, with following definitions :
-
-[source,css]
-----
-.timeline > .title {
-    background-color: blue;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    margin: 0;
-}
-.timeline > .content  {
-    padding: 40px 20px;
-}
-.timeline > .content > p > strong {
-    font-size: 30px;
-    color: navy;
-}
-----
-
+[role="col-md-4"]
+.Panel with success contextual state class
 ====
-----
-[role="timeline"]
-.A side intro title
+[panel,success]
+.Panel title
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Panel content
 --
-----
 ====
-Renders:
 
-[role="timeline"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Choose side of main content
-
-You can also change the side of intro title (default is left), by adding
-the `halign` attribute with *right* value.
-
+[role="col-md-4"]
+.Panel with warning contextual state class
 ====
-----
-[role="timeline",halign="right"]
-.A side intro title
+[panel,warning]
+.Panel title
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Panel content
 --
-----
 ====
-Renders:
 
-[role="timeline",halign="right"]
-.A side intro title
---
-*The main title*
+link:panels.default.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
 
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Width of two columns
-
-You can control width of both columns with the `cols` attribute.
-Default values are *3,9*. That means col-md-3 or span3 for intro title,
-and col-md-9 or span9 for main content.
-
-====
-----
-[role="timeline",halign="left",cols="4,8"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-----
-====
-Renders:
-
-[role="timeline",halign="left",cols="4,8"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Blog signature
-
-On blog, we used also a signature to identify origin of an article and its author.
-Optional attributes `citetitle` and `attribution` are there for that.
-
-NOTE: You may also used these attributes to display other informations.
-
-====
-----
-[role="timeline",citetitle="from http://example.com",attribution="Author's name"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-----
-====
-Renders:
-
-[role="timeline",citetitle="from http://example.com",attribution="Author's name"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-Visit our link:../../../examples/index.html["expo"] for other concrete examples.
-
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
 footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/delimited-blocks.asciidoc].
