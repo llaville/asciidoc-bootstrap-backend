@@ -2,9 +2,11 @@
 :title:       Icons Font Samples
 :description: Examples of Icons Font attributes
 include::attributes.asciidoc[]
-:navinfo1:
+:navinfo2:
 :icons!:
-:iconsfont: glyphicon
+:iconsfont:   font-awesome
+:jumbotron:
+:footer!:
 
 
 To increase icon sizes relative to their container, use attribute `size` with value +
@@ -17,15 +19,15 @@ TIP: And if you build this `{docfile}` with another backend than bootstrap, don'
 == GlyphIcon usage
 
 ************************************************
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download lg",icon="cloud-download",size="lg",width=20]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 2x",icon="cloud-download",size="2x",width=28]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 3x",icon="cloud-download",size="3x",width=42]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 4x",icon="cloud-download",size="4x",width=56]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 5x",icon="cloud-download",size="5x",width=70,role="hidden-xs"]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 6x",icon="cloud-download",size="6x",width=84,role="hidden-xs"]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 7x",icon="cloud-download",size="7x",width=98,role="hidden-xs"]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 8x",icon="cloud-download",size="8x",width=112,role="hidden-xs"]
-image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 9x",icon="cloud-download",size="9x",width=126,role="hidden-xs hidden-sm"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download lg",icon="cloud-download",size="lg",width=20,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 2x",icon="cloud-download",size="2x",width=28,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 3x",icon="cloud-download",size="3x",width=42,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 4x",icon="cloud-download",size="4x",width=56,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 5x",icon="cloud-download",size="5x",width=70,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 6x",icon="cloud-download",size="6x",width=84,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 7x",icon="cloud-download",size="7x",width=98,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 8x",icon="cloud-download",size="8x",width=112,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 9x",icon="cloud-download",size="9x",width=126,iconsfont="glyphicon",role="hidden-xs hidden-sm"]
 ************************************************
 
 .A snippet code
@@ -35,9 +37,12 @@ image:./images/icons/glyphicon/glyphicons_364_cloud_download.png
   alt="Cloud Download lg",
   icon="cloud-download",
   size="lg",
-  width=20
+  width=20,
+  iconsfont="glyphicon"  
 ]
 ----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+
 
 == Font-Awesome usage
 
@@ -64,6 +69,8 @@ image:./images/icons/font-awesome/cloud-download.png
   iconsfont="font-awesome"
 ]
 ----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+
 
 == Ionicons usage
 
@@ -90,3 +97,4 @@ image:./images/icons/ionicons/ios7-cloud-download.png
   iconsfont="ionicons"
 ]
 ----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
