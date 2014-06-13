@@ -4,17 +4,10 @@
 include::attributes.asciidoc[]
 :navinfo2:
 :icons:
-:iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:stylesheet: admonition-iconsfont.css
+:iconsfont:   font-awesome
+:jumbotron:
+:footer!:
 
-ifdef::basebackend-bootstrap[]
-:icon-prefix: glyphicon-
-endif::[]
-
-ifndef::basebackend-bootstrap[]
-:icon-prefix:
-endif::[]
 
 == Implementation
 [role="lead"]
@@ -73,8 +66,8 @@ which renders:
 <3> Some sort of Windows 3.1 hack.
 
 TIP: If you want to customize this bullet icons look like, please add a `.callout`
-CSS rule in the `user.css` stylesheet of your favorite theme.
+CSS rule in a custom stylesheet, and apply it with +-a stylesheet=<your_stylesheet>+.
 
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
+IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
+
 footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/callouts.asciidoc].
