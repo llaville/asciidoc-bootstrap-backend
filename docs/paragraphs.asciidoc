@@ -3,6 +3,10 @@
 :description: http://asciidoc.org/userguide.html#_paragraphs
 include::attributes.asciidoc[]
 :navinfo2:
+:icons!:
+:iconsfont:   font-awesome
+:jumbotron:
+:footer!:
 
 
 == Admonition paragraphs
@@ -23,8 +27,18 @@ footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs
 
 By default the AsciiDoc HTML backends generate text captions instead of admonition icon image links.
 
-Want to link:admonition-text.html[see] what it look like without images or icons font symbols,
-and just a little CSS customization.
+Want to link:admonition-text.default.html[see] what it look like without images or icons font symbols.
+Start with Bootstrap *Default* theme.
+
+[TIP]
+=====================================================================
+.Use later the Themes menu to switch skin and compare render
+
+* standard *AsciiDoc* html5 backend
+* Bootstrap *Default* theme
+* Bootswatch *Flatly* theme
+* Bootswatch *Readable* theme
+=====================================================================
 
 === Using images
 
@@ -33,14 +47,24 @@ To generate links to icon images define the `icons` attribute,
 for example using the +-a icons+ command-line option.
 
 As AsciiDoc, this backend will have the same default behavior.
-Want to link:admonition-images.html[see] examples.
+
+Want to link:admonition-images.default.html[see] what it look like with Bootstrap *Default* theme.
+
+[TIP]
+=====================================================================
+.Use later the Themes menu to switch skin and compare render
+
+* standard *AsciiDoc* html5 backend
+* Bootstrap *Default* theme
+* Bootswatch *Flatly* theme
+* Bootswatch *Readable* theme
+=====================================================================
+
 
 === Using icons font
 
 Since version 3.1.0, admonitionblock may optionally used icons font to draw icons.
 To generate links to icons font symbols define the `iconsfont` attribute.
-
-Want to link:admonition-iconsfont.html[see] Font-Awesome examples.
 
 Remember that you can use any of icons font support by the backend.
 
@@ -48,7 +72,17 @@ Remember that you can use any of icons font support by the backend.
 * http://fontawesome.io[Font-Awesome] - use +-a iconsfont=font-awesome+
 * http://ionicons.com/[Ionicons] - use +-a iconsfont=ionicons+
 
+Want to link:admonition-iconsfont.default.html[see] what it look like with Font-Awesome.
+Start with Bootstrap *Default* theme.
 
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
+[TIP]
+=====================================================================
+.Use later the Themes menu to switch skin and compare render
+
+* standard *AsciiDoc* html5 backend
+* Bootstrap *Default* theme
+* Bootswatch *Flatly* theme
+* Bootswatch *Readable* theme
+=====================================================================
+
 footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/paragraphs.asciidoc].
