@@ -1,6 +1,6 @@
 = {title}
 :title:       Official Blog of AsciiDoc-Bootstrap backend
-:description: What's new on this project 
+:description: What's new on this project
 :brand:       https://github.com/llaville/asciidoc-bootstrap-backend
 :rssref:      http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
 :jumbotron:
@@ -29,6 +29,9 @@ Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS 
 ====
 
 [role="col-md-9"]
+include::201406-asciidoc-bootstrap-4.0.0-preview-4.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
 include::201406-asciidoc-bootstrap-4.0.0-preview-3.asciidoc[]
 
 [role="col-md-9 col-md-offset-3"]
