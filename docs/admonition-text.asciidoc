@@ -1,15 +1,18 @@
 = {title}
 :title:       Admonition Paragraphs
-:description: Using Text Captions
+:description: http://asciidoc.org/userguide.html#X28
+:doctitle:    Text behavior - {title}
 include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont!:
-:stylesheet: admonition-text.css
+:jumbotron:
+:footer!:
+:stylesheet: admonition-text.default.css
 
 include::admonition-samples.asciidoc[]
 
-== Read More
+== Learn More
 
 .Behind the scene
 ************************************************
@@ -36,8 +39,14 @@ E.g:
 ----
 $ asciidoc.py 
   -b bootstrap
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  -a theme=flatly
   -a stylesheet=admonition-text.css
-  my_page.asciidoc
+  -a navbar=fixed
+  -a totop
+  {docfile}
 ----
 
 [source,css] 
@@ -46,4 +55,9 @@ $ asciidoc.py
 include::../stylesheets/admonition-text.css[]
 ----
 
-See results in link:admonition-text.custom.html[LIVE] !
+See results in live with :
+
+* standard  link:admonition-text-custom.html5.html[AsciiDoc] html5 backend.
+* Bootstrap link:admonition-text-custom.default.html[default] theme.
+* Bootswatch link:admonition-text-custom.flatly.html[flatly] theme.
+* Bootstrap link:admonition-text-custom.readable.html[readable] theme.
