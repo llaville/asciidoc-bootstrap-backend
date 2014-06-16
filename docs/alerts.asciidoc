@@ -1,0 +1,180 @@
+= {title}
+:title:       Alerts
+:description: http://getbootstrap.com/components/#alerts
+:doctitle:    Bootstrap Alert Component for Asciidoc-Bootstrap - {title}
+include::attributes.asciidoc[]
+:navinfo2:
+:iconsfont:   font-awesome
+:jumbotron:
+:footer!:
+
+[role="lead"]
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+
+== Basic example
+
+WARNING: Alerts don't have default classes, only base and modifier classes. 
+A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. 
+Choose from success, info, warning, or danger.
+
+[role="col-md-6"]
+.AsciiDoc Code
+....
+[alert,success]
+.Well done!
+--
+You successfully read this important alert message.
+--
+....
+
+[role="col-md-6"]
+.Alert with success contextual state class
+====
+[alert,success]
+.Well done!
+--
+You successfully read this important alert message.
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.AsciiDoc Code
+....
+[alert,info]
+.Heads up!
+--
+This alert needs your attention, but it's not super important.
+--
+....
+
+[role="col-md-6"]
+.Alert with info contextual state class
+====
+[alert,info]
+.Heads up!
+--
+This alert needs your attention, but it's not super important.
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.AsciiDoc Code
+....
+[alert,warning]
+.Warning!
+--
+Better check yourself, you're not looking too good.
+--
+....
+
+[role="col-md-6"]
+.Alert with warning contextual state class
+====
+[alert,warning]
+.Warning!
+--
+Better check yourself, you're not looking too good.
+--
+====
+
+unfloat::[]
+
+[role="col-md-6"]
+.AsciiDoc Code
+....
+[alert,danger]
+.Oh snap!
+--
+Change a few things up and try submitting again.
+--
+....
+
+[role="col-md-6"]
+.Alert with danger contextual state class
+====
+[alert,danger]
+.Oh snap!
+--
+Change a few things up and try submitting again.
+--
+====
+
+
+== Dismissable alerts
+
+Build on any alert by setting an optional `dismiss` option (close button).
+
+[role="col-md-6"]
+.AsciiDoc Code
+....
+[alert,warning,true]
+.Warning!
+--
+Better check yourself, you're not looking too good.
+--
+....
+
+[role="col-md-6"]
+.Alert with contextual state class
+====
+[alert,warning,true]
+.Warning!
+--
+Better check yourself, you're not looking too good.
+--
+====
+
+
+== Learn More
+
+.Behind the scene
+************************************************
+Build this `{docfile}` footnote:[https://raw.githubusercontent.com/llaville/asciidoc-bootstrap-backend/v4/docs/alerts.asciidoc]
+
+NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docfile` attribute.
+
+with :
+
+*html5* backend::
+----
+$ asciidoc.py
+  -b html5
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  {docfile}
+----
+
+WARNING: You will have tons of WARNING because AsciiDoc does not support the `alert-style` open block.
+But the result is not so bad. Check yourself: select the *AsciiDoc* entry in *Themes* menu.
+----
+asciidoc: WARNING: alerts.asciidoc: line 35: missing style: [blockdef-open]: alert
+asciidoc: WARNING: alerts.asciidoc: line 57: missing style: [blockdef-open]: alert
+asciidoc: WARNING: alerts.asciidoc: line 79: missing style: [blockdef-open]: alert
+asciidoc: WARNING: alerts.asciidoc: line 101: missing style: [blockdef-open]: alert
+asciidoc: WARNING: alerts.asciidoc: line 126: missing style: [blockdef-open]: alert
+----
+
+*bootstrap* backend::
+----
+$ asciidoc.py
+  -b bootstrap
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  -a theme=flatly
+  -a navbar=fixed
+  -a totop
+  {docfile}
+----
+
+WARNING: You will have a WARNING because the theme used (e.g. flatly) is a Bootswatch theme,
+and not a AsciiDoc Theme.
+----
+asciidoc: WARNING: missing theme: flatly
+----
+************************************************
