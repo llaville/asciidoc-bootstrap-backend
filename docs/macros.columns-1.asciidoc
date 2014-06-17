@@ -1,0 +1,24 @@
+
+[role="col-md-3"]
+====
+[panel]
+--
+*About*
+http://glyphsearch.com/[GlyphSearch]
+
+image:icons/font-awesome/mobile.png[alt="mobile",icon="mobile",size="lg",iconsfont="font-awesome"]
+image:icons/font-awesome/tablet.png[alt="tablet",icon="tablet",size="2x",iconsfont="font-awesome"]
+image:icons/font-awesome/laptop.png[alt="laptop",icon="laptop",size="3x",iconsfont="font-awesome"]
+image:icons/font-awesome/desktop.png[alt="desktop",icon="desktop",size="3x",iconsfont="font-awesome"]
+--
+====
+
+[role="col-md-9"]
+====
+*GlyphSearch: Improving the Search for Icon Fonts*
+
+GlyphSearch is a site that allows you to search
+Font Awesome, Glyphicons, and Ionicons simultaneously.
+====
+
+unfloat::[]
