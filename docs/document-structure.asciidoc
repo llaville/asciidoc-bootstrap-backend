@@ -3,6 +3,8 @@
 :description: http://asciidoc.org/userguide.html#_document_structure
 include::attributes.asciidoc[]
 :navinfo2:
+:jumbotron:
+:footer!:
 
 
 == Backend Attributes
@@ -22,20 +24,10 @@ navinfo2:: Include `navinfo.html` and `<filename>-navinfo.html`
 Where `<filename>` is the file name (without extension) of the AsciiDoc
 input file.
 
-The following example will build a [label label-info]#Bootstrap 2# version and include the
-`mydoc-navinfo.html` navinfo file in the HTML output file:
-
-  $ asciidoc -b bootstrap -a bsver=2 -a navinfo mydoc.txt
-
-This next example will build a [label label-info]#Bootstrap 2# version and include `navinfo.html` and `mydoc-navinfo.html`
+The following example will include a `navinfo.html` and `mydoc-navinfo.html`
 navinfo files in the HTML output file:
 
-  $ asciidoc -b bootstrap -a bsver=2 -a navinfo2 mydoc.txt
-
-This next example will build a [label label-info]#Bootstrap 3# version and include `navinfo.bs3.html` and `mydoc-navinfo.bs3.html`
-navinfo files in the HTML output file:
-
-  $ asciidoc -b bootstrap -a bsver=3 -a navinfo2 mydoc.txt
+  $ asciidoc -b bootstrap -a navinfo2 mydoc.txt
 
 | footer |
 This attribute control which footer informations
@@ -46,15 +38,10 @@ the version and last updated informations.
 
 footer:: Include `footer.html`
 
-The following example will build a [label label-info]#Bootstrap 2# version and include the `footer.html` file
+The following example will include the `footer.html` file
 in the HTML output file:
 
-  $ asciidoc -b bootstrap -a bsver=2 -a footer mydoc.txt
-
-The next example will build a [label label-info]#Bootstrap 3# version and include the `footer.bs3.html` file
-in the HTML output file:
-
-  $ asciidoc -b bootstrap -a bsver=3 -a footer mydoc.txt
+  $ asciidoc -b bootstrap -a footer mydoc.txt
 
 | totop |
 This attribute control which _back to top_ system you want to include in the output file.
@@ -62,29 +49,19 @@ This attribute control which _back to top_ system you want to include in the out
 when attribute unset:: Include a _Back to top_ standard html href link
 when attribute set::   Used the http://mattvarone.com/web-design/uitotop-jquery-plugin/[UItoTop jQuery plugin].
 
-The following example will build a [label label-info]#Bootstrap 2# version and include the standard href link
+The following example will include a dynamic clickable area
 in the HTML output file:
 
-  $ asciidoc -b bootstrap -a bsver=2 -a totop! mydoc.txt
-
-The next example will build a [label label-info]#Bootstrap 3# and include a dynamic clickable area
-in the HTML output file:
-
-  $ asciidoc -b bootstrap -a bsver=3 -a totop mydoc.txt
+  $ asciidoc -b bootstrap -a totop mydoc.txt
 
 | brandver |
 This attribute control whether you want to include a dynamic versions list in the output file.
 A `versions.html` file must exists.
 
-The following example will build a [label label-info]#Bootstrap 2# and include a static versions list, identified by the navinfo.html,
-in the HTML output file:
-
-  $ asciidoc -b bootstrap -a bsver=2 -a brandver mydoc.txt
-
-The next example will build a [label label-info]#Bootstrap 3# and do not include a static versions list, identified by the navinfo.html,
+The following example will not include a static versions list, identified by the navinfo.html,
 in the HTML output file (default behavior):
 
-  $ asciidoc -b bootstrap -a bsver=3 -a brandver! mydoc.txt
+  $ asciidoc -b bootstrap -a brandver! mydoc.txt
 
 |====================================================================
 
@@ -92,44 +69,24 @@ in the HTML output file (default behavior):
 
 === Navigation bar
 
-.Example of [label label-info]#Bootstrap 2# left navigation menu: _document-structure-navinfo.html_
+.Example of left navigation menu: _document-structure-navinfo.html_
 [source,html]
 ----
 include::document-structure-navinfo.html[]
 ----
 
-.Example of [label label-info]#Bootstrap 3# left navigation menu: _document-structure-navinfo.bs3.html_
-[source,html]
-----
-include::document-structure-navinfo.bs3.html[]
-----
-
-.Example of [label label-info]#Bootstrap 2# right navigation menu: _navinfo.html_
+.Example of right navigation menu: _navinfo.html_
 [source,html]
 ----
 include::navinfo.html[]
 ----
 
-.Example of [label label-info]#Bootstrap 3# right navigation menu: _navinfo.bs3.html_
-[source,html]
-----
-include::navinfo.bs3.html[]
-----
-
 === Footer
 
-.Example of [label label-info]#Bootstrap 2# footer file: _footer.html_
+.Example of footer file: _footer.html_
 [source,html]
 ----
 include::footer.html[]
 ----
 
-.Example of [label label-info]#Bootstrap 3# footer file: _footer.bs3.html_
-[source,html]
-----
-include::footer.bs3.html[]
-----
-
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/document-structure.asciidoc].
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/docs/document-structure.asciidoc].
