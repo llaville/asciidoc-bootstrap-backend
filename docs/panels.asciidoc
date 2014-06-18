@@ -3,7 +3,8 @@
 :description: http://getbootstrap.com/components/#panels
 :doctitle:    Bootstrap Panel Component for Asciidoc-Bootstrap - {title}
 include::attributes.asciidoc[]
-:iconsfont: font-awesome
+:navinfo2:
+:iconsfont:   font-awesome
 :jumbotron:
 :footer!:
 

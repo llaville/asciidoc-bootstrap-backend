@@ -5,6 +5,7 @@ include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont:   font-awesome
+:jumbotron:
 
 
 == Download
