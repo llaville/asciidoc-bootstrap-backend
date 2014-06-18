@@ -6,6 +6,9 @@ include::attributes.asciidoc[]
 :icons!:
 :iconsfont: font-awesome
 :pygments-style: monokai
+:jumbotron:
+:footer!:
+
 
 == Pygments
 
@@ -61,6 +64,4 @@ Renders
 
 include::source.asciidoc[]
 
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/source-code-highlight.asciidoc].
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/docs/source-code-highlight.asciidoc].
