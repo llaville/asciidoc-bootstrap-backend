@@ -1,5 +1,5 @@
 :revnumber:   4.0.0
-:revdate:     2014-mm-dd
+:revdate:     2014-07-04
 :toc:
 :brand:       AsciiDoc-Bootstrap
 :brandref:    https://github.com/llaville/asciidoc-bootstrap-backend
@@ -7,3 +7,5 @@
 :sidebar:     right
 :footer:
 :idprefix:    _
+:gitbranch:   v4
+:rawbaseurl:  https://raw.github.com/llaville/asciidoc-bootstrap-backend/{gitbranch}
