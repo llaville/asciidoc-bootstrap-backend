@@ -117,4 +117,4 @@ Panel content
 
 link:panels.default.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/delimited-blocks.asciidoc].
+footnote:[{rawbaseurl}/docs/delimited-blocks.asciidoc].

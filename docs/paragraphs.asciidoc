@@ -21,7 +21,7 @@ Since version 1.2.0, admonitionblock used _alert-block_ Twitter Bootstrap styles
 With support of icons font, it's now time to change the behavior and default styles.
 
 To compare three render categories, we will use the same file source
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/admonition-samples.asciidoc].
+footnote:[{rawbaseurl}/docs/admonition-samples.asciidoc].
 
 === Using text captions
 
@@ -85,4 +85,4 @@ Start with Bootstrap *Default* theme.
 * Bootswatch *Readable* theme
 =====================================================================
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/paragraphs.asciidoc].
+footnote:[{rawbaseurl}/docs/paragraphs.asciidoc].

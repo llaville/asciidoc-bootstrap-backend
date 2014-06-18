@@ -74,7 +74,7 @@ Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should h
 @import "asciidoc/iconsfont.less";
 ----
 
-Build this `{docfile}` footnote:[https://raw.githubusercontent.com/llaville/asciidoc-bootstrap-backend/v4/docs/iconsfont.asciidoc] with :
+Build this `{docfile}` footnote:[{rawbaseurl}/docs/iconsfont.asciidoc] with :
 
 *html5* backend:: 
 ----

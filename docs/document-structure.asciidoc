@@ -89,4 +89,4 @@ include::navinfo.html[]
 include::footer.html[]
 ----
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/docs/document-structure.asciidoc].
+footnote:[{rawbaseurl}/docs/document-structure.asciidoc].

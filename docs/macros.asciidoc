@@ -211,4 +211,4 @@ include::macros.columns-2.asciidoc[]
 
 WARNING: All icon fonts do not support same icon names. Be carefull if you switch to another icons font.
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/docs/macros.asciidoc].
+footnote:[{rawbaseurl}/docs/macros.asciidoc].

@@ -263,7 +263,7 @@ Panel content
 
 .Behind the scene
 ************************************************
-Build this `{docfile}` footnote:[https://raw.githubusercontent.com/llaville/asciidoc-bootstrap-backend/v4/docs/panels.asciidoc]
+Build this `{docfile}` footnote:[{rawbaseurl}/docs/panels.asciidoc]
 
 NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docfile` attribute.
 

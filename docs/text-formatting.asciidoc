@@ -29,4 +29,4 @@ Renders:
 
 A bootstrap [label label-warning]#warning# label.
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/docs/text-formatting.asciidoc].
+footnote:[{rawbaseurl}/docs/text-formatting.asciidoc].

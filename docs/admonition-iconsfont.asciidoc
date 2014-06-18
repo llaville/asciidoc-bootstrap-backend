@@ -20,7 +20,7 @@ include::admonition-samples.asciidoc[]
 .Behind the scene
 ************************************************
 Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line *activated*
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/less/asciidoc/admonition-iconsfont.less] :
+footnote:[{rawbaseurl}/less/asciidoc/admonition-iconsfont.less] :
 ----
 @import "asciidoc/admonition-iconsfont.less";
 ----

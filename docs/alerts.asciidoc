@@ -133,7 +133,7 @@ Better check yourself, you're not looking too good.
 
 .Behind the scene
 ************************************************
-Build this `{docfile}` footnote:[https://raw.githubusercontent.com/llaville/asciidoc-bootstrap-backend/v4/docs/alerts.asciidoc]
+Build this `{docfile}` footnote:[{rawbaseurl}/docs/alerts.asciidoc]
 
 NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docfile` attribute.
 

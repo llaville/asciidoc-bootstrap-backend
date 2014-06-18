@@ -64,4 +64,4 @@ Renders
 
 include::source.asciidoc[]
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/v4/docs/source-code-highlight.asciidoc].
+footnote:[{rawbaseurl}/docs/source-code-highlight.asciidoc].

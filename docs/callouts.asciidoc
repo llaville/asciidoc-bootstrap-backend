@@ -70,4 +70,4 @@ CSS rule in a custom stylesheet, and apply it with +-a stylesheet=<your_styleshe
 
 IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
 
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/callouts.asciidoc].
+footnote:[{rawbaseurl}/docs/callouts.asciidoc].
