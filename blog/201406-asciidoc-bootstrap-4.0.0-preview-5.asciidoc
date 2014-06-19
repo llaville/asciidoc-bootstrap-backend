@@ -1,4 +1,4 @@
-:doctitle:    AsciiDoc-Bootstrap 5.0.0 preview
+:doctitle:    AsciiDoc-Bootstrap 4.0.0 preview
 :description: Part 5
 :iconsfont:   glyphicon
 :imagesdir:   ./images
