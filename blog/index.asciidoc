@@ -5,9 +5,11 @@
 :rssref:      http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
 :jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 :icons!:
 :iconsfont:   font-aweseome
 :imagesdir:   ./images
+
 
 [role="col-md-3"]
 ====
@@ -29,6 +31,9 @@ Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS 
 ====
 
 [role="col-md-9"]
+include::201406-asciidoc-bootstrap-4.0.0-planned.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
 include::201406-asciidoc-bootstrap-4.0.0-preview-5.asciidoc[]
 
 [role="col-md-9 col-md-offset-3"]
