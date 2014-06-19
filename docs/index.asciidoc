@@ -1,21 +1,110 @@
 = {title}
 :title:       Asciidoc-Bootstrap
-:description: An AsciiDoc backend that renders the AsciiDoc source as HTML5 in the style of Bootstrap
-:boostrap2:   2.3.2
+:description: An AsciiDoc backend that renders the AsciiDoc source as HTML5 in the style of Bootstrap.
+include::attributes.asciidoc[]
 :boostrap3:   3.1.1
+:adocbs:      3.3.0
 :icons!:
-:iconsfont: ionicons
-:iconsfontdir: ./fonts/ionicons
+:iconsfont:   font-awesome
+:jumbotron:
+:jumbotron-fullwidth:
+:footer:
+:footer-fullwidth:
+
+
+== Releases
+
+_currently v{adocbs}_
+
+[role="col-md-3"]
+====
+[panel,warning]
+.v1
+--
+Support only Bootstrap 2
+
+[bg-warning]*Deprecated*
+
+Branch 1 release was published on December 3, 2012.
 
 ifdef::basebackend-bootstrap[]
-:icon-prefix: glyphicon-
+link:https://github.com/mojavelinux/asciidoc-bootstrap-docs-backend["See Dan Allen works",role="primary",options="block"]
 endif::[]
 
+ifndef::basebackend-bootstrap[]
+https://github.com/mojavelinux/asciidoc-bootstrap-docs-backend[See Dan Allen works]
+endif::[]
+--
+====
+
+[role="col-md-3"]
+====
+[panel,warning]
+.v2
+--
+Support only Bootstrap 2
+
+[bg-warning]*Deprecated*
+
+Last branch 2 release was published on October 15, 2013.
+
+ifdef::basebackend-bootstrap[]
+link:./manual/2.1/en/getting-started.html["Learn more",role="primary",options="block"]
+endif::[]
+
+ifndef::basebackend-bootstrap[]
+link:./manual/2.1/en/getting-started.html[Learn more]
+endif::[]
+--
+====
+
+[role="col-md-3"]
+====
+[panel,primary]
+.v3
+--
+Support both Bootstrap 2 and 3
+
+[bg-primary]*Stable Release*
+
+Last branch 3 release was published on Marth 20, 2014.
+
+ifdef::basebackend-bootstrap[]
+link:./manual/3.3/en/get-started.html["Learn more",role="primary",options="block"]
+endif::[]
+
+ifndef::basebackend-bootstrap[]
+link:./manual/3.3/en/get-started.html[Learn more]
+endif::[]
+--
+====
+
+[role="col-md-3"]
+====
+[panel,danger]
+.v4
+--
+Support only Bootstrap 3
+
+[bg-danger]*Still Under Development*
+
+It will become stable on July 4, 2014.
+
+ifdef::basebackend-bootstrap[]
+link:./manual/4.0/en/getting-started.cerulean.html["Learn more",role="primary",options="block"]
+endif::[]
+
+ifndef::basebackend-bootstrap[]
+link:./manual/4.0/en/getting-started.html[Learn more]
+endif::[]
+--
+====
+
+unfloat::[]
 
 == Features
 
-[role="lead"]
-Since the version 1
+=== Since the version 1
 
 [horizontal]
 [label label-success]#Fixed Navbar#:: is always pinned at top of the output file (even if empty).
@@ -25,18 +114,16 @@ Since the version 1
 [label label-success]#TOC position#:: can be place on a sidebar on left or right of the main document.
 [label label-success]#Themes#:: support AsciiDoc themes plugin.
 
-[role="lead"]
-Since the version 2
+=== Since the version 2
 
 [horizontal]
 [label label-success]#Dynamic Navbar#:: add optional dropdown menu of a static versions list. An easy available documents switcher.
 [label label-success]#Back to top#:: system allow to choose between standard text html link and UItoTop jQuery plugin
 
-[role="lead"]
-Since the version 3
+
+=== Since the version 3
 
 [horizontal]
-
 [label label-success]#TOC position#:: can be place either on start or on a sidebar (left or right) of the main document.
 [label label-success]#Themes#:: support Bootstrap themes v2 and v3.
 [label label-success]#Links#:: buttons support was added.
@@ -46,31 +133,24 @@ Since the version 3
 [label label-success]#Affix plugin#:: from Bootstrap. [label label-warning]#3.2.0#
 [label label-success]#Favorite icon#:: is optional. [label label-warning]#3.2.0#
 
+=== Since the version 4
 
-== Examples
+[horizontal]
+[label label-success]#Less#:: one of the most famous CSS preprocessor was adopted.
+[label label-success]#Footer#:: of the document may be enhanced from standard to full width in all resolution.
+[label label-success]#Panels#:: Bootstrap3 Component is partially supported (header and body without footer).
+[label label-success]#Alerts#:: Bootstrap3 Component is fully supported.
+[label label-success]#Icon Fonts#:: are accepted via the image inline macro for better compatibility with other backends. [label label-danger]#Icon inline macro was dropped#
+
+== Open Source
 
 [role="lead"]
-Visit our link:../../../examples/index.html["expo",role="info",icon="{icon-prefix}tint",options="right,white"]
-to learn in minutes the basic templates for showcasing how the navbar and toc works.
+{brand} is open source. It's hosted, developed, and maintained on GitHub.
 
-image::images/screenshots/expo.png[link="../../../examples/index.html",role="thumbnail",options="responsive"]
+ifdef::basebackend-bootstrap[]
+link:{brandref}["View the GitHub Project",role="primary",options="block"]
+endif::[]
 
-
-== Get Started
-
-[role="lead"]
-Overview of the project, its contents, and how to get started with your own theme.
-
-No need to be a Bootstrap Jedi Master to add your own template that will look like your documents so professional.
-You can find some free Bootstrap template providers. http://bootswatch.com/[Bootswatch] is one of them.
-
-The standard distribution of AsciiDoc-Bootstrap included the default Bootstrap theme
-for versions [label label-default]#{boostrap2}# and [label label-primary]#{boostrap3}#.
-
-You have also ability to install additional themes without effort or few.
-
-link:get-started.html[caption="Start and enjoy your new adventure",role="warning",icon="{icon-prefix}play-circle"]
-
-== About _this document_
-link:howto.html#how_to_build_the_landing_page[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/index.asciidoc].
+ifndef::basebackend-bootstrap[]
+{brandref}[View the GitHub Project]
+endif::[]
