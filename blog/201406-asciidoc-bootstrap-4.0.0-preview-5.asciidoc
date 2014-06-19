@@ -8,6 +8,7 @@
 :summary:     Notification with Bootstrap Alert Component
 :jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 
 == {summary}
 
