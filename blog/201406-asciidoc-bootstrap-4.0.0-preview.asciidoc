@@ -5,15 +5,17 @@
 :author:      Laurent Laville
 :revdate:     2014-06-05
 :pubdate:     Thu, 05 Jun 2014 14:12:27 +0200
-:summary:     AsciiDoc-Bootstrap 4 has a new Icons Font Strategy.
+:summary:     AsciiDoc-Bootstrap 4 has a new Icons Font Strategy
 :jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 
+[id="post-1"]
 == {summary}
 
 [quote,Published by {author} on {revdate}]
 ____
-image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
 
 The next major version 4.0 will come with changes, as described below :
 

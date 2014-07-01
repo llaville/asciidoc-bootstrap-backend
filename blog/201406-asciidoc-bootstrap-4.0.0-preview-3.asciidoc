@@ -5,15 +5,17 @@
 :author:      Laurent Laville
 :revdate:     2014-06-12
 :pubdate:     Thu, 12 Jun 2014 15:41:26 +0200
-:summary:     Add support for Bootstrap Panel Component.
+:summary:     Add support for Bootstrap Panel Component
 :jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 
+[id="post-3"]
 == {summary}
 
 [quote,Published by {author} on {revdate}]
 ____
-image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
 
 Today, I've added support of http://getbootstrap.com/components/#panels[Bootstrap Panel Component].
 

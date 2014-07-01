@@ -10,11 +10,12 @@
 :jumbotron-fullwidth:
 :footer-fullwidth:
 
+[id="post-6"]
 == {summary}
 
 [quote,Published by {author} on {revdate}]
 ____
-image:icons/glyphicon/glyphicons_045_calendar.png[alt="calendar",icon="calendar",size="4x",width=56]
+image:icons/glyphicon/glyphicons_045_calendar.png[alt="calendar",icon="calendar",size="4x"]
 
 Today, I've added a new project home page at url http://laurent-laville.org/asciidoc/bootstrap/[].
 

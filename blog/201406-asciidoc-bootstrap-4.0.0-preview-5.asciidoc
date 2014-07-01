@@ -10,11 +10,12 @@
 :jumbotron-fullwidth:
 :footer-fullwidth:
 
+[id="post-5"]
 == {summary}
 
 [quote,Published by {author} on {revdate}]
 ____
-image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
 
 Today, I've added support of http://getbootstrap.com/components/#alerts[Bootstrap Alert Component].
 

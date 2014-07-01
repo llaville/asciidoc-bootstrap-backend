@@ -8,12 +8,14 @@
 :summary:     Icons Font new Strategy comparison
 :jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 
+[id="post-4"]
 == {summary}
 
 [quote,Published by {author} on {revdate}]
 ____
-image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
 
 On June 5th and 6th, I've added a basic Icons Font new Strategy comparison.
 

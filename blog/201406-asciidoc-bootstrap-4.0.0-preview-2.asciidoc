@@ -5,15 +5,17 @@
 :author:      Laurent Laville
 :revdate:     2014-06-06
 :pubdate:     Fri, 06 Jun 2014 10:11:24 +0200
-:summary:     Examples of AsciiDoc-Bootstrap 4 Icons Font uses.
+:summary:     Examples of AsciiDoc-Bootstrap 4 Icons Font uses
 :jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 
+[id="post-2"]
 == {summary}
 
 [quote,Published by {author} on {revdate}]
 ____
-image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x",width=56]
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
 
 Yesterday, I've introduced the new Icons Font Strategy.
 Today it's time to see more examples in action.
