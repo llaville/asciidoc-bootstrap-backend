@@ -13,7 +13,7 @@ Provide up-to-date feedback on the progress of a workflow or action with simple 
 
 ifndef::basebackend-bootstrap[]
 WARNING: There is no fallback strategy to build a progress bar with `html5` or any other backends.
-ifndef::basebackend-bootstrap[]
+endif::basebackend-bootstrap[]
 
 ifdef::basebackend-bootstrap[]
 
