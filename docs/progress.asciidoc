@@ -1,0 +1,82 @@
+= {title}
+:title:       Progress bars
+:description: http://getbootstrap.com/components/#progress
+:doctitle:    Bootstrap Progress Component for Asciidoc-Bootstrap - {title}
+include::attributes.asciidoc[]
+:navinfo2:
+:iconsfont:   font-awesome
+:jumbotron:
+
+
+[role="lead"]
+Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
+
+ifndef::basebackend-bootstrap[]
+WARNING: There is no fallback strategy to build a progress bar with `html5` or any other backends.
+ifndef::basebackend-bootstrap[]
+
+ifdef::basebackend-bootstrap[]
+
+[options="header,autowidth", role="table table-bordered table-striped"]
+|===========================
+| Description | Render
+
+2+| *Default progress bar*
+
+| 0% complete
+| progress:0[]
+pass:[<code>progress:0[\]</code>]
+
+| 100% complete
+| progress:100[]
+pass:[<code>progress:100[\]</code>]
+
+2+| *Labels*
+
+| with only percent value
+| progress:60[caption="60%"]
+pass:[<code>progress:60[caption="60%"\]</code>]
+
+2+|
+
+| with a custom text
+| progress:75[caption="other text label, at 75%"]
+pass:[<code>progress:75[caption="other text label, at 75%"\]</code>]
+
+2+| *Contextual alternatives*
+
+| with `info` class
+| progress:40[role="info",caption="40% complete"]
+pass:[<code>progress:40[role="info",caption="40% complete"\]</code>]
+
+| with `success` class
+| progress:50[role="success",caption="50% complete"]
+pass:[<code>progress:50[role="success",caption="50% complete"\]</code>]
+
+| with `warning` class
+| progress:60[role="warning",caption="60% complete"]
+pass:[<code>progress:60[role="warning",caption="60% complete"\]</code>]
+
+| with `danger` class
+| progress:70[role="danger",caption="70% complete"]
+pass:[<code>progress:70[role="danger",caption="70% complete"\]</code>]
+
+2+| *Striped effect, without label*
+
+| without contextual class
+| progress:45[striped=""]
+pass:[<code>progress:45[striped=""\]</code>]
+
+| with contextual `warning` class
+| progress:65[role="warning",striped=""]
+pass:[<code>progress:65[role="warning",striped=""\]</code>]
+
+| animated
+| progress:72[role="info",striped="",animated=""]
+pass:[<code>progress:72[role="info",striped="",animated=""\]</code>]
+
+|===========================
+
+CAUTION: Stacked progress bar is not supported.
+
+endif::basebackend-bootstrap[]
