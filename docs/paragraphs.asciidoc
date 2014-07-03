@@ -30,16 +30,6 @@ By default the AsciiDoc HTML backends generate text captions instead of admoniti
 Want to link:admonition-text.default.html[see] what it look like without images or icons font symbols.
 Start with Bootstrap *Default* theme.
 
-[TIP]
-=====================================================================
-.Use later the Themes menu to switch skin and compare render
-
-* standard *AsciiDoc* html5 backend
-* Bootstrap *Default* theme
-* Bootswatch *Flatly* theme
-* Bootswatch *Readable* theme
-=====================================================================
-
 === Using images
 
 By default the AsciiDoc HTML backends generate text captions instead of admonition icon image links.
@@ -49,17 +39,6 @@ for example using the +-a icons+ command-line option.
 As AsciiDoc, this backend will have the same default behavior.
 
 Want to link:admonition-images.default.html[see] what it look like with Bootstrap *Default* theme.
-
-[TIP]
-=====================================================================
-.Use later the Themes menu to switch skin and compare render
-
-* standard *AsciiDoc* html5 backend
-* Bootstrap *Default* theme
-* Bootswatch *Flatly* theme
-* Bootswatch *Readable* theme
-=====================================================================
-
 
 === Using icons font
 
@@ -74,15 +53,5 @@ Remember that you can use any of icons font support by the backend.
 
 Want to link:admonition-iconsfont.default.html[see] what it look like with Font-Awesome.
 Start with Bootstrap *Default* theme.
-
-[TIP]
-=====================================================================
-.Use later the Themes menu to switch skin and compare render
-
-* standard *AsciiDoc* html5 backend
-* Bootstrap *Default* theme
-* Bootswatch *Flatly* theme
-* Bootswatch *Readable* theme
-=====================================================================
 
 footnote:[{rawbaseurl}/docs/paragraphs.asciidoc].
