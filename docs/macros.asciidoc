@@ -210,4 +210,38 @@ include::macros.columns-2.asciidoc[]
 
 WARNING: All icon fonts do not support same icon names. Be carefull if you switch to another icons font.
 
+== Progress bars
+
+[role="lead"]
+AsciiDoc-Bootstrap backend 4.0.0 introduces a new inline macro
+that implement the Bootstrap Progress Component.
+
+WARNING: Stacked progress bar is not supported.
+
+    progess:<target>[<attributes>]
+
+The contents of the progress `<target>` is used to draw percent of progress bar completed
+(Must be numeric and between 0 and 100).
+
+.Progress macro attributes
+- The optional 'caption' attribute is the progress bar label.
+- The optional 'role' attribute is used as contextual class. Should be either `info`, `success`, `warning`, or `danger`.
+- The optional 'striped' attribute, with an empty content, is used to display http://getbootstrap.com/components/#progress-striped[striped effect progress bar].
+- The optional 'animated' attribute, with an empty content, is used to display http://getbootstrap.com/components/#progress-animated[animated effect progress bar].
+
+ifdef::basebackend-bootstrap[]
+
+Here are few examples :
+
+.Default progress bar at 55% complete
+progress:55[]
+
+.Progress bar with label
+progress:60[caption="60%"]
+
+.Progress bar with contextual class
+progress:50[role="success"]
+
+endif::basebackend-bootstrap[]
+
 footnote:[{rawbaseurl}/docs/macros.asciidoc].
