@@ -6,7 +6,6 @@ include::attributes.asciidoc[]
 :icons!:
 :iconsfont:   font-awesome
 :jumbotron:
-:footer!:
 
 
 == Admonition paragraphs
