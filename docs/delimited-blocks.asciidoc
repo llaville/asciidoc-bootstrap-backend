@@ -82,10 +82,12 @@ book part introductions and more.
 WARNING: Previous version 3, used it to simulate multi columns. Version 4 dropped this behavior.
 Don't be afraid, this feature is still possible using the standard Bootstrap classes like `.col-md-*` and so on.
 
+=== Panels
+
 First open block structure is used to implement the Bootstrap Panel Component.
 
 [role="col-md-4"]
-.Panel with primary contextual state class
+.With `primary` contextual state class
 ====
 [panel,primary]
 .Panel title
@@ -95,7 +97,7 @@ Panel content
 ====
 
 [role="col-md-4"]
-.Panel with success contextual state class
+.With `success` contextual state class
 ====
 [panel,success]
 .Panel title
@@ -105,7 +107,7 @@ Panel content
 ====
 
 [role="col-md-4"]
-.Panel with warning contextual state class
+.With `warning` contextual state class
 ====
 [panel,warning]
 .Panel title
@@ -114,6 +116,46 @@ Panel content
 --
 ====
 
+unfloat::[]
+
 link:panels.cerulean.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
+
+=== Alerts
+
+Second open block structure is used to implement the Bootstrap Alert Component.
+
+[role="col-md-4"]
+.With `info` contextual state class
+====
+[alert,info]
+.Heads up!
+--
+This alert needs your attention, but it's not super important.
+--
+====
+
+[role="col-md-4"]
+.With `success` contextual state class
+====
+[alert,success]
+.Well done!
+--
+You successfully read this important alert message.
+--
+====
+
+[role="col-md-4"]
+.With `warning` contextual state class
+====
+[alert,warning]
+.Warning!
+--
+Better check yourself, you're not looking too good.
+--
+====
+
+unfloat::[]
+
+link:alerts.cerulean.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
 
 footnote:[{rawbaseurl}/docs/delimited-blocks.asciidoc].
