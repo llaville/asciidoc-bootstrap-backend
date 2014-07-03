@@ -7,7 +7,6 @@ include::attributes.asciidoc[]
 :icons!:
 :iconsfont:   font-awesome
 :jumbotron:
-:footer!:
 
 [role="lead"]
 When you want to use the same AsciiDoc source document with another backend than Bootstrap,

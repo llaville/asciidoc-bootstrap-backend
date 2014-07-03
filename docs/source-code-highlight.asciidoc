@@ -7,7 +7,6 @@ include::attributes.asciidoc[]
 :iconsfont: font-awesome
 :pygments-style: monokai
 :jumbotron:
-:footer!:
 
 
 == Pygments

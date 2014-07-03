@@ -5,7 +5,6 @@ include::attributes.asciidoc[]
 :navinfo2:
 :iconsfont:   font-awesome
 :jumbotron:
-:footer!:
 
 
 [role="lead"]

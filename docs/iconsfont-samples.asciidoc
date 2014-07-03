@@ -6,7 +6,6 @@ include::attributes.asciidoc[]
 :icons!:
 :iconsfont:   font-awesome
 :jumbotron:
-:footer!:
 
 
 To increase icon sizes relative to their container, use attribute `size` with value +

@@ -4,7 +4,6 @@
 include::attributes.asciidoc[]
 :navinfo2:
 :jumbotron:
-:footer!:
 
 == Quoted text
 

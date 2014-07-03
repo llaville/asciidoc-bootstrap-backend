@@ -6,7 +6,6 @@ include::attributes.asciidoc[]
 :navinfo2:
 :icons:
 :jumbotron:
-:footer!:
 
 include::admonition-samples.asciidoc[]
 

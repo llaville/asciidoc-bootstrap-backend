@@ -6,7 +6,6 @@ include::attributes.asciidoc[]
 :navinfo2:
 :iconsfont:   font-awesome
 :jumbotron:
-:footer!:
 
 [role="lead"]
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.

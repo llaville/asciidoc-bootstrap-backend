@@ -7,7 +7,6 @@ include::attributes.asciidoc[]
 :imagesdir:   ./images
 :iconsfont:   font-awesome
 :jumbotron:
-:footer!:
 
 
 == Linking to Local Documents

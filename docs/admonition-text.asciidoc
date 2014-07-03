@@ -7,7 +7,6 @@ include::attributes.asciidoc[]
 :icons!:
 :iconsfont!:
 :jumbotron:
-:footer!:
 :stylesheet: admonition-text.default.css
 
 include::admonition-samples.asciidoc[]
