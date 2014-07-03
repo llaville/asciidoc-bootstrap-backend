@@ -114,6 +114,6 @@ Panel content
 --
 ====
 
-link:panels.default.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
+link:panels.cerulean.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
 
 footnote:[{rawbaseurl}/docs/delimited-blocks.asciidoc].
