@@ -16,9 +16,10 @@ $ asciidoc --backend install bootstrap-<version>.zip
 ----
 +<version>+ is to be replaced by the latest version available of the backend.
 
-== Get Started
+== Documentation
 
-Start at http://laurent-laville.org/asciidoc/bootstrap/
+You can read online or download eBooks format (chunked, chm, pdf, epub) at
+http://laurent-laville.org/asciidoc/bootstrap/manual/current/en/
 
 == Credits
 
