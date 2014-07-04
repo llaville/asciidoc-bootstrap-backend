@@ -21,10 +21,15 @@ foreach ($finder as $file) {
 }
 ----
 
+ifndef::basebackend-docbook[]
+
 ifeval::["{source-highlighter}"=="pygments"]
 :local-css-style: pastie
 [args="-O style={local-css-style},noclasses=True"]
 endif::[]
+
+endif::basebackend-docbook[]
+
 [source,css]
 .Using local theme [label label-default]#{local-css-style}#
 ----

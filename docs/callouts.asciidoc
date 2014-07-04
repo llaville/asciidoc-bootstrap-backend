@@ -1,5 +1,5 @@
-= {title}
-:title:       Callouts
+= Callouts
+:doctitle:    Callouts
 :description: http://asciidoc.org/userguide.html#X105
 include::attributes.asciidoc[]
 :navinfo2:
@@ -68,5 +68,3 @@ TIP: If you want to customize this bullet icons look like, please add a `.callou
 CSS rule in a custom stylesheet, and apply it with +-a stylesheet=<your_stylesheet>+.
 
 IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
-
-footnote:[{rawbaseurl}/docs/callouts.asciidoc].

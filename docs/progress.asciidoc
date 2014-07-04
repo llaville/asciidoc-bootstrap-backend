@@ -1,4 +1,4 @@
-= {title}
+= Progress bars
 :title:       Progress bars
 :description: http://getbootstrap.com/components/#progress
 :doctitle:    Bootstrap Progress Component for Asciidoc-Bootstrap - {title}
@@ -10,10 +10,6 @@ include::attributes.asciidoc[]
 
 [role="lead"]
 Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
-
-ifndef::basebackend-bootstrap[]
-WARNING: There is no fallback strategy to build a progress bar with `html5` or any other backends.
-endif::basebackend-bootstrap[]
 
 ifdef::basebackend-bootstrap[]
 

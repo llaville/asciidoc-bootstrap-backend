@@ -1,5 +1,5 @@
-= {title}
-:title:       Delimited Blocks
+= Delimited Blocks
+:doctitle:    Delimited Blocks
 :description: http://asciidoc.org/userguide.html#X104
 include::attributes.asciidoc[]
 :navinfo2:
@@ -118,7 +118,13 @@ Panel content
 
 unfloat::[]
 
-link:panels.cerulean.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
+ifdef::basebackend-docbook[]
+See xref:_panels_bootstrap_component[] to learn how AsciiDoc-Bootstrap backend implements this feature
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
+link:panels.html[Learn] how AsciiDoc-Bootstrap backend implements this feature.
+endif::basebackend-html[]
 
 === Alerts
 
@@ -156,6 +162,10 @@ Better check yourself, you're not looking too good.
 
 unfloat::[]
 
-link:alerts.cerulean.html[Learn more] how AsciiDoc-Bootstrap backend implements this feature.
+ifdef::basebackend-docbook[]
+See xref:_alerts_bootstrap_component[] to learn how AsciiDoc-Bootstrap backend implements this feature
+endif::basebackend-docbook[]
 
-footnote:[{rawbaseurl}/docs/delimited-blocks.asciidoc].
+ifdef::basebackend-html[]
+link:alerts.html[Learn] how AsciiDoc-Bootstrap backend implements this feature.
+endif::basebackend-html[]

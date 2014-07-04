@@ -1,14 +1,29 @@
-= {title}
-:title:       Getting Started
+= Getting Started
+:doctitle:    Getting Started
 :description: Overview of the project, its contents, and how to get started with your own theme.
 include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont:   font-awesome
 :jumbotron:
-
+:imagesdir:   ./images
 
 == Download
+
+ifdef::basebackend-docbook[]
+
+* Uncompressed, Minified CSS and Javascripts, and Fonts.
+Source files are included but without html documentation.
+
+link:http://laurent-laville.org/asciidoc/bootstrap/bootstrap-{revnumber}.zip[Download backend]
+
+* User documentation built with AsciiDoc-Boostrap backend and the default theme is available to read it offline.
+
+link:http://laurent-laville.org/asciidoc/bootstrap/index.html[Download html documentation]
+
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 
 [role="col-md-6"]
 .Backend
@@ -18,28 +33,30 @@ Source files are included but without html documentation.
 
 ifdef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/bootstrap-{revnumber}.zip["Download backend",role="primary",icon="glyphicon-download-alt",options="block,white"]
-endif::[]
+endif::basebackend-bootstrap[]
 
 ifndef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/bootstrap-{revnumber}.zip[Download backend]
-endif::[]
+endif::basebackend-bootstrap[]
 --
 
 [role="col-md-6"]
 .Documentation
 --
-User documentation built with AsciiDoc-Boostrap backend and the Cerulean theme is available to read it offline.
+User documentation built with AsciiDoc-Boostrap backend and the default theme is available to read it offline.
 
 ifdef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/userdoc-{revnumber}.zip["Download html documentation",role="primary",icon="glyphicon-download-alt",options="block,white"]
-endif::[]
+endif::basebackend-bootstrap[]
 
 ifndef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/userdoc-{revnumber}.zip[Download html documentation]
-endif::[]
+link:index.html[Download html documentation]
+endif::basebackend-bootstrap[]
 --
 
 unfloat::[]
+
+endif::basebackend-html[]
 
 Install as any other plugins:
 ----
@@ -51,9 +68,9 @@ NOTE: `<version>` is to be replaced by the latest version available of the backe
 =====================================================================
 The Asciidoc Bootstrap backend standard version included :
 
-* version 3.1.1+1 ( +themes/+ ) of the default, flatly, readable, cerulean and united themes from http://bootswatch.com/[Bootswatch] template provider.
-* version 3.1.1 ( +bootstrap/+, +less/bootstrap/+ ) of http://getbootstrap.com[Bootstrap].
-* version 4.0.3 ( +fonts/+, +/less/font-awesome/+ ) of http://fortawesome.github.io/Font-Awesome/[Font-Awesome].
+* version 3.2.0 ( +themes/+ ) of the default, flatly, readable, cerulean and united themes from http://bootswatch.com/[Bootswatch] template provider.
+* version 3.2.0 ( +bootstrap/+, +less/bootstrap/+ ) of http://getbootstrap.com[Bootstrap].
+* version 4.1.0 ( +fonts/+, +/less/font-awesome/+ ) of http://fortawesome.github.io/Font-Awesome/[Font-Awesome].
 * version 1.5.2 ( +fonts/+, +less/ionicons/+ ) of http://ionicons.com/[Ionicons].
 =====================================================================
 
@@ -69,22 +86,40 @@ You can download pre-compiled CSS (uncompressed and/or minified) with default be
 
 TIP: These files are already included in AsciiDoc-Bootstrap backend standard distribution (see +stylesheets/+ folder)
 
+ifdef::basebackend-docbook[]
+
+.Basic Flatly theme
+image::flatly.png[link="http://bootswatch.com/flatly",scale="50"]
+
+.Basic Readable theme
+image::readable.png[link="http://bootswatch.com/readable",scale="50"]
+
+.Basic Cerulean theme
+image::cerulean.png[link="http://bootswatch.com/cerulean",scale="50"]
+
+.Basic United theme
+image::united.png[link="http://bootswatch.com/united",scale="50"]
+
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
+
 [role="col-md-4"]
 ====
 [panel,info]
 .Basic Flatly theme
 --
-image::images/flatly.png[link="http://bootswatch.com/flatly",options="responsive"]
+image::flatly.png[link="http://bootswatch.com/flatly",options="responsive"]
 
 ifdef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.min.css["asciidoc-bootstrap.flatly.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.css["asciidoc-bootstrap.flatly.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::[]
+endif::basebackend-bootstrap[]
 
 ifndef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.min.css[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.css[]
-endif::[]
+endif::basebackend-bootstrap[]
 --
 ====
 
@@ -93,17 +128,17 @@ endif::[]
 [panel,info]
 .Basic Readable theme
 --
-image::images/readable.png[link="http://bootswatch.com/readable",options="responsive"]
+image::readable.png[link="http://bootswatch.com/readable",options="responsive"]
 
 ifdef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.min.css["asciidoc-bootstrap.readable.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.css["asciidoc-bootstrap.readable.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::[]
+endif::basebackend-bootstrap[]
 
 ifndef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.min.css[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.css[]
-endif::[]
+endif::basebackend-bootstrap[]
 --
 ====
 
@@ -112,17 +147,17 @@ endif::[]
 [panel,info]
 .Basic Cerulean theme
 --
-image::images/cerulean.png[link="http://bootswatch.com/cerulean",options="responsive"]
+image::cerulean.png[link="http://bootswatch.com/cerulean",options="responsive"]
 
 ifdef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.min.css["asciidoc-bootstrap.cerulean.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.css["asciidoc-bootstrap.cerulean.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::[]
+endif::basebackend-bootstrap[]
 
 ifndef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.min.css[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.css[]
-endif::[]
+endif::basebackend-bootstrap[]
 --
 ====
 
@@ -131,19 +166,21 @@ endif::[]
 [panel,info]
 .Basic United theme
 --
-image::images/united.png[link="http://bootswatch.com/united",options="responsive"]
+image::united.png[link="http://bootswatch.com/united",options="responsive"]
 
 ifdef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.min.css["asciidoc-bootstrap.united.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.css["asciidoc-bootstrap.united.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::[]
+endif::basebackend-bootstrap[]
 
 ifndef::basebackend-bootstrap[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.min.css[]
 link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.css[]
-endif::[]
+endif::basebackend-bootstrap[]
 --
 ====
+
+endif::basebackend-html[]
 
 
 == File structure
@@ -210,7 +247,13 @@ file structure and contents.
 [role="lead"]
 Head to the docs sections for more information and examples.
 
+ifdef::basebackend-docbook[]
+=== Source Code Highlight
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:source-code-highlight.html[Source Code Highlight]
+endif::basebackend-html[]
 
 The http://pygments.org[Pygments] syntax highlighter can be used
 for xhtml11, html5 and bootstrap outputs.
@@ -218,22 +261,46 @@ for xhtml11, html5 and bootstrap outputs.
 NOTE: Since version 3.1.0 you have ability to use any of the Pygments 1.5 themes
 provided at document build time.
 
+ifdef::basebackend-docbook[]
+=== Text Formatting
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:text-formatting.html[Text Formatting]
+endif::basebackend-html[]
 
 Words and phrases can be formatted by enclosing inline text with quote characters.
 
+ifdef::basebackend-docbook[]
+=== Delimited Blocks
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:delimited-blocks.html[Delimited Blocks]
+endif::basebackend-html[]
 
 Delimited blocks are blocks of text enveloped by leading and trailing delimiter lines
 
+ifdef::basebackend-docbook[]
+=== Paragraphs
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:paragraphs.html[Paragraphs]
+endif::basebackend-html[]
 
 Paragraphs are blocks of text terminated by a blank line, the end of file,
 or the start of a delimited block or a list. There are three paragraph syntaxes:
 normal, indented (literal) and admonition which are rendered, by default,
 with the corresponding paragraph style.
 
+ifdef::basebackend-docbook[]
+=== Document Structure
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:document-structure.html[Document Structure]
+endif::basebackend-html[]
 
 AsciiDoc has two mechanisms for optionally including additional meta-data
 in the header of the output document.
@@ -241,13 +308,25 @@ in the header of the output document.
 Like the `docinfo` attribute, bootstrap backend add support to dropdowns
 navigation bar with to new `navinfo` attribute.
 
+ifdef::basebackend-docbook[]
+=== Callouts
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:callouts.html[Callouts]
+endif::basebackend-html[]
 
 Callouts are a mechanism for annotating verbatim text (for example: source code,
 computer output and user input). Callout markers are placed inside the annotated text
 while the actual annotations are presented in a callout list after the annotated text.
 
+ifdef::basebackend-docbook[]
+=== Macros
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:macros.html[Macros]
+endif::basebackend-html[]
 
 Macros are a mechanism for substituting parametrized text into output documents.
 
@@ -256,16 +335,25 @@ Macros have a 'name', a single 'target' argument and an 'attribute list'.
 Inline Macros occur in an inline element context. Predefined Inline
 macros include 'image' and 'link' macros.
 
+ifdef::basebackend-docbook[]
+=== Backend Attributes
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:attributes-ref.html[Backend Attributes]
+endif::basebackend-html[]
 
 List all specifics attributes of this backend.
 
+ifdef::basebackend-docbook[]
+=== Customizing
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
 === link:customizing.html[Customizing]
+endif::basebackend-html[]
 
 AsciiDoc-Bootstrap v4 includes support of http://lesscss.org[LESS] 
 one of the most popular CSS preprocessor. 
 
 Easy to maintain, and change skins of your favorite Asciidoc documents.
-
-
-footnote:[{rawbaseurl}/docs/getting-started.asciidoc].

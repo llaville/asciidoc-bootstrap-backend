@@ -1,5 +1,5 @@
-= {title}
-:title:       Document Structure
+= Document Structure
+:doctitle:    Document Structure
 :description: http://asciidoc.org/userguide.html#_document_structure
 include::attributes.asciidoc[]
 :navinfo2:
@@ -87,5 +87,3 @@ include::navinfo.html[]
 ----
 include::footer.html[]
 ----
-
-footnote:[{rawbaseurl}/docs/document-structure.asciidoc].

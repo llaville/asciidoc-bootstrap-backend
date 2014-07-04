@@ -1,5 +1,5 @@
-= {title}
-:title:       Macros
+= Macros
+:doctitle:    Macros
 :description: http://asciidoc.org/userguide.html#_macros
 include::attributes.asciidoc[]
 :navinfo2:
@@ -132,7 +132,13 @@ image::screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="respons
 ====
 Renders:
 
+ifdef::basebackend-bootstrap[]
 image::screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+endif::basebackend-bootstrap[]
+
+ifdef::basebackend-docbook[]
+image:screenshots/bs2default-navbar-default-jumbotron-toc2.png[scale="50"]
+endif::basebackend-docbook[]
 
 Try several resolution and see what happens with or without responsive option.
 
@@ -229,6 +235,8 @@ The contents of the progress `<target>` is used to draw percent of progress bar 
 - The optional 'striped' attribute, with an empty content, is used to display http://getbootstrap.com/components/#progress-striped[striped effect progress bar].
 - The optional 'animated' attribute, with an empty content, is used to display http://getbootstrap.com/components/#progress-animated[animated effect progress bar].
 
+WARNING: There is no fallback strategy to build a progress bar with `html5` or any other backends.
+
 ifdef::basebackend-bootstrap[]
 
 Here are few examples :
@@ -242,6 +250,6 @@ progress:60[caption="60%"]
 .Progress bar with contextual class
 progress:50[role="success"]
 
-endif::basebackend-bootstrap[]
+See link:progress.html[more] examples.
 
-footnote:[{rawbaseurl}/docs/macros.asciidoc].
+endif::basebackend-bootstrap[]

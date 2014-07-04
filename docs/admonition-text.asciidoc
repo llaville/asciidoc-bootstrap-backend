@@ -1,5 +1,5 @@
-= {title}
-:title:       Admonition Paragraphs
+= Admonition Paragraphs using text
+:doctitle:    Admonition Paragraphs
 :description: http://asciidoc.org/userguide.html#X28
 :doctitle:    Text behavior - {title}
 include::attributes.asciidoc[]
@@ -15,7 +15,7 @@ include::admonition-samples.asciidoc[]
 
 .Behind the scene
 ************************************************
-Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line activated 
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line activated
 footnote:[{rawbaseurl}/less/asciidoc/admonition-text.less] :
 ----
 @import "asciidoc/admonition-text.less";
@@ -28,15 +28,15 @@ And this other line deactivated (if you don't want to use Icons Font feature) :
 ************************************************
 
 If you want to modify the default render, either change the `less/asciidoc/admonition-text.less` source file,
-and rebuild the `asciidoc-bootstrap.css` file,  
-or copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`. 
+and rebuild the `asciidoc-bootstrap.css` file,
+or copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`.
 
 IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
 
 E.g:
 
 ----
-$ asciidoc.py 
+$ asciidoc.py
   -b bootstrap
   -a linkcss
   -a stylesdir=./stylesheets
@@ -48,11 +48,13 @@ $ asciidoc.py
   {docfile}
 ----
 
-[source,css] 
+[source,css]
 .Content of `admonition-text.css`
 ----
 include::../stylesheets/admonition-text.css[]
 ----
+
+ifdef::basebackend-html[]
 
 See results in live with :
 
@@ -61,3 +63,5 @@ See results in live with :
 * Bootstrap link:admonition-text-custom.readable.html[readable] theme.
 * Bootstrap link:admonition-text-custom.cerulean.html[cerulean] theme.
 * Bootstrap link:admonition-text-custom.united.html[united] theme.
+
+endif::basebackend-html[]

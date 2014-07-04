@@ -1,5 +1,5 @@
-= {title}
-:title:       Admonition Paragraphs
+= Admonition Paragraphs using icons images
+:doctitle:    Admonition Paragraphs
 :description: http://asciidoc.org/userguide.html#X28
 :doctitle:    AsciiDoc standard behavior - {title}
 include::attributes.asciidoc[]
@@ -50,6 +50,8 @@ $ asciidoc.py
 include::../stylesheets/admonition-images.css[]
 ----
 
+ifdef::basebackend-html[]
+
 See results in live with :
 
 * Bootstrap link:admonition-images-custom.default.html[default] theme.
@@ -57,3 +59,5 @@ See results in live with :
 * Bootstrap link:admonition-images-custom.readable.html[readable] theme.
 * Bootstrap link:admonition-images-custom.cerulean.html[cerulean] theme.
 * Bootstrap link:admonition-images-custom.united.html[united] theme.
+
+endif::basebackend-html[]

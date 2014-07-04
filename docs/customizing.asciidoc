@@ -1,11 +1,15 @@
-= {title}
-:title:       Customizing AsciiDoc-Bootstrap
+= Customizing AsciiDoc-Bootstrap
+:doctitle:    Customizing AsciiDoc-Bootstrap
 :description: Build your own version that will match your needs
 include::attributes.asciidoc[]
 :navinfo2:
 :iconsfont:   font-awesome
 :jumbotron:
 
+ifdef::basebackend-docbook[]
+[partintro]
+--
+endif::basebackend-docbook[]
 
 [role="lead"]
 Release v4.0.0 included the default Bootstrap theme and four more free themes  
@@ -19,7 +23,11 @@ If all those skins does not match your needs, you can either :
 
 All these alternatives are not equals, and requires different skill.
 
-=== Switch theme
+ifdef::basebackend-docbook[]
+--
+endif::basebackend-docbook[]
+
+== Switch theme
 
 If you decide to modify LESS source files, remember that switching from one theme to another 
 require only to change `theme` variable at line 2 in following file.
@@ -31,11 +39,11 @@ require only to change `theme` variable at line 2 in following file.
 @theme:     "default";
 @themesdir: "../themes/@{theme}";
 
-// Bootstrap 3.1
+// Bootstrap 3.2
 @import "bootstrap/bootstrap.less";
 @import "@{themesdir}/variables.less";
 
-// Font-Awesome 4.0
+// Font-Awesome 4.1
 @import "font-awesome/font-awesome.less";
 
 // Ionicons 1.5
@@ -49,7 +57,7 @@ require only to change `theme` variable at line 2 in following file.
 @import "asciidoc/admonition-iconsfont.less";
 ---- 
 
-=== Icons font support by Font-Awesome 
+== Icons font support by Font-Awesome 
 
 If you don't want to use http://fortawesome.github.io/Font-Awesome/[Font-Awesome],
 just remove or comment line 10.
@@ -61,7 +69,7 @@ just remove or comment line 10.
 
 CAUTION: Be careful, that admonition block used Font-Awesome by default (see file +asciidoc/admonition-iconsfont.less+ ) 
 
-=== Icons font support by Ionicons 
+== Icons font support by Ionicons 
 
 If you don't want to use http://ionicons.com/[Ionicons],
 just remove or comment line 13.
@@ -71,7 +79,7 @@ just remove or comment line 13.
 //@import "ionicons/ionicons.less";
 ----
 
-=== Admonition Blocks
+== Admonition Blocks
 
 * If you want to use text rather then icons font or standard PNG image files, then you have to
 activate line 19 and comment line 20.

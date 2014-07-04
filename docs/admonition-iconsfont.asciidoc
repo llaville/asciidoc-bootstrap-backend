@@ -1,5 +1,5 @@
-= {title}
-:title:       Admonition Paragraphs
+= Admonition Paragraphs using Icons Font
+:doctitle:    Admonition Paragraphs
 :description: Using Font-Awesome Icons Font
 :doctitle:    Icons Font for Asciidoc-Bootstrap - {title}
 include::attributes.asciidoc[]

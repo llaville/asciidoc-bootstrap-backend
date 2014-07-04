@@ -1,5 +1,5 @@
-= {title}
-:title:       Paragraphs
+= Paragraphs
+:doctitle:    Paragraphs
 :description: http://asciidoc.org/userguide.html#_paragraphs
 include::attributes.asciidoc[]
 :navinfo2:
@@ -26,7 +26,13 @@ footnote:[{rawbaseurl}/docs/admonition-samples.asciidoc].
 
 By default the AsciiDoc HTML backends generate text captions instead of admonition icon image links.
 
-Want to link:admonition-text.cerulean.html[see] what it look like without images or icons font symbols.
+ifdef::basebackend-docbook[]
+See xref:_admonition_paragraphs_using_text[]
+endif::basebackend-docbook[]
+ifdef::basebackend-html[]
+link:admonition-text.html[See]
+endif::basebackend-html[]
+what it look like without images or icons font symbols.
 
 === Using images
 
@@ -36,7 +42,13 @@ for example using the +-a icons+ command-line option.
 
 As AsciiDoc, this backend will have the same default behavior.
 
-Want to link:admonition-images.cerulean.html[see] what it look like.
+ifdef::basebackend-docbook[]
+See xref:_admonition_paragraphs_using_icons_images[]
+endif::basebackend-docbook[]
+ifdef::basebackend-html[]
+link:admonition-images.html[See]
+endif::basebackend-html[]
+what it look like.
 
 === Using icons font
 
@@ -49,6 +61,10 @@ Remember that you can use any of icons font support by the backend.
 * http://fontawesome.io[Font-Awesome] - use +-a iconsfont=font-awesome+
 * http://ionicons.com/[Ionicons] - use +-a iconsfont=ionicons+
 
-Want to link:admonition-iconsfont.cerulean.html[see] what it look like with Font-Awesome.
-
-footnote:[{rawbaseurl}/docs/paragraphs.asciidoc].
+ifdef::basebackend-docbook[]
+See xref:_admonition_paragraphs_using_icons_font[]
+endif::basebackend-docbook[]
+ifdef::basebackend-html[]
+link:admonition-iconsfont.html[See]
+endif::basebackend-html[]
+what it look like with Font-Awesome.

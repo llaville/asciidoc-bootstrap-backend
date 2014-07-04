@@ -1,5 +1,5 @@
-= {title}
-:title:       Source Code Highlight
+= Source Code Highlight
+:doctitle:    Source Code Highlight
 :description: http://asciidoc.org/source-highlight-filter.html
 include::attributes.asciidoc[]
 :navinfo2:
@@ -62,5 +62,3 @@ include::source.asciidoc[]
 Renders
 
 include::source.asciidoc[]
-
-footnote:[{rawbaseurl}/docs/source-code-highlight.asciidoc].
