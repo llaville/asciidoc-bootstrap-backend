@@ -32,6 +32,9 @@ Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS 
 ====
 
 [role="col-md-9"]
+include::201407-asciidoc-bootstrap-4.0.0-released.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
 include::201407-asciidoc-bootstrap-4.0.0-preview-6.asciidoc[]
 
 [role="col-md-9 col-md-offset-3"]
