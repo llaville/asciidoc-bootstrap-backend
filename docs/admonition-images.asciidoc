@@ -1,7 +1,6 @@
 = Admonition Paragraphs using icons images
 :doctitle:    Admonition Paragraphs
 :description: http://asciidoc.org/userguide.html#X28
-:doctitle:    AsciiDoc standard behavior - {title}
 include::attributes.asciidoc[]
 :navinfo2:
 :icons:

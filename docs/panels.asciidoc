@@ -1,7 +1,6 @@
 = Panels Bootstrap Component
 :doctitle:    Panels Bootstrap Component
 :description: http://getbootstrap.com/components/#panels
-:doctitle:    Bootstrap Panel Component for Asciidoc-Bootstrap - {title}
 include::attributes.asciidoc[]
 :navinfo2:
 :iconsfont:   font-awesome

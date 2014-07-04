@@ -1,7 +1,6 @@
 = Alerts Bootstrap Component
 :doctitle:    Alerts Bootstrap Component
 :description: http://getbootstrap.com/components/#alerts
-:doctitle:    Bootstrap Alert Component for Asciidoc-Bootstrap - {title}
 include::attributes.asciidoc[]
 :navinfo2:
 :iconsfont:   font-awesome
