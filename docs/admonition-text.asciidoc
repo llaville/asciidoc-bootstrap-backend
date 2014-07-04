@@ -1,28 +1,66 @@
-= {title}
-:title:       Admonition Paragraphs
-:description: Using Text Captions
+= Admonition Paragraphs using text
+:doctitle:    Admonition Paragraphs
+:description: http://asciidoc.org/userguide.html#X28
 include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont!:
-:stylesheet: admonition-text.css
+:jumbotron:
+:stylesheet: admonition-text.default.css
 
 include::admonition-samples.asciidoc[]
 
-== Behind the scene
+== Learn More
 
-Render is make with these CSS rules
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/stylesheets/admonition-text.css].
+.Behind the scene
+************************************************
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line activated
+footnote:[{rawbaseurl}/less/asciidoc/admonition-text.less] :
+----
+@import "asciidoc/admonition-text.less";
+----
+
+And this other line deactivated (if you don't want to use Icons Font feature) :
+----
+@import "asciidoc/admonition-iconsfont.less";
+----
+************************************************
+
+If you want to modify the default render, either change the `less/asciidoc/admonition-text.less` source file,
+and rebuild the `asciidoc-bootstrap.css` file,
+or copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`.
+
+IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
+
+E.g:
+
+----
+$ asciidoc.py
+  -b bootstrap
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  -a theme=flatly
+  -a stylesheet=admonition-text.css
+  -a navbar=fixed
+  -a totop
+  {docfile}
+----
 
 [source,css]
+.Content of `admonition-text.css`
 ----
 include::../stylesheets/admonition-text.css[]
 ----
 
-If you want to modify this render, copy at least the following CSS rules 
-in your `user.css` theme stylesheet (e.g. readable/user.css) and apply all changes you want.
+ifdef::basebackend-html[]
 
-* .admonition
-* .admonition .icon
-* .admonition .icon .title 
-* .admonition .content
+See results in live with :
+
+* Bootstrap link:admonition-text-custom.default.html[default] theme.
+* Bootswatch link:admonition-text-custom.flatly.html[flatly] theme.
+* Bootstrap link:admonition-text-custom.readable.html[readable] theme.
+* Bootstrap link:admonition-text-custom.cerulean.html[cerulean] theme.
+* Bootstrap link:admonition-text-custom.united.html[united] theme.
+
+endif::basebackend-html[]

@@ -6,21 +6,8 @@ include::../docs/attributes.asciidoc[]
 :footer!:
 :navinfo2:
 
-//////////////////////////
-   Bootstrap 2 syntax
-//////////////////////////
-ifeval::["{bsver}"=="2"]
-:span11:  span11
-:options:
-endif::[]
-
-//////////////////////////
-   Bootstrap 3 syntax
-//////////////////////////
-ifeval::["{bsver}"=="3"]
 :span11:  col-md-11
 :options: responsive
-endif::[]
 
 
 == Basic navbar

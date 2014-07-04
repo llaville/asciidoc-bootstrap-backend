@@ -1,34 +1,12 @@
-= {title}
-:title:       Macros
+= Macros
+:doctitle:    Macros
 :description: http://asciidoc.org/userguide.html#_macros
 include::attributes.asciidoc[]
-:navinfo1:
+:navinfo2:
 :icons!:
-:iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:stylesheet: admonition-iconsfont.css
-
-ifdef::basebackend-bootstrap[]
-
-//////////////////////////
-   Bootstrap 2 syntax
-//////////////////////////
-ifeval::["{bsver}"=="2"]
-:icon-prefix: icon-
-endif::[]
-
-//////////////////////////
-   Bootstrap 3 syntax
-//////////////////////////
-ifeval::["{bsver}"=="3"]
-:icon-prefix: glyphicon-
-endif::[]
-
-endif::[]
-
-ifndef::basebackend-bootstrap[]
-:icon-prefix:
-endif::[]
+:imagesdir:   ./images
+:iconsfont:   font-awesome
+:jumbotron:
 
 
 == Linking to Local Documents
@@ -75,7 +53,10 @@ link:get-started.html[role="primary"]
 ====
 Renders:
 
+ifdef::basebackend-bootstrap[]
 link:get-started.html[role="primary"]
+endif::[]
+
 
 Change the text
 
@@ -90,7 +71,9 @@ link:get-started.html[caption="Start Tour",role="primary"]
 ====
 Renders:
 
+ifdef::basebackend-bootstrap[]
 link:get-started.html["Start Tour",role="primary"]
+endif::[]
 
 NOTE: You have certainly understood that all button color style may be applied with the `role` attribute.
 (*inverse*, *default*, *primary*, *info*, *success*, *warning*, *danger*).
@@ -104,7 +87,9 @@ link:get-started.html["Start Tour",role="info",icon="glyphicon-play-circle"]
 ====
 Renders:
 
-link:get-started.html["Start Tour",role="info",icon="{icon-prefix}play-circle"]
+ifdef::basebackend-bootstrap[]
+link:get-started.html["Start Tour",role="info",icon="glyphicon-play-circle"]
+endif::[]
 
 WARNING: Icons are named with prefix *glyphicon* on [label label-info]#Bootstrap 3#,
 and with prefix *icon* on [label label-info]#Bootstrap 2#.
@@ -118,7 +103,9 @@ link:get-started.html["Whats wrong",role="danger",icon="glyphicon-remove-circle"
 ====
 Renders:
 
-link:get-started.html["Whats wrong",role="danger",icon="{icon-prefix}remove-circle",options="right,white"]
+ifdef::basebackend-bootstrap[]
+link:get-started.html["Whats wrong",role="danger",icon="glyphicon-remove-circle",options="right,white"]
+endif::[]
 
 IMPORTANT: On [label label-info]#Bootstrap 2# icon color are black by default.
 So add *white* option to change it. This option is useless on [label label-info]#Bootstrap 3#.
@@ -140,12 +127,18 @@ NOTE: It was not the case in [label label-info]#Bootstrap 2#. So this attribute 
 
 ====
 ----
-image:images/screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+image::screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
 ----
 ====
 Renders:
 
-image:images/screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+ifdef::basebackend-bootstrap[]
+image::screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+endif::basebackend-bootstrap[]
+
+ifdef::basebackend-docbook[]
+image:screenshots/bs2default-navbar-default-jumbotron-toc2.png[scale="50"]
+endif::basebackend-docbook[]
 
 Try several resolution and see what happens with or without responsive option.
 
@@ -157,42 +150,34 @@ for inserting an icon at an arbitrary place in paragraph content.
 
 NOTE: Credit to AsciiDoctor https://github.com/asciidoctor/asciidoctor/issues/529[GH-529 issue].
 
+IMPORTANT: AsciiDoc-Bootstrap backend 4.0 has dropped this icon inline macro, to keep a better compatibility
+with other backends. Use then the image inline macro with additional attributes.
+
 Right now we are blessed with many icon fonts that continue to grow with every release,
 like http://glyphicons.com/[Glyphicons], http://fontawesome.io[Font-Awesome],
-http://ionicons.com/[Ionicons], http://icomoon.io/[IcoMoon] and more again ...
+http://ionicons.com/[Ionicons], and more again ...
 
-AsciiDoc-Bootstrap backend 3.1.0 support these four icon fonts.
-Valid `iconsfont` attribute values are : *glyphicon*, *font-awesome*, *ionicons* and *icomoon*.
-
-NOTE: A good location for `iconsfontdir` could be +(outdir)/fonts+.
-See also the link:get-started.html#file_structure[File Structure] of AsciiDoc-Bootstrap distribution.
+AsciiDoc-Bootstrap backend 4.0 support these three icon fonts.
+Valid `iconsfont` attribute values are : *glyphicon*, *font-awesome*, and *ionicons*.
 
 [CAUTION]
 =====================================================================
-The inline icon macro is similar to the inline image macro with two exceptions:
+Our inline image macro is similar to the standard Asciidoc inline image macro with one exception:
 
-* If the `icons` attribute has the value *font*, the macro will translated to a font-based icon.
-+
-e.g: [label label-default]#<span class="glyphicon glyphicon-calendar"></span>#,
-[label label-default]#<span class="fa fa-calendar"></span>#,
-[label label-default]#<span class="icon ion-calendar"></span>#,
-or [label label-default]#<span class="icomoon icon-calendar"></span>#
-
-* If the `icons` attribute is not set or has the value *image*, the macro will insert
-an image (PNG format) into the document that resolves to a file in the `iconsdir` directory.
-+
-e.g: [label label-default]#<span class="image"><img width="48" height="48" alt="calendar" src="./images/icons/calendar.png"></span>#
+* If the `iconsfont` attribute is set, the macro will translate image to a font-based icon result.
 =====================================================================
 
-  icon:<target>[<attributes>]
+  image:<target>[<attributes>]
 
-The contents of the icon `<target>` is displayed.
+The contents of the image `<target>` is displayed.
 
-.Icon macro attributes
+.Our Image macro attributes
+- The required 'iconsfont' attribute tells which icons font to use.
+Possibles values are : *glyphicon*, *font-awesome*, *ionicons*.
 - The optional 'size' attribute scales the icon.
 Possible values are : *lg* (33% increase), *2x*, *3x*, *4x*, *5x*, *6x*, *7x*, *8x*, *9x*.
 
-.Icon macro attributes when `icons` attribute is not set or has the value *image*
+.Standard Image macro attributes
 - The optional 'title' attribute provides a title for the icon.
 - The optional 'width' and 'height' attributes scale the icon (image in png format)
 size and can be used in any combination. The units are pixels and default values are 48.
@@ -200,64 +185,71 @@ size and can be used in any combination. The units are pixels and default values
 Here is an example that inserts a calendar icon in front of a blog entry and its published date.
 ====
 ----
-icon:calendar[] by Laurent Laville, published on November 21, 2013
+image:icons/font-awesome/calendar.png[alt="calendar",icon="calendar",size="4x",iconsfont="font-awesome"] by Laurent Laville, published on November 21, 2013
 ----
-
-With `icons` attribute set to *font*, and `iconsfontdir` set to
-location of http://fontawesome.io[Font-Awesome 4] distribution (+css/+ and +fonts/+ folders).
 ====
 Renders:
 
-icon:calendar[] by Laurent Laville, published on November 21, 2013
+image:icons/font-awesome/calendar.png[alt="calendar",icon="calendar",size="4x",iconsfont="font-awesome"] by Laurent Laville, published on November 21, 2013
 
-Here is another example that used link:delimited-blocks.html#open_blocks[Open Blocks]
-design to display a simple blog. More concrete examples on our link:../../../examples/index.html["expo"].
-====
-----
-[role="timeline",citetitle="http://glyphsearch.com/"]
-.icon:mobile[size="lg"] icon:tablet[size="2x"]
---
-*GlyphSearch: Improving the Search for Icon Fonts*
+WARNING: AsciiDoc-Bootstrap 4.0 did not used anymore the open block to simulate multi-columns.
+We used now the standard Bootstrap classes `col-md-*` and so on.
 
-http://glyphsearch.com/[GlyphSearch] is a site that allows you to search
-Font Awesome, Glyphicons, and Ionicons simultaneously.
---
-[role="timeline",citetitle="http://fontello.com/"]
-.[yellow]#icon:font[size="5x"]#
---
-*Fontello - icon font scissors*
+Here is another example that display two columns on medium device (greater than 992 pixels)
 
-This http://fontello.com/[tool] lets you combine icon webfonts for your own project. With fontello you can:
+.AsciiDoc Code
+....
+include::macros.columns-1.asciidoc[]
+....
+unfloat::[]
+include::macros.columns-1.asciidoc[]
 
-* shrink glyph collections, minimizing font size
-* merge symbols from several fonts into a single file
-* access large sets of professional-grade open source icons
---
-----
-====
+And another example with three columns on medium device (greater than 992 pixels)
 
-[role="timeline",citetitle="http://glyphsearch.com/"]
-.icon:mobile[size="lg"] icon:tablet[size="2x"]
---
-*GlyphSearch: Improving the Search for Icon Fonts*
+.AsciiDoc Code
+....
+include::macros.columns-2.asciidoc[]
+....
+unfloat::[]
+include::macros.columns-2.asciidoc[]
 
-http://glyphsearch.com/[GlyphSearch] is a site that allows you to search
-Font Awesome, Glyphicons, and Ionicons simultaneously.
---
-[role="timeline",citetitle="http://fontello.com/"]
-.[yellow]#icon:font[size="5x"]#
---
-*Fontello - icon font scissors*
 
-This http://fontello.com/[tool] lets you combine icon webfonts for your own project. With fontello you can:
+WARNING: All icon fonts do not support same icon names. Be carefull if you switch to another icons font.
 
-* shrink glyph collections, minimizing font size
-* merge symbols from several fonts into a single file
-* access large sets of professional-grade open source icons
---
+== Progress bars
 
-WARNING: All icon fonts that not support same icon names. Be advised that switching icon fonts may results of unexpected values.
+[role="lead"]
+AsciiDoc-Bootstrap backend 4.0.0 introduces a new inline macro
+that implement the Bootstrap Progress Component.
 
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/macros.asciidoc].
+WARNING: Stacked progress bar is not supported.
+
+    progess:<target>[<attributes>]
+
+The contents of the progress `<target>` is used to draw percent of progress bar completed
+(Must be numeric and between 0 and 100).
+
+.Progress macro attributes
+- The optional 'caption' attribute is the progress bar label.
+- The optional 'role' attribute is used as contextual class. Should be either `info`, `success`, `warning`, or `danger`.
+- The optional 'striped' attribute, with an empty content, is used to display http://getbootstrap.com/components/#progress-striped[striped effect progress bar].
+- The optional 'animated' attribute, with an empty content, is used to display http://getbootstrap.com/components/#progress-animated[animated effect progress bar].
+
+WARNING: There is no fallback strategy to build a progress bar with `html5` or any other backends.
+
+ifdef::basebackend-bootstrap[]
+
+Here are few examples :
+
+.Default progress bar at 55% complete
+progress:55[]
+
+.Progress bar with label
+progress:60[caption="60%"]
+
+.Progress bar with contextual class
+progress:50[role="success"]
+
+See link:progress.html[more] examples.
+
+endif::basebackend-bootstrap[]

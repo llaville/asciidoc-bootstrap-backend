@@ -1,0 +1,36 @@
+:doctitle:    AsciiDoc-Bootstrap 4.0.0 preview
+:description: Part 4
+:iconsfont:   glyphicon
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-06-13
+:pubdate:     Fri, 13 Jun 2014 10:22:25 +0200
+:summary:     Icons Font new Strategy comparison
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+
+[id="post-4"]
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
+
+On June 5th and 6th, I've added a basic Icons Font new Strategy comparison.
+
+Now, it's time to update the base of render comparison, with the Themes menu.
+
+* standard *AsciiDoc* html5 backend
+* Bootstrap *Default* theme
+* Bootswatch *Flatly* theme
+* Bootswatch *Readable* theme
+
+
+Begin with the default theme, and switch later on other skins :
+
+* http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/iconsfont.default.html[Icons Font] usage.
+* http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/admonition-text.default.html[Admonition Paragraphs] with text behavior.
+* http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/admonition-images.default.html[Admonition Paragraphs] with image (default) behavior.
+* http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/admonition-iconsfont.default.html[Admonition Paragraphs] with icons font behavior.
+____

@@ -1,0 +1,25 @@
+
+[role="col-md-2"]
+====
+[yellow]#image:icons/font-awesome/font.png[alt="font",icon="font",size="9x",iconsfont="font-awesome"]#
+====
+
+[role="col-md-8"]
+[quote,http://fontello.com/]
+____
+*Fontello*
+
+This http://fontello.com/[tool] lets you combine icon webfonts for your own project. With fontello you can:
+
+* shrink glyph collections, minimizing font size
+* merge symbols from several fonts into a single file
+* access large sets of professional-grade open source icons
+____
+
+[role="col-md-2"]
+.About
+****
+http://fontello.com/[Fontello], the icon font scissors.
+****
+
+unfloat::[]

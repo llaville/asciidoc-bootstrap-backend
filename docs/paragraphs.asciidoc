@@ -1,8 +1,11 @@
-= {title}
-:title:       Paragraphs
+= Paragraphs
+:doctitle:    Paragraphs
 :description: http://asciidoc.org/userguide.html#_paragraphs
 include::attributes.asciidoc[]
 :navinfo2:
+:icons!:
+:iconsfont:   font-awesome
+:jumbotron:
 
 
 == Admonition paragraphs
@@ -17,14 +20,19 @@ Since version 1.2.0, admonitionblock used _alert-block_ Twitter Bootstrap styles
 With support of icons font, it's now time to change the behavior and default styles.
 
 To compare three render categories, we will use the same file source
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/admonition-samples.asciidoc].
+footnote:[{rawbaseurl}/docs/admonition-samples.asciidoc].
 
 === Using text captions
 
 By default the AsciiDoc HTML backends generate text captions instead of admonition icon image links.
 
-Want to link:admonition-text.html[see] what it look like without images or icons font symbols,
-and just a little CSS customization.
+ifdef::basebackend-docbook[]
+See xref:_admonition_paragraphs_using_text[]
+endif::basebackend-docbook[]
+ifdef::basebackend-html[]
+link:admonition-text.html[See]
+endif::basebackend-html[]
+what it look like without images or icons font symbols.
 
 === Using images
 
@@ -33,23 +41,30 @@ To generate links to icon images define the `icons` attribute,
 for example using the +-a icons+ command-line option.
 
 As AsciiDoc, this backend will have the same default behavior.
-Want to link:admonition-images.html[see] examples.
+
+ifdef::basebackend-docbook[]
+See xref:_admonition_paragraphs_using_icons_images[]
+endif::basebackend-docbook[]
+ifdef::basebackend-html[]
+link:admonition-images.html[See]
+endif::basebackend-html[]
+what it look like.
 
 === Using icons font
 
 Since version 3.1.0, admonitionblock may optionally used icons font to draw icons.
 To generate links to icons font symbols define the `iconsfont` attribute.
 
-Want to link:admonition-iconsfont.html[see] Font-Awesome examples.
-
 Remember that you can use any of icons font support by the backend.
 
 * http://glyphicons.com/[Glyphicons] - use +-a iconsfont=glyphicon+
 * http://fontawesome.io[Font-Awesome] - use +-a iconsfont=font-awesome+
 * http://ionicons.com/[Ionicons] - use +-a iconsfont=ionicons+
-* http://icomoon.io/[IcoMoon] - use +-a iconsfont=icomoon+
 
-
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/paragraphs.asciidoc].
+ifdef::basebackend-docbook[]
+See xref:_admonition_paragraphs_using_icons_font[]
+endif::basebackend-docbook[]
+ifdef::basebackend-html[]
+link:admonition-iconsfont.html[See]
+endif::basebackend-html[]
+what it look like with Font-Awesome.

@@ -1,0 +1,27 @@
+:doctitle:    AsciiDoc-Bootstrap 4.0.0
+:description: Stable release is planned
+:iconsfont:   glyphicon
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-06-19
+:pubdate:     Thu, 19 Jun 2014 10:17:23 +0200
+:summary:     Upcoming release of AsciiDoc-Bootstrap
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+
+[id="post-6"]
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/glyphicon/glyphicons_045_calendar.png[alt="calendar",icon="calendar",size="4x"]
+
+Today, I've added a new project home page at url http://laurent-laville.org/asciidoc/bootstrap/[].
+
+Even if AsciiDoc-Bootstrap v4 is still under development, the current source code is almost stable to be officially shown.
+But there are no package distribution available.
+So download source code from the GitHub project page https://github.com/llaville/asciidoc-bootstrap-backend/archive/v4.zip[]
+
+*The final stable release is planned for July 4, 2014*
+____

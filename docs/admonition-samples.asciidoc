@@ -1,3 +1,6 @@
+
+== Admonition NOTE block
+
 ====
 ----
 NOTE: This is an example note.
@@ -13,6 +16,8 @@ NOTE: This is an example note.
 [NOTE]
 Alternatively, you can specify the paragraph admonition style explicitly using an AttributeList element.
 
+== Admonition IMPORTANT block
+
 ====
 ----
 IMPORTANT: This is another example more important.
@@ -21,6 +26,8 @@ IMPORTANT: This is another example more important.
 Renders:
 
 IMPORTANT: This is another example more important.
+
+== Admonition CAUTION block
 
 ====
 ----
@@ -31,6 +38,8 @@ Renders:
 
 CAUTION: This is another example important but less.
 
+== Admonition WARNING block
+
 ====
 ----
 WARNING: This is a warning example.
@@ -39,6 +48,8 @@ WARNING: This is a warning example.
 Renders:
 
 WARNING: This is a warning example.
+
+== Admonition NOTE custom icon block
 
 ====
 ----
@@ -50,6 +61,8 @@ Renders:
 
 [icon="./images/icons/example.png"]
 NOTE: What lovely war.
+
+== Admonition TIP block
 
 ====
 ----

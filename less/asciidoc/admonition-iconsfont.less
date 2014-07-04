@@ -1,0 +1,68 @@
+// Bootstrap backend styles of Handbook for admonitionblock icons font only
+
+.admonition {
+    /* bootstrap 3 .alert style */
+    padding: 15px;
+    margin-bottom: 21px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+.note {
+    border-color: olive;
+}
+.tip {
+    border-color: blue;
+}
+.warning {
+    border-color: yellow;
+}
+.caution {
+    border-color: fuchsia;
+}
+.important {
+    border-color: red;
+}
+.note .icon {
+    color: olive;
+}
+.tip .icon {
+    color: blue;
+}
+.warning .icon {
+    color: yellow;
+}
+.caution .icon {
+    color: fuchsia;
+}
+.important .icon {
+    color: red;
+}
+.note .icon .@{admonition-icon-prefix}:before{
+    content: @admonition-icon-note;
+}
+.tip .icon .@{admonition-icon-prefix}:before{
+    content: @admonition-icon-tip;
+}
+.warning .icon .@{admonition-icon-prefix}:before{
+    content: @admonition-icon-warning;  
+}
+.caution .icon .@{admonition-icon-prefix}:before{
+    content: @admonition-icon-caution;  
+}
+.important .icon .@{admonition-icon-prefix}:before{
+    content: @admonition-icon-important;  
+}
+.admonition .icon {
+    float: left;
+    font-size: 3em;
+}
+.admonition .icon .title {
+    font-size: 1em;
+    margin: 0;
+}
+.admonition .content {
+    padding-left: 0.5em;
+    margin-left: 4em;
+    border-left: 3px solid #DDDDDD;
+    min-height: 4em;
+}

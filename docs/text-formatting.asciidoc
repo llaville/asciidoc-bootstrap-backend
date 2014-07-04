@@ -1,9 +1,9 @@
-= {title}
-:title:       Text Formatting
+= Text Formatting
+:doctitle:    Text Formatting
 :description: http://asciidoc.org/userguide.html#_text_formatting
 include::attributes.asciidoc[]
 :navinfo2:
-
+:jumbotron:
 
 == Quoted text
 
@@ -27,7 +27,3 @@ A bootstrap [label label-warning]#warning# label.
 Renders:
 
 A bootstrap [label label-warning]#warning# label.
-
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/text-formatting.asciidoc].

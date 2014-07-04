@@ -1,0 +1,38 @@
+:doctitle:    Backend 4.0 preview
+:description: Summary of changes for upcoming release
+:iconsfont:   font-awesome
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-07-01
+:pubdate:     Tue, 01 Jul 2014 20:59:33 +0200
+:summary:     New features in upcoming version 4.0.0
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+
+[id="post-1"]
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/font-awesome/check-square-o.png[alt="check",icon="check-square-o",size="4x"]
+
+[role="lead"]
+Summary of new features in version 4.0.0 planned for July 4, 2014
+
+* End of compatibility with Bootstrap 2.
+* We have adopted http://lesscss.org[Less] the CSS preprocessor to build all stylesheets.
+* Accept only icons font that provide LESS source code. So we have dropped IcoMoon support.
+* Icon inline macro was removed to a better compatibility with others backends.
+* We have added support for Bootstrap Panel Component.
+* We have added support for Bootstrap Alert Component.
+
+[CAUTION]
+====
+The `toc` and `toc2` attributes are not supported as expected.
+
+We would like to improve it in next release 4.1
+
+If you would add a mini toc, have a look on archives's sources of this blog.
+====
+____

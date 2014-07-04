@@ -1,19 +1,21 @@
-:css-signature: blog
+:doctitle:    Backend 3.2 stable
+:description:
 :iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
-:author: Laurent Laville
-:revdate: 2013-12-20
-:pubdate: Fri, 20 Dec 2013 13:01:10 +0100
-:summary: AsciiDoc-Bootstrap 3.2.0 has been released.
+:author:    Laurent Laville
+:revdate:   2013-12-20
+:pubdate:   Fri, 20 Dec 2013 13:01:10 +0100
+:summary:   AsciiDoc-Bootstrap 3.2.0 has been released
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
 
-== AsciiDoc-Bootstrap 3.2.0 released
+[id="post-3"]
+== {summary}
 
-[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
-.icon:rocket[size="4x"]
---
-[role="lead"]
-{summary}
+[quote,Published by {author} on {revdate}]
+____
+image:icons/font-awesome/rocket.png[alt="release",icon="rocket",size="4x"]
 
 http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/[AsciiDoc-Bootstrap] 3.2.0
 has just been released. This is the last version of year 2013.
@@ -33,4 +35,4 @@ New backend features :
 Upgrades :
 
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.3
---
+____

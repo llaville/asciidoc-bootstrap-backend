@@ -1,0 +1,46 @@
+:doctitle:    AsciiDoc-Bootstrap 4.0.0 preview
+:description: Part 5
+:iconsfont:   glyphicon
+:imagesdir:   ./images
+:author:      Laurent Laville
+:revdate:     2014-06-16
+:pubdate:     Mon, 16 Jun 2014 17:02:10 +0200
+:summary:     Notification with Bootstrap Alert Component
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+
+[id="post-5"]
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/glyphicon/glyphicons_054_clock.png[alt="future",icon="time",size="4x"]
+
+Today, I've added support of http://getbootstrap.com/components/#alerts[Bootstrap Alert Component].
+
+You can now either use *Alert* or *Panel* to display basic notification messages. 
+More styles will come later.
+
+Begin with the default theme, and switch later on other skins (even with html5 backend) :
+
+* http://laurent-laville.org/asciidoc/bootstrap/manual/4.0/en/alerts.default.html[Alert] Component.
+
+.with Alert Component:
+====
+[alert,info]
+.Heads up!
+--
+This alert needs your attention, but it's not super important.
+--
+====
+
+.with Panel Component:
+====
+[panel,danger,dismiss]
+.Oh snap!
+--
+Change a few things up and try submitting again.
+--
+====
+____

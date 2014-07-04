@@ -1,0 +1,111 @@
+= Customizing AsciiDoc-Bootstrap
+:doctitle:    Customizing AsciiDoc-Bootstrap
+:description: Build your own version that will match your needs
+include::attributes.asciidoc[]
+:navinfo2:
+:iconsfont:   font-awesome
+:jumbotron:
+
+ifdef::basebackend-docbook[]
+[partintro]
+--
+endif::basebackend-docbook[]
+
+[role="lead"]
+Release v4.0.0 included the default Bootstrap theme and four more free themes  
+from http://bootswatch.com/[Bootswatch] template provider.
+
+If all those skins does not match your needs, you can either :
+
+* download other alternative pre-compiled CSS (uncompressed and/or minified).
+* download other alternative pre-setting templates (required the http://lesscss.org[LESS] source code).
+* build yourself your own theme.
+
+All these alternatives are not equals, and requires different skill.
+
+ifdef::basebackend-docbook[]
+--
+endif::basebackend-docbook[]
+
+== Switch theme
+
+If you decide to modify LESS source files, remember that switching from one theme to another 
+require only to change `theme` variable at line 2 in following file.
+
+.Source file `less/asciidoc-bootstrap.less`
+[source,css,numbered]
+----
+@import "variables.less";
+@theme:     "default";
+@themesdir: "../themes/@{theme}";
+
+// Bootstrap 3.2
+@import "bootstrap/bootstrap.less";
+@import "@{themesdir}/variables.less";
+
+// Font-Awesome 4.1
+@import "font-awesome/font-awesome.less";
+
+// Ionicons 1.5
+@import "ionicons/ionicons.less";
+
+// AsciiDoc 8.6
+@import "asciidoc/common.less";
+@import "asciidoc/pygments.less";
+@import "asciidoc/iconsfont.less";
+//@import "asciidoc/admonition-text.less";
+@import "asciidoc/admonition-iconsfont.less";
+---- 
+
+== Icons font support by Font-Awesome 
+
+If you don't want to use http://fortawesome.github.io/Font-Awesome/[Font-Awesome],
+just remove or comment line 10.
+
+[source,css]
+----
+//@import "font-awesome/font-awesome.less";
+----
+
+CAUTION: Be careful, that admonition block used Font-Awesome by default (see file +asciidoc/admonition-iconsfont.less+ ) 
+
+== Icons font support by Ionicons 
+
+If you don't want to use http://ionicons.com/[Ionicons],
+just remove or comment line 13.
+
+[source,css]
+----
+//@import "ionicons/ionicons.less";
+----
+
+== Admonition Blocks
+
+* If you want to use text rather then icons font or standard PNG image files, then you have to
+activate line 19 and comment line 20.
++
+[source,css]
+----
+@import "asciidoc/admonition-text.less";
+//@import "asciidoc/admonition-iconsfont.less";
+----
+
+* If you want to use icons font, don't change anything.
+
+* If you want to use only PNG image files ( with AsciiDoc `icons` attribute ), 
+just remove or comment 20. 
++
+[source,css]
+----
+//@import "asciidoc/admonition-iconsfont.less";
+----
+
+=== Apply a theme
+
+The AsciiDoc `theme` attribute is used to select an alternative CSS stylesheet.
+
+E.g
+
+----
+$ asciidoc.py -b bootstrap -a theme=united {docfile}
+----

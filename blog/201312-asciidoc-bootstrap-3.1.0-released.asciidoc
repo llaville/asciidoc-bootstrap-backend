@@ -1,19 +1,21 @@
-:css-signature: blog
+:doctitle:    Backend 3.1 stable
+:description:
 :iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
-:author: Laurent Laville
-:revdate: 2013-12-03
-:pubdate: Tue, 03 Dec 2013 10:20:08 +0100
-:summary: AsciiDoc-Bootstrap 3.1.0 has been released.
+:author:    Laurent Laville
+:revdate:   2013-12-03
+:pubdate:   Tue, 03 Dec 2013 10:20:08 +0100
+:summary:   AsciiDoc-Bootstrap 3.1.0 has been released
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
 
-== AsciiDoc-Bootstrap 3.1.0 released
+[id="post-2"]
+== {summary}
 
-[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
-.icon:rocket[size="4x"]
---
-[role="lead"]
-{summary}
+[quote,Published by {author} on {revdate}]
+____
+image:icons/font-awesome/rocket.png[alt="release",icon="rocket",size="4x"]
 
 http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/[AsciiDoc-Bootstrap] 3.1.0
 has just been released. Here is a list of the most important changes:
@@ -31,4 +33,4 @@ New backend features :
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.2
 * New `rssref` attribute to specify a RSS feed in output document.
 * Admonition Block support text, images and icons font.
---
+____

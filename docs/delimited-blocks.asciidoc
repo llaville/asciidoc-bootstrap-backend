@@ -1,32 +1,11 @@
-= {title}
-:title:       Delimited Blocks
+= Delimited Blocks
+:doctitle:    Delimited Blocks
 :description: http://asciidoc.org/userguide.html#X104
 include::attributes.asciidoc[]
 :navinfo2:
 :icons!:
-:iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:stylesheet: admonition-iconsfont.css
-
-ifdef::basebackend-bootstrap[]
-
-//////////////////////////
-   Bootstrap 2 syntax
-//////////////////////////
-ifeval::["{bsver}"=="2"]
-:well-small: well-small
-:well-large: well-large
-endif::[]
-
-//////////////////////////
-   Bootstrap 3 syntax
-//////////////////////////
-ifeval::["{bsver}"=="3"]
-:well-small: well-sm
-:well-large: well-lg
-endif::[]
-
-endif::[]
+:iconsfont:   font-awesome
+:jumbotron:
 
 
 == Sidebar Blocks
@@ -54,11 +33,11 @@ SidebarBlocks) can be placed inside a sidebar.
 
 You may also used the attribute `role` to control padding and rounded corners.
 
-With `role` set to value *well-small* [label label-info]#Bootstrap 2#, or *well-sm* [label label-info]#Bootstrap 3#
+With *well-sm* role:
 ====
 ----
 .An Example Sidebar
-[role="well-small"]
+[role="well-sm"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
@@ -68,17 +47,17 @@ SidebarBlocks) can be placed inside a sidebar.
 Renders:
 
 .An Example Sidebar
-[role="{well-small}"]
+[role="well-sm"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
 ****
 
-With `role` set to value *well-large* [label label-info]#Bootstrap 2#, or *well-lg* [label label-info]#Bootstrap 3#
+With *well-lg* role:
 ====
 ----
 .An Example Sidebar
-[role="well-large"]
+[role="well-lg"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
@@ -88,7 +67,7 @@ SidebarBlocks) can be placed inside a sidebar.
 Renders:
 
 .An Example Sidebar
-[role="{well-large}"]
+[role="well-lg"]
 ****
 Any AsciiDoc SectionBody element (apart from
 SidebarBlocks) can be placed inside a sidebar.
@@ -100,171 +79,93 @@ SidebarBlocks) can be placed inside a sidebar.
 Open blocks are special: they are used to generate document abstracts,
 book part introductions and more.
 
-Here we will used it to display a very simple two columns layout.
+WARNING: Previous version 3, used it to simulate multi columns. Version 4 dropped this behavior.
+Don't be afraid, this feature is still possible using the standard Bootstrap classes like `.col-md-*` and so on.
 
-[TIP]
-.Focus on openblock
-=====================================================================
-For demonstration purpose only, and to understand where are the visual limit
-of open block, we used these css rules :
+=== Panels
 
-[source,css]
-----
-.openblock {
-    border: 1px dashed;
-    height: 300px;
-    background-color: #fff;
-    padding: 0.2em;
-}
-----
-=====================================================================
+First open block structure is used to implement the Bootstrap Panel Component.
 
+[role="col-md-4"]
+.With `primary` contextual state class
 ====
-----
-.A side intro title
+[panel,primary]
+.Panel title
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Panel content
 --
-----
 ====
-Renders:
 
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Design under control
-
-A bit ugly, but may be improved with css rules. Set a CSS *class* (timeline for example)
-to the `role` attribute, with following definitions :
-
-[source,css]
-----
-.timeline > .title {
-    background-color: blue;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    margin: 0;
-}
-.timeline > .content  {
-    padding: 40px 20px;
-}
-.timeline > .content > p > strong {
-    font-size: 30px;
-    color: navy;
-}
-----
-
+[role="col-md-4"]
+.With `success` contextual state class
 ====
-----
-[role="timeline"]
-.A side intro title
+[panel,success]
+.Panel title
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Panel content
 --
-----
 ====
-Renders:
 
-[role="timeline"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Choose side of main content
-
-You can also change the side of intro title (default is left), by adding
-the `halign` attribute with *right* value.
-
+[role="col-md-4"]
+.With `warning` contextual state class
 ====
-----
-[role="timeline",halign="right"]
-.A side intro title
+[panel,warning]
+.Panel title
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Panel content
 --
-----
 ====
-Renders:
 
-[role="timeline",halign="right"]
-.A side intro title
---
-*The main title*
+unfloat::[]
 
-And the content, what could be whatever you want: table, image, listing, ...
---
+ifdef::basebackend-docbook[]
+See xref:_panels_bootstrap_component[] to learn how AsciiDoc-Bootstrap backend implements this feature
+endif::basebackend-docbook[]
 
-=== Width of two columns
+ifdef::basebackend-html[]
+link:panels.html[Learn] how AsciiDoc-Bootstrap backend implements this feature.
+endif::basebackend-html[]
 
-You can control width of both columns with the `cols` attribute.
-Default values are *3,9*. That means col-md-3 or span3 for intro title,
-and col-md-9 or span9 for main content.
+=== Alerts
 
+Second open block structure is used to implement the Bootstrap Alert Component.
+
+[role="col-md-4"]
+.With `info` contextual state class
 ====
-----
-[role="timeline",halign="left",cols="4,8"]
-.A side intro title
+[alert,info]
+.Heads up!
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+This alert needs your attention, but it's not super important.
 --
-----
 ====
-Renders:
 
-[role="timeline",halign="left",cols="4,8"]
-.A side intro title
---
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
---
-
-=== Blog signature
-
-On blog, we used also a signature to identify origin of an article and its author.
-Optional attributes `citetitle` and `attribution` are there for that.
-
-NOTE: You may also used these attributes to display other informations.
-
+[role="col-md-4"]
+.With `success` contextual state class
 ====
-----
-[role="timeline",citetitle="from http://example.com",attribution="Author's name"]
-.A side intro title
+[alert,success]
+.Well done!
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+You successfully read this important alert message.
 --
-----
 ====
-Renders:
 
-[role="timeline",citetitle="from http://example.com",attribution="Author's name"]
-.A side intro title
+[role="col-md-4"]
+.With `warning` contextual state class
+====
+[alert,warning]
+.Warning!
 --
-*The main title*
-
-And the content, what could be whatever you want: table, image, listing, ...
+Better check yourself, you're not looking too good.
 --
+====
 
-Visit our link:../../../examples/index.html["expo"] for other concrete examples.
+unfloat::[]
 
-== About _this document_
-link:howto.html#how_to_build_internal_pages[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/docs/delimited-blocks.asciidoc].
+ifdef::basebackend-docbook[]
+See xref:_alerts_bootstrap_component[] to learn how AsciiDoc-Bootstrap backend implements this feature
+endif::basebackend-docbook[]
+
+ifdef::basebackend-html[]
+link:alerts.html[Learn] how AsciiDoc-Bootstrap backend implements this feature.
+endif::basebackend-html[]

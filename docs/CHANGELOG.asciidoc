@@ -5,6 +5,16 @@ include::attributes.asciidoc[]
 :navinfo1:
 
 
+== Version 4.0.0 _(2014-06-dd)_
+
+.Additions and changes:
+* Drop support of Bootstrap 2.3.2
+* Upgrade jQuery to version 1.11.1
+* Improve Internet Explorer CSS3 Media Query (with HTML5 Shiv 3.7.2 and Respond 1.4.0)
+
+.Bug fixes:
+* none
+
 == Version 3.3.0 _(2014-03-20)_
 
 .Additions and changes:

@@ -1,39 +1,62 @@
-= {title}
-:title:       Admonition Paragraphs
+= Admonition Paragraphs using icons images
+:doctitle:    Admonition Paragraphs
 :description: http://asciidoc.org/userguide.html#X28
 include::attributes.asciidoc[]
 :navinfo2:
 :icons:
+:jumbotron:
 
 include::admonition-samples.asciidoc[]
 
-== Behind the scene
+== Learn More
 
-Default render, is make with these CSS rules, you can found on each `<theme>.css`
-stylesheet (e.g. readable.css).
+.Behind the scene
+************************************************
+Have a look in the LESS source file `less/asciidoc-bootstrap.less`, you should have at least this line *deactivated* :
+----
+@import "asciidoc/admonition-text.less";
+----
+
+And this other line *activated* (if you want to use Icons Font feature) :
+----
+@import "asciidoc/admonition-iconsfont.less";
+----
+************************************************
+
+If you want to modify the default render,
+copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc ) with attribute `stylesheet`.
+
+IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
+
+E.g:
+
+----
+$ asciidoc.py
+  -b bootstrap
+  -a linkcss
+  -a stylesdir=./stylesheets
+  -a scriptsdir=./javascripts
+  -a theme=flatly
+  -a stylesheet=admonition-images.css
+  -a navbar=fixed
+  -a totop
+  {docfile}
+----
 
 [source,css]
+.Content of `admonition-images.css`
 ----
-.admonition {
-    padding: 15px;
-    margin-bottom: 21px;
-    border: 0;
-}
-.admonition .icon {
-    float: left;
-    font-size: 3em;
-}
-.admonition .icon .title {
-    font-size: 1em;
-    margin: 0;
-}
-.admonition .content {
-    padding-left: 0.5em;
-    margin-left: 4em;
-    border-left: 3px solid #DDDDDD;
-    min-height: 4em;
-}
+include::../stylesheets/admonition-images.css[]
 ----
 
-If you want to modify this render, copy one of both of these CSS rules
-in your `user.css` theme stylesheet (e.g. readable/user.css) and apply all changes you want.
+ifdef::basebackend-html[]
+
+See results in live with :
+
+* Bootstrap link:admonition-images-custom.default.html[default] theme.
+* Bootswatch link:admonition-images-custom.flatly.html[flatly] theme.
+* Bootstrap link:admonition-images-custom.readable.html[readable] theme.
+* Bootstrap link:admonition-images-custom.cerulean.html[cerulean] theme.
+* Bootstrap link:admonition-images-custom.united.html[united] theme.
+
+endif::basebackend-html[]

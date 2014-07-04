@@ -1,20 +1,24 @@
-:css-signature: blog
-:icons: font
+:doctitle:    Backend 3.1 preview
+:description: 
 :iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
 :imagesdir: ./images
-:author: Laurent Laville
-:revdate: 2013-11-28
-:pubdate: Thu, 28 Nov 2013 17:08:18 +0100
-:summary: Summary of new features in version 3.1.0 planned for December 3, 2013
+:author:    Laurent Laville
+:revdate:   2013-11-28
+:pubdate:   Thu, 28 Nov 2013 17:08:18 +0100
+:summary:   New features in upcoming version 3.1.0
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
 
-== New features in upcoming version 3.1.0
+[id="post-2"]
+== {summary}
 
-[role="blog",cols="3,9",halign="right",citetitle="Published by {author} on {revdate}"]
-.icon:check-square-o[size="4x"]
---
+[quote,Published by {author} on {revdate}]
+____
+image:icons/font-awesome/check-square-o.png[alt="check",icon="check-square-o",size="4x"]
+
 [role="lead"]
-{summary}
+Summary of new features in version 3.1.0 planned for December 3, 2013
 
 * CSS signature, the AsciiDoc feature, is now available.
 * Open Blocks allows to write blog, releases or features pages.
@@ -24,4 +28,4 @@
 * Add backend build signature in default text footer.
 * Upgrade Bootstrap and Bootswatch Themes to latest version 3.0.2
 * New `rssref` attribute to specify a RSS feed in output document.
---
+____

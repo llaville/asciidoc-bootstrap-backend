@@ -1,26 +1,41 @@
-= Official Blog of AsciiDoc-Bootstrap backend
+= {title}
+:title:       Official Blog of AsciiDoc-Bootstrap backend
 :description: What's new on this project
-:brand: https://github.com/llaville/asciidoc-bootstrap-backend
-:rssref: http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
+:brand:       https://github.com/llaville/asciidoc-bootstrap-backend
+:rssref:      http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
+:jumbotron:
 :jumbotron-fullwidth:
+:footer-fullwidth:
 :icons!:
-:iconsfont: font-awesome
-:iconsfontdir: ./fonts/font-awesome
-:imagesdir: ./images
-:css-signature: blog
+:iconsfont:   font-aweseome
+:imagesdir:   ./images
 
-[role="well-sm"]
-**********
-*Stay tuned*
 
+[role="col-md-3"]
+====
+[panel,primary]
+.Stay tuned
+--
 Subscribe to http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml[RSS feed].
+--
 
-*Archives*
-
-[style="archives"]
+[panel,success]
+.Archives
+--
 - 2013
 ** link:201311.html[November] [badge pull-right]#2#
 ** link:201312.html[December] [badge pull-right]#3#
 - 2014
 ** link:201403.html[Marth] [badge pull-right]#1#
-**********
+** link:201406.html[June] [badge pull-right]#6#
+--
+====
+
+[role="col-md-9"]
+include::201407-asciidoc-bootstrap-4.0.0-released.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
+include::201407-asciidoc-bootstrap-4.0.0-preview-6.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
+include::201407-new-features-in-upcoming-version-4.0.0.asciidoc[]

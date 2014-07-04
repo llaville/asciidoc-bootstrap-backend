@@ -1,0 +1,99 @@
+= {title}
+:title:       Icons Font Samples
+:description: Examples of Icons Font attributes
+include::attributes.asciidoc[]
+:navinfo2:
+:icons!:
+:iconsfont:   font-awesome
+:jumbotron:
+
+
+To increase icon sizes relative to their container, use attribute `size` with value +
+`lg` (33% increase), `2x`, `3x`, `4x`, `5x`, `6x`, `7x`, `8x` or `9x`.
+
+TIP: And if you build this `{docfile}` with another backend than bootstrap, don't forget to set the `width` attribute with value
+20 for `lg`, 28 for `2x`, 42 for `3x`, 56 for `4x`, 70 for `5x`, 84 for `6x`, 98 for `7x`, 112 for `8x` or 126 for `9x`.
+
+
+== GlyphIcon usage
+
+************************************************
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download lg",icon="cloud-download",size="lg",width=20,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 2x",icon="cloud-download",size="2x",width=28,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 3x",icon="cloud-download",size="3x",width=42,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 4x",icon="cloud-download",size="4x",width=56,iconsfont="glyphicon"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 5x",icon="cloud-download",size="5x",width=70,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 6x",icon="cloud-download",size="6x",width=84,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 7x",icon="cloud-download",size="7x",width=98,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 8x",icon="cloud-download",size="8x",width=112,iconsfont="glyphicon",role="hidden-xs"]
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png[alt="Cloud Download 9x",icon="cloud-download",size="9x",width=126,iconsfont="glyphicon",role="hidden-xs hidden-sm"]
+************************************************
+
+.A snippet code
+----
+image:./images/icons/glyphicon/glyphicons_364_cloud_download.png
+[
+  alt="Cloud Download lg",
+  icon="cloud-download",
+  size="lg",
+  width=20,
+  iconsfont="glyphicon"  
+]
+----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+
+
+== Font-Awesome usage
+
+************************************************
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download lg",icon="cloud-download",size="lg",width=20,iconsfont="font-awesome"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 2x",icon="cloud-download",size="2x",width=28,iconsfont="font-awesome"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 3x",icon="cloud-download",size="3x",width=42,iconsfont="font-awesome"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 4x",icon="cloud-download",size="4x",width=56,iconsfont="font-awesome"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 5x",icon="cloud-download",size="5x",width=70,iconsfont="font-awesome",role="hidden-xs"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 6x",icon="cloud-download",size="6x",width=84,iconsfont="font-awesome",role="hidden-xs"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 7x",icon="cloud-download",size="7x",width=98,iconsfont="font-awesome",role="hidden-xs"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 8x",icon="cloud-download",size="8x",width=112,iconsfont="font-awesome",role="hidden-xs"]
+image:./images/icons/font-awesome/cloud-download.png[alt="Cloud Download 9x",icon="cloud-download",size="9x",width=126,iconsfont="font-awesome",role="hidden-xs hidden-sm"]
+************************************************
+
+.A snippet code
+----
+image:./images/icons/font-awesome/cloud-download.png
+[
+  alt="Cloud Download 2x",
+  icon="cloud-download",
+  size="2x",
+  width=28,
+  iconsfont="font-awesome"
+]
+----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+
+
+== Ionicons usage
+
+************************************************
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download lg",icon="ios7-cloud-download",size="lg",width=20,iconsfont="ionicons"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 2x",icon="ios7-cloud-download",size="2x",width=28,iconsfont="ionicons"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 3x",icon="ios7-cloud-download",size="3x",width=42,iconsfont="ionicons"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 4x",icon="ios7-cloud-download",size="4x",width=56,iconsfont="ionicons"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 5x",icon="ios7-cloud-download",size="5x",width=70,iconsfont="ionicons",role="hidden-xs"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 6x",icon="ios7-cloud-download",size="6x",width=84,iconsfont="ionicons",role="hidden-xs"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 7x",icon="ios7-cloud-download",size="7x",width=98,iconsfont="ionicons",role="hidden-xs"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 8x",icon="ios7-cloud-download",size="8x",width=112,iconsfont="ionicons",role="hidden-xs"]
+image:./images/icons/ionicons/ios7-cloud-download.png[alt="Cloud Download 9x",icon="ios7-cloud-download",size="9x",width=126,iconsfont="ionicons",role="hidden-xs hidden-sm"]
+************************************************
+
+.A snippet code
+----
+image:./images/icons/ionicons/ios7-cloud-download.png
+[
+  alt="Cloud Download 3x",
+  icon="ios7-cloud-download",
+  size="3x",
+  width=42,
+  iconsfont="ionicons"
+]
+----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 

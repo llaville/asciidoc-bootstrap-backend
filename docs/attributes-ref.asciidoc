@@ -1,0 +1,40 @@
+= {title}
+:title:       Backend Attributes
+:description: 
+include::attributes.asciidoc[]
+:navinfo2:
+:iconsfont:   font-awesome
+:jumbotron:
+
+
+[role="lead"]
+This table contains a list of optional attributes that influence the generated outputs.
+
+[options="header", cols="1,7", role="table table-bordered"]
+|===========================
+| Name         | Description
+| brand        | A simple link to show your brand or project name
+| brandref     | A link to the main page of your project. By default it's a simple anchor #
+| brandver     | Control display of a dynamic versions list of your project.
+| favicon      | Add a link to your favorite icon
+| footer       | Control which footer informations will be included in the output file.
+| footer-fullwidth
+| Enhance the footer of the document with a full width in all resolution.
+| iconsfont    | The name of the icons font provider: either `glyphicon`, `font-awesome`, or `ionicons`.
+| jumbotron    | Enhance the title of the document.
+| jumbotron-fullwidth
+| Enhance the title of the document with a full width jumbotron in all resolution.
+| navbar       | Define the style of navigation bar: `default` (default value), `fixed` or `static`.
+| navbar-inverse
+| Inverted variation of the basic navbar.
+| navinfo,
+navinfo1,
+navinfo2
+| Control which navigation information files will be included in the output file.
+| pygments-style
+| Change the Pygments style. Default theme is `emacs` with a variant background: the one provided by AsciiDoc.
+| rssref       | Specify an URL of RSS feed to be linked with output document.
+| sidebar      | The TOC can be place on a sidebar on `left` (default value) or `right` of the main document body.
+| tocaffix     | Use Bootstrap affix plugin to pin the TOC2 on left or right side triggered at offset specified.
+| totop        | Control which _back to top_ system you want to include in the output file.
+|===========================
