@@ -3,7 +3,7 @@
 :iconsfont:   glyphicon
 :imagesdir:   ./images
 :author:      Laurent Laville
-:revdate:     2014-06-03
+:revdate:     2014-07-03
 :pubdate:     Thu, 03 Jul 2014 09:58:32 +0200
 :summary:     Add support for Bootstrap ProgressBar Component
 :jumbotron:
