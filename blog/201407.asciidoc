@@ -1,0 +1,31 @@
+= Official Blog of AsciiDoc-Bootstrap backend
+:description: Archives of July 2014
+:brand:       https://github.com/llaville/asciidoc-bootstrap-backend
+:rssref:      http://www.laurent-laville.org/asciidoc/bootstrap/blog/rss.xml
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+:icons!:
+:iconsfont:   font-awesome
+:imagesdir:   ./images
+
+
+[role="col-md-3"]
+====
+[panel,primary]
+.{toc-title}
+--
+* xref:post-3[AsciiDoc-Bootstrap 4.0.0 has been released]
+* xref:post-2[Add support for Bootstrap ProgressBar Component]
+* xref:post-1[New features in upcoming version 4.0.0]
+--
+====
+
+[role="col-md-9"]
+include::201407-asciidoc-bootstrap-4.0.0-released.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
+include::201407-asciidoc-bootstrap-4.0.0-preview-6.asciidoc[]
+
+[role="col-md-9 col-md-offset-3"]
+include::201407-new-features-in-upcoming-version-4.0.0.asciidoc[]
