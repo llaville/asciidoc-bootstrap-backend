@@ -37,10 +37,10 @@ image:./images/icons/glyphicon/glyphicons_364_cloud_download.png
   icon="cloud-download",
   size="lg",
   width=20,
-  iconsfont="glyphicon"  
+  iconsfont="glyphicon"
 ]
 ----
-IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block.
 
 
 == Font-Awesome usage
@@ -68,7 +68,7 @@ image:./images/icons/font-awesome/cloud-download.png
   iconsfont="font-awesome"
 ]
 ----
-IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block.
 
 
 == Ionicons usage
@@ -96,4 +96,32 @@ image:./images/icons/ionicons/ios7-cloud-download.png
   iconsfont="ionicons"
 ]
 ----
-IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block. 
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block.
+
+
+== Octicons usage
+
+************************************************
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download lg",icon="cloud-download",size="lg",width=20,iconsfont="octicons"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 2x",icon="cloud-download",size="2x",width=28,iconsfont="octicons"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 3x",icon="cloud-download",size="3x",width=42,iconsfont="octicons"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 4x",icon="cloud-download",size="4x",width=56,iconsfont="octicons"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 5x",icon="cloud-download",size="5x",width=70,iconsfont="octicons",role="hidden-xs"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 6x",icon="cloud-download",size="6x",width=84,iconsfont="octicons",role="hidden-xs"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 7x",icon="cloud-download",size="7x",width=98,iconsfont="octicons",role="hidden-xs"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 8x",icon="cloud-download",size="8x",width=112,iconsfont="octicons",role="hidden-xs"]
+image:./images/icons/octicons/cloud-download.svg[alt="Cloud Download 9x",icon="cloud-download",size="9x",width=126,iconsfont="octicons",role="hidden-xs hidden-sm"]
+************************************************
+
+.A snippet code
+----
+image:./images/icons/octicons/cloud-download.svg
+[
+  alt="Cloud Download 3x",
+  icon="cloud-download",
+  size="4x",
+  width=56,
+  iconsfont="octicons"
+]
+----
+IMPORTANT: We use here the `iconsfont` attribute, because we have already set it to another value in the header block.

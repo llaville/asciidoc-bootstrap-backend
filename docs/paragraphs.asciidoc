@@ -60,6 +60,7 @@ Remember that you can use any of icons font support by the backend.
 * http://glyphicons.com/[Glyphicons] - use +-a iconsfont=glyphicon+
 * http://fontawesome.io[Font-Awesome] - use +-a iconsfont=font-awesome+
 * http://ionicons.com/[Ionicons] - use +-a iconsfont=ionicons+
+* https://octicons.github.com/[Octicons] - use +-a iconsfont=octicons+
 
 ifdef::basebackend-docbook[]
 See xref:_admonition_paragraphs_using_icons_font[]
