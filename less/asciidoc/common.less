@@ -4,6 +4,28 @@ body.navbarfixed {
     padding-top: @navbar-body-padding;
 }
 
+div.section + div.section {
+    padding-top: @line-height-computed * 2;
+}
+
+// Headers positionning
+
+h1[id], h2[id], h3[id] {
+    margin-top: -@navbar-margin-bottom;
+    padding-top: @navbar-margin-bottom;
+}
+
+body.navbarfixed h1[id], body.navbarfixed h2[id], body.navbarfixed h3[id] {
+    margin-top: -(@navbar-margin-bottom + @navbar-body-padding);
+    padding-top: (@navbar-margin-bottom + @navbar-body-padding);
+}
+
+// Navbar alignments
+
+.navbar-static-top {
+    margin-bottom: 0;
+}
+
 // Jumbotron
 
 .container {
