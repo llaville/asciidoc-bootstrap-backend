@@ -12,7 +12,7 @@ ifdef::basebackend-docbook[]
 endif::basebackend-docbook[]
 
 [role="lead"]
-Release v4.0.0 included the default Bootstrap theme and four more free themes  
+Release v4.0.0 included the default Bootstrap theme and four more free themes
 from http://bootswatch.com/[Bootswatch] template provider.
 
 If all those skins does not match your needs, you can either :
@@ -29,7 +29,7 @@ endif::basebackend-docbook[]
 
 == Switch theme
 
-If you decide to modify LESS source files, remember that switching from one theme to another 
+If you decide to modify LESS source files, remember that switching from one theme to another
 require only to change `theme` variable at line 2 in following file.
 
 .Source file `less/asciidoc-bootstrap.less`
@@ -49,15 +49,18 @@ require only to change `theme` variable at line 2 in following file.
 // Ionicons 1.5
 @import "ionicons/ionicons.less";
 
+// Octicons 2.1 with '@octicons-font-path' modified
+@import "octicons/octicons.less";
+
 // AsciiDoc 8.6
 @import "asciidoc/common.less";
 @import "asciidoc/pygments.less";
 @import "asciidoc/iconsfont.less";
 //@import "asciidoc/admonition-text.less";
 @import "asciidoc/admonition-iconsfont.less";
----- 
+----
 
-== Icons font support by Font-Awesome 
+== Icons font support by Font-Awesome
 
 If you don't want to use http://fortawesome.github.io/Font-Awesome/[Font-Awesome],
 just remove or comment line 10.
@@ -67,9 +70,9 @@ just remove or comment line 10.
 //@import "font-awesome/font-awesome.less";
 ----
 
-CAUTION: Be careful, that admonition block used Font-Awesome by default (see file +asciidoc/admonition-iconsfont.less+ ) 
+CAUTION: Be careful, that admonition block used Font-Awesome by default (see file +asciidoc/admonition-iconsfont.less+ )
 
-== Icons font support by Ionicons 
+== Icons font support by Ionicons
 
 If you don't want to use http://ionicons.com/[Ionicons],
 just remove or comment line 13.
@@ -77,6 +80,16 @@ just remove or comment line 13.
 [source,css]
 ----
 //@import "ionicons/ionicons.less";
+----
+
+== Icons font support by Octicons
+
+If you don't want to use https://octicons.github.com/[Octicons],
+just remove or comment line 16.
+
+[source,css]
+----
+//@import "octicons/octicons.less";
 ----
 
 == Admonition Blocks
@@ -92,8 +105,8 @@ activate line 19 and comment line 20.
 
 * If you want to use icons font, don't change anything.
 
-* If you want to use only PNG image files ( with AsciiDoc `icons` attribute ), 
-just remove or comment 20. 
+* If you want to use only PNG image files ( with AsciiDoc `icons` attribute ),
+just remove or comment 20.
 +
 [source,css]
 ----
