@@ -1,0 +1,37 @@
+:doctitle:    Backend 4.1 stable
+:description:
+:iconsfont: font-awesome
+:imagesdir: ./images
+:author:    Laurent Laville
+:revdate:   2014-08-04
+:pubdate:   Mon, 04 Aug 2014 10:47:16 +0200
+:summary:   AsciiDoc-Bootstrap 4.1.0 has been released
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+
+[id="post-2"]
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/font-awesome/rocket.png[alt="release",icon="rocket",size="4x"]
+
+http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/[AsciiDoc-Bootstrap] 4.1.0
+has just been released.
+
+Issues fixed :
+
+* `toc` and `toc2` attributes works as expected
+
+More details on milestone https://github.com/llaville/asciidoc-bootstrap-backend/milestones/v4.1.0[v4.1.0]
+
+Behaviors changes :
+
+* `sidebar` attribute was removed. Use instead the standard `toc-placement` attribute.
+* We used the Bootstrap Panel Component rather than `well` css class to render Table Of Contents.
+
+New backend features :
+
+* We have added support for https://octicons.github.com/[Octicons] GitHub icons font.
+____

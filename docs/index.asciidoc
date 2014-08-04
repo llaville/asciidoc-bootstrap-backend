@@ -3,8 +3,10 @@
 :description: An AsciiDoc backend that renders the AsciiDoc source as HTML5 in the style of Bootstrap.
 include::attributes.asciidoc[]
 :boostrap3:   3.2.0
-:adocbs:      4.0.0
+:adocbs:      4.1.0
 :icons!:
+:toc!:
+:toc2!:
 :iconsfont:   font-awesome
 :jumbotron:
 :jumbotron-fullwidth:
@@ -60,12 +62,12 @@ endif::[]
 
 [role="col-md-3"]
 ====
-[panel,info]
+[panel,warning]
 .v3
 --
 Support both Bootstrap 2 and 3
 
-[bg-info]*Stable Release*
+[bg-warning]*Deprecated*
 
 Last branch 3 release was published on Marth 20, 2014.
 
@@ -88,7 +90,7 @@ Support only Bootstrap 3
 
 [bg-primary]*Stable Release*
 
-Last branch 4 release was published on July 4, 2014.
+Last branch 4 release was published on August 4, 2014.
 
 ifdef::basebackend-bootstrap[]
 link:./manual/current/en/getting-started.html["Learn more",role="primary",options="block"]
@@ -142,6 +144,7 @@ unfloat::[]
 [label label-success]#Alerts#:: Bootstrap3 Component is fully supported.
 [label label-success]#Progress#:: Bootstrap3 Component is partially supported (without stacked bars) with the new progress inline macro.
 [label label-success]#Icon Fonts#:: are accepted via the image inline macro for better compatibility with other backends. [label label-danger]#Icon inline macro was dropped#
+[label label-success]#Octicons#:: icons font support was added. [label label-warning]#4.1.0#
 
 == Open Source
 
@@ -155,3 +158,27 @@ endif::[]
 ifndef::basebackend-bootstrap[]
 {brandref}[View the GitHub Project]
 endif::[]
+
+== Licenses
+
+[role="col-md-6"]
+====
+[panel,success]
+--
+[bg-success]*Documentation*
+
+All documentation provided in +docs+ folder are
+in http://asciidoc.org[AsciiDoc] format (files with extension +.asciidoc+),
+and is released under the http://creativecommons.org/licenses/by-sa/3.0/[Attribution-Share Alike 3.0 Unported] license.
+--
+====
+
+[role="col-md-6"]
+====
+[panel,success]
+--
+[bg-success]*Code*
+
+All source code is released under the https://github.com/llaville/asciidoc-bootstrap-backend/blob/master/LICENSE[Apache Licence Version 2.0].
+--
+====

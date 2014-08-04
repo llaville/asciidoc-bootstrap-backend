@@ -1,14 +1,14 @@
 :author:      Laurent Laville
 :keywords:    AsciiDoc, Bootstrap, Font-Awesome, Glyphicons
-:revnumber:   4.0.0
-:revdate:     2014-07-04
-:toc:
+:revnumber:   4.1.0
+:revdate:     2014-08-04
+:toc2:
+:toc-placement: right
 :brand:       AsciiDoc-Bootstrap
 :brandref:    https://github.com/llaville/asciidoc-bootstrap-backend
 :brandver:
-:sidebar:     right
 :footer:
 :footer-fullwidth:
 :idprefix:    _
-:gitbranch:   v4
+:gitbranch:   master
 :rawbaseurl:  https://raw.github.com/llaville/asciidoc-bootstrap-backend/{gitbranch}
