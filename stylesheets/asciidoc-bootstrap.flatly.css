@@ -1,4 +1,4 @@
-/* glyphicon | fa | octicon */
+/* glyphicon | fa | ion | octicon */
 /* fa-info-circle */
 /* fa-lightbulb-o */
 /* fa-exclamation-triangle */
@@ -11012,6 +11012,9 @@ MIT License: https://github.com/driftyco/ionicons
 /* ⚡ */
 body.navbarfixed {
   padding-top: 60px;
+}
+.section {
+  clear: both;
 }
 div.section + div.section {
   padding-top: 42px;
