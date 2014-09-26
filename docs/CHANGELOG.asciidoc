@@ -5,6 +5,19 @@ include::attributes.asciidoc[]
 :navinfo1:
 
 
+== Version 4.2.0 _(2014-10-04)_
+
+.Additions and changes:
+* Upgrade Font-Awesome to version 4.2.0
+
+.Bug fixes:
+* sect1 header does not used section css style (clear:both) when role is in affect.
+See commit https://github.com/llaville/asciidoc-bootstrap-backend/commit/32e511c740a25e9766d61525dd55da8c560c3016[32e511c]
+* fixed css comment style for standalone documents.
+See commit https://github.com/llaville/asciidoc-bootstrap-backend/commit/8543f213335f72420cafc92304c4ae11129b4b92[8543f21]
+* add missing optional stylesheet for standalone documents.
+See commit https://github.com/llaville/asciidoc-bootstrap-backend/commit/7907777bf40645c3181054307dbde62c55c2c820[7907777]
+
 == Version 4.1.0 _(2014-08-04)_
 
 .Additions and changes:
