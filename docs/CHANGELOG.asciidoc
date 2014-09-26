@@ -8,7 +8,9 @@ include::attributes.asciidoc[]
 == Version 4.2.0 _(2014-10-04)_
 
 .Additions and changes:
+* add new bootswatch theme http://bootswatch.com/sandstone[Sandstone] to standard distribution
 * Upgrade Font-Awesome to version 4.2.0
+* Upgrade bootswatch themes to version 3.2.0-4
 
 .Bug fixes:
 * sect1 header does not used section css style (clear:both) when role is in affect.

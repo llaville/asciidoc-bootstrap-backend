@@ -101,6 +101,9 @@ image::cerulean.png[link="http://bootswatch.com/cerulean",scale="50"]
 .Basic United theme
 image::united.png[link="http://bootswatch.com/united",scale="50"]
 
+.Basic Sandstone theme
+image::sandstone.png[link="http://bootswatch.com/sandstone",scale="50"]
+
 endif::basebackend-docbook[]
 
 ifdef::basebackend-html[]
@@ -181,6 +184,25 @@ endif::basebackend-bootstrap[]
 --
 ====
 
+[role="col-md-4"]
+====
+[panel,info]
+.Basic Sandstone theme
+--
+image::sandstone.png[link="http://bootswatch.com/sandstone",options="responsive"]
+
+ifdef::basebackend-bootstrap[]
+link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.min.css["asciidoc-bootstrap.sandstone.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
+link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.css["asciidoc-bootstrap.sandstone.css",role="info",icon="glyphicon-download-alt",options="block,white"]
+endif::basebackend-bootstrap[]
+
+ifndef::basebackend-bootstrap[]
+link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.min.css[]
+link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.css[]
+endif::basebackend-bootstrap[]
+--
+====
+
 endif::basebackend-html[]
 
 
@@ -231,6 +253,7 @@ file structure and contents.
   │   ├── asciidoc-bootstrap.flatly.css
   │   ├── asciidoc-bootstrap.readable.css
   │   ├── asciidoc-bootstrap.united.css
+  │   ├── asciidoc-bootstrap.sandstone.css
   │   ├── pygments.css
   │   ├── pygments.monokai.css
   │   ├── pygments.pastie.css
