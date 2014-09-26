@@ -5,7 +5,18 @@ include::attributes.asciidoc[]
 :navinfo1:
 
 
-== Version 4.0.0 _(2014-06-dd)_
+== Version 4.1.0 _(2014-08-04)_
+
+.Additions and changes:
+* fix issues on Table Of Contents ( toc1 and toc 2)
+* fix header title visibility when using any entry of TOC
+* improve render with Bootstrap (default) panel component, rather than well class
+* add support of https://octicons.github.com/[GitHub Octicons]
+
+.Bug fixes:
+* none
+
+== Version 4.0.0 _(2014-07-04)_
 
 .Additions and changes:
 * Drop support of Bootstrap 2.3.2
