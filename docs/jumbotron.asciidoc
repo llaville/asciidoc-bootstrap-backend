@@ -1,0 +1,111 @@
+= Jumbotron Bootstrap Component
+:doctitle:    Jumbotron Bootstrap Component
+:description: http://getbootstrap.com/components/#jumbotron
+include::attributes.asciidoc[]
+:navinfo2:
+:iconsfont:   font-awesome
+:jumbotron:
+:toc2!:
+
+
+[panel]
+.{toc-title}
+--
+* xref:_basic_example[Basic example]
+* xref:_common_jumbotron[Common Jumbotron]
+* xref:_specific_jumbotron[Specific Jumbotron]
+* xref:_combined_common_and_specific_jumbotron[Combined Common and Specific Jumbotron]
+--
+
+[role="lead"]
+A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.
+
+WARNING: This feature is available only since version 4.2.0
+
+== Basic example
+
+Default behavior show the same content as previous version 4.1.0
+
+That meens, with only `jumbotron` attribute defined, we got such output `:title:` or `:doctitle:` for header, and `:description:` for sub-header.
+
+++++
+<div class="jumbotron">
+    <h1>Jumbotron Bootstrap Component</h1>
+    <p class="lead">http://getbootstrap.com/components/#jumbotron</p>
+</div>
+++++
+
+Html code produced is :
+....
+<div class="jumbotron">
+    <h1>Jumbotron Bootstrap Component</h1>
+    <p class="lead">http://getbootstrap.com/components/#jumbotron</p>
+</div>
+....
+
+== Common Jumbotron
+
+If you want to display the same jumbotron content on all pages, use both `jumbotron` and `jumboinfo1` attributes
+and put the common content into a `jumboinfo.html` file.
+
+E.g: Content of a `jumboinfo.html` file
+....
+<h1>Hello, world!</h1>
+<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+....
+
+We got such result :
+++++
+<div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+</div>
+++++
+
+== Specific Jumbotron
+
+If you want to display a specific jumbotron content on one page, use both `jumbotron` and `jumboinfo` attributes
+and put the specific content into a `<filename>-jumboinfo.html` file, where `<filename>` is the `docname` of your page.
+
+NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docname` attribute.
+
+E.g: Content of a `<filename>-jumboinfo.html` file
+....
+<h1>Hello, world!</h1>
+<p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+....
+
+We got such result :
+++++
+<div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+</div>
+++++
+
+== Combined Common and Specific Jumbotron
+
+If you want to display a jumbotron that include both the common and the specific content, use both `jumbotron` and `jumboinfo2` attributes
+and put the specific content into a `<filename>-jumboinfo.html` file, where `<filename>` is the `docname` of your page.
+
+NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docname` attribute.
+
+E.g: Content of a `jumboinfo.html` file
+....
+<h1>Hello, world!</h1>
+<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+....
+
+E.g: Content of a `<filename>-jumboinfo.html` file
+....
+<p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+....
+
+We got such result :
+++++
+<div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+</div>
+++++

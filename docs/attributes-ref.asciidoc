@@ -24,6 +24,10 @@ This table contains a list of optional attributes that influence the generated o
 | jumbotron    | Enhance the title of the document.
 | jumbotron-fullwidth
 | Enhance the title of the document with a full width jumbotron in all resolution.
+| jumboinfo,
+jumboinfo1,
+jumboinfo2
+| Control which jumbotron information files will be included in the output file.
 | navbar       | Define the style of navigation bar: `default` (default value), `fixed` or `static`.
 | navbar-inverse
 | Inverted variation of the basic navbar.

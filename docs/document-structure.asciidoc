@@ -28,6 +28,22 @@ navinfo files in the HTML output file:
 
   $ asciidoc -b bootstrap -a navinfo2 mydoc.txt
 
+| jumboinfo, jumboinfo1, jumboinfo2 |
+These three attributes control which jumbotron information
+files will be included in the output file:
+
+jumboinfo:: Include `<filename>-jumboinfo.html`
+jumboinfo1:: Include `jumboinfo.html`
+jumboinfo2:: Include `jumboinfo.html` and `<filename>-jumboinfo.html`
+
+Where `<filename>` is the file name (without extension) of the AsciiDoc
+input file.
+
+The following example will include a `jumboinfo.html` and `mydoc-jumboinfo.html`
+jumboinfo files in the HTML output file:
+
+  $ asciidoc -b bootstrap -a jumboinfo2 mydoc.txt
+
 | footer |
 This attribute control which footer informations
 will be included in the output file:
@@ -65,6 +81,10 @@ in the HTML output file (default behavior):
 |====================================================================
 
 == Examples
+
+=== Jumbotron
+
+Learn more at the link:jumbotron.html[Jumbotron Bootstrap Component] page.
 
 === Navigation bar
 
