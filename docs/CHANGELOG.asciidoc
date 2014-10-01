@@ -3,11 +3,12 @@
 :description: Summary of versions changes
 include::attributes.asciidoc[]
 :navinfo1:
-
+:jumbotron:
 
 == Version 4.2.0 _(2014-10-04)_
 
 .Additions and changes:
+* add three new attributes (`jumboinfo`, `jumboinfo1` and `jumboinfo2`) to handle custom version of Jumbotron Component.
 * add new bootswatch theme http://bootswatch.com/sandstone[Sandstone] to standard distribution
 * Upgrade Font-Awesome to version 4.2.0
 * Upgrade bootswatch themes to version 3.2.0-4
