@@ -1,7 +1,7 @@
 :author:      Laurent Laville
 :keywords:    AsciiDoc, Bootstrap, Font-Awesome, Glyphicons
-:revnumber:   4.1.0
-:revdate:     2014-08-04
+:revnumber:   4.2.0
+:revdate:     2014-10-04
 :toc2:
 :toc-placement: right
 :brand:       AsciiDoc-Bootstrap

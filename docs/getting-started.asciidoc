@@ -263,6 +263,7 @@ file structure and contents.
       ├── default/
       ├── flatly/
       ├── readable/
+      ├── sandstone/
       └── united/
 ----
 
@@ -332,6 +333,7 @@ in the header of the output document.
 
 Like the `docinfo` attribute, bootstrap backend add support to dropdowns
 navigation bar with to new `navinfo` attribute.
+It also add support to bootstrap jumbotron component with the new `jumboinfo` attribute.
 
 ifdef::basebackend-docbook[]
 === Callouts
@@ -378,7 +380,7 @@ ifdef::basebackend-html[]
 === link:customizing.html[Customizing]
 endif::basebackend-html[]
 
-AsciiDoc-Bootstrap v4 includes support of http://lesscss.org[LESS] 
-one of the most popular CSS preprocessor. 
+AsciiDoc-Bootstrap v4 includes support of http://lesscss.org[LESS]
+one of the most popular CSS preprocessor.
 
 Easy to maintain, and change skins of your favorite Asciidoc documents.
