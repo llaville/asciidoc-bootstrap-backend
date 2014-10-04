@@ -1,0 +1,24 @@
+:doctitle:    Backend 4.2 stable
+:description:
+:iconsfont: font-awesome
+:imagesdir: ./images
+:author:    Laurent Laville
+:revdate:   2014-10-04
+:pubdate:   Sat, 04 Oct 2014 09:49:59 +0200
+:summary:   AsciiDoc-Bootstrap 4.2.0 has been released
+:jumbotron:
+:jumbotron-fullwidth:
+:footer-fullwidth:
+
+[id="post-2"]
+== {summary}
+
+[quote,Published by {author} on {revdate}]
+____
+image:icons/font-awesome/rocket.png[alt="release",icon="rocket",size="4x"]
+
+http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/[AsciiDoc-Bootstrap] 4.2.0
+has just been released.
+
+More details on http://www.laurent-laville.org/asciidoc/bootstrap/manual/current/en/CHANGELOG.html[changelog]
+____
