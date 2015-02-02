@@ -2,6 +2,3 @@ bootstrap/*
 fonts/*
 themes/*
 Thumbs.db
-blog/vendor/*
-blog/rssbuilder.php
-blog/rss.xml
