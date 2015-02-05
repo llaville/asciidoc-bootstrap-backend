@@ -3,10 +3,11 @@
 :description: An AsciiDoc backend that renders the AsciiDoc source as HTML5 in the style of Bootstrap.
 include::attributes.asciidoc[]
 :boostrap3:   3.2.0
-:adocbs:      4.1.0
+:adocbs:      4.3.0
 :icons!:
 :toc!:
 :toc2!:
+:themeswitcher!:
 :iconsfont:   font-awesome
 :jumbotron:
 :jumbotron-fullwidth:
@@ -18,49 +19,7 @@ include::attributes.asciidoc[]
 
 _currently v{adocbs}_
 
-[role="col-md-3"]
-====
-[panel,warning]
-.v1
---
-Support only Bootstrap 2
-
-[bg-warning]*Deprecated*
-
-Branch 1 release was published on December 3, 2012.
-
-ifdef::basebackend-bootstrap[]
-link:https://github.com/mojavelinux/asciidoc-bootstrap-docs-backend["See Dan Allen works",role="primary",options="block"]
-endif::[]
-
-ifndef::basebackend-bootstrap[]
-https://github.com/mojavelinux/asciidoc-bootstrap-docs-backend[See Dan Allen works]
-endif::[]
---
-====
-
-[role="col-md-3"]
-====
-[panel,warning]
-.v2
---
-Support only Bootstrap 2
-
-[bg-warning]*Deprecated*
-
-Last branch 2 release was published on October 15, 2013.
-
-ifdef::basebackend-bootstrap[]
-link:./manual/2.1/en/getting-started.html["Learn more",role="primary",options="block"]
-endif::[]
-
-ifndef::basebackend-bootstrap[]
-link:./manual/2.1/en/getting-started.html[Learn more]
-endif::[]
---
-====
-
-[role="col-md-3"]
+[role="col-md-6"]
 ====
 [panel,warning]
 .v3
@@ -81,7 +40,7 @@ endif::[]
 --
 ====
 
-[role="col-md-3"]
+[role="col-md-6"]
 ====
 [panel,primary]
 .v4
@@ -90,7 +49,7 @@ Support only Bootstrap 3
 
 [bg-primary]*Stable Release*
 
-Last branch 4 release was published on August 4, 2014.
+Last branch 4 release was published on February 5, 2015.
 
 ifdef::basebackend-bootstrap[]
 link:./manual/current/en/getting-started.html["Learn more",role="primary",options="block"]
@@ -145,6 +104,7 @@ unfloat::[]
 [label label-success]#Progress#:: Bootstrap3 Component is partially supported (without stacked bars) with the new progress inline macro.
 [label label-success]#Icon Fonts#:: are accepted via the image inline macro for better compatibility with other backends. [label label-danger]#Icon inline macro was dropped#
 [label label-success]#Octicons#:: icons font support was added. [label label-warning]#4.1.0#
+[label label-success]#Themes#:: switcher with JQuery plugin [label label-warning]#4.3.0#
 
 == Open Source
 

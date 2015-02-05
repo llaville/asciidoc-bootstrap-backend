@@ -68,24 +68,21 @@ NOTE: `<version>` is to be replaced by the latest version available of the backe
 =====================================================================
 The Asciidoc Bootstrap backend standard version included :
 
-* version 3.2.0 ( +themes/+ ) of the default, flatly, readable, cerulean and united themes from http://bootswatch.com/[Bootswatch] template provider.
-* version 3.2.0 ( +bootstrap/+, +less/bootstrap/+ ) of http://getbootstrap.com[Bootstrap].
-* version 4.2.0 ( +fonts/+, +/less/font-awesome/+ ) of http://fortawesome.github.io/Font-Awesome/[Font-Awesome].
-* version 1.5.2 ( +fonts/+, +less/ionicons/+ ) of http://ionicons.com/[Ionicons].
-* version 2.1.1 ( +fonts/+, +less/octicons/+ ) of https://octicons.github.com/[Octicons].
+* version 3.3.2 ( +themes/+ ) of the default, flatly, readable, cerulean and united themes from http://bootswatch.com/[Bootswatch] template provider.
+* version 3.3.2 ( +bootstrap/+, +less/bootstrap/+ ) of http://getbootstrap.com[Bootstrap].
+* version 4.3.0 ( +fonts/+, +/less/font-awesome/+ ) of http://fortawesome.github.io/Font-Awesome/[Font-Awesome].
+* version 2.0.1 ( +fonts/+, +less/ionicons/+ ) of http://ionicons.com/[Ionicons].
+* version 2.1.2 ( +fonts/+, +less/octicons/+ ) of https://octicons.github.com/[Octicons].
 =====================================================================
 
 === Themes from Bootswatch _a free template provider_
 
 [role="lead"]
-AsciiDoc-Bootstrap backend v4 standard distribution included these following templates :
-
-You can download pre-compiled CSS (uncompressed and/or minified) with default behavior :
+AsciiDoc-Bootstrap backend v4 standard distribution included these following templates
+with pre-compiled CSS (uncompressed and/or minified) and default behavior :
 
 * Admonition blocks used Font-Awesome icons font
 * Support both Glyphicon, Font-Awesome and Ionicons icons font
-
-TIP: These files are already included in AsciiDoc-Bootstrap backend standard distribution (see +stylesheets/+ folder)
 
 ifdef::basebackend-docbook[]
 
@@ -114,16 +111,6 @@ ifdef::basebackend-html[]
 .Basic Flatly theme
 --
 image::flatly.png[link="http://bootswatch.com/flatly",options="responsive"]
-
-ifdef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.min.css["asciidoc-bootstrap.flatly.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.css["asciidoc-bootstrap.flatly.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::basebackend-bootstrap[]
-
-ifndef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.min.css[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.flatly.css[]
-endif::basebackend-bootstrap[]
 --
 ====
 
@@ -133,16 +120,6 @@ endif::basebackend-bootstrap[]
 .Basic Readable theme
 --
 image::readable.png[link="http://bootswatch.com/readable",options="responsive"]
-
-ifdef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.min.css["asciidoc-bootstrap.readable.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.css["asciidoc-bootstrap.readable.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::basebackend-bootstrap[]
-
-ifndef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.min.css[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.readable.css[]
-endif::basebackend-bootstrap[]
 --
 ====
 
@@ -152,16 +129,6 @@ endif::basebackend-bootstrap[]
 .Basic Cerulean theme
 --
 image::cerulean.png[link="http://bootswatch.com/cerulean",options="responsive"]
-
-ifdef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.min.css["asciidoc-bootstrap.cerulean.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.css["asciidoc-bootstrap.cerulean.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::basebackend-bootstrap[]
-
-ifndef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.min.css[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.cerulean.css[]
-endif::basebackend-bootstrap[]
 --
 ====
 
@@ -171,16 +138,6 @@ endif::basebackend-bootstrap[]
 .Basic United theme
 --
 image::united.png[link="http://bootswatch.com/united",options="responsive"]
-
-ifdef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.min.css["asciidoc-bootstrap.united.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.css["asciidoc-bootstrap.united.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::basebackend-bootstrap[]
-
-ifndef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.min.css[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.united.css[]
-endif::basebackend-bootstrap[]
 --
 ====
 
@@ -190,16 +147,6 @@ endif::basebackend-bootstrap[]
 .Basic Sandstone theme
 --
 image::sandstone.png[link="http://bootswatch.com/sandstone",options="responsive"]
-
-ifdef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.min.css["asciidoc-bootstrap.sandstone.min.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.css["asciidoc-bootstrap.sandstone.css",role="info",icon="glyphicon-download-alt",options="block,white"]
-endif::basebackend-bootstrap[]
-
-ifndef::basebackend-bootstrap[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.min.css[]
-link:http://laurent-laville.org/asciidoc/bootstrap/asciidoc-bootstrap.sandstone.css[]
-endif::basebackend-bootstrap[]
 --
 ====
 

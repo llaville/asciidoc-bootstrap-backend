@@ -3,6 +3,7 @@
 :icons!:
 :iconsfont:   font-awesome
 :theme:       united
+:themeswitcher!:
 :stylesheet:  cover.css
 
 
