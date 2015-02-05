@@ -4,6 +4,7 @@
 include::attributes.asciidoc[]
 :boostrap3:   3.2.0
 :adocbs:      4.3.0
+:navbar!:
 :icons!:
 :toc!:
 :toc2!:

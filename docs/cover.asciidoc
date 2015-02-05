@@ -1,6 +1,7 @@
 = Cover
 :description: AsciiDoc-Bootstrap Book cover
 :icons!:
+:navbar!:
 :iconsfont:   font-awesome
 :theme:       united
 :themeswitcher!:

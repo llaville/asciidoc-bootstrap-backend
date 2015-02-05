@@ -39,14 +39,14 @@ require only to change `theme` variable at line 2 in following file.
 @theme:     "default";
 @themesdir: "../themes/@{theme}";
 
-// Bootstrap 3.2
+// Bootstrap 3.3
 @import "bootstrap/bootstrap.less";
 @import "@{themesdir}/variables.less";
 
-// Font-Awesome 4.2
+// Font-Awesome 4.3
 @import "font-awesome/font-awesome.less";
 
-// Ionicons 1.5
+// Ionicons 2.0
 @import "ionicons/ionicons.less";
 
 // Octicons 2.1 with '@octicons-font-path' modified
