@@ -69,7 +69,7 @@ NOTE: `<version>` is to be replaced by the latest version available of the backe
 The Asciidoc Bootstrap backend standard version included :
 
 * version 3.3.2 ( +themes/+ ) of the default, flatly, readable, cerulean and united themes from http://bootswatch.com/[Bootswatch] template provider.
-* version 3.3.2 ( +bootstrap/+, +less/bootstrap/+ ) of http://getbootstrap.com[Bootstrap].
+* version 3.3.4 ( +bootstrap/+, +less/bootstrap/+ ) of http://getbootstrap.com[Bootstrap].
 * version 4.3.0 ( +fonts/+, +/less/font-awesome/+ ) of http://fortawesome.github.io/Font-Awesome/[Font-Awesome].
 * version 2.0.1 ( +fonts/+, +less/ionicons/+ ) of http://ionicons.com/[Ionicons].
 * version 2.1.2 ( +fonts/+, +less/octicons/+ ) of https://octicons.github.com/[Octicons].
