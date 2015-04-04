@@ -2,6 +2,7 @@
 :doctitle:    Getting Started
 :description: Overview of the project, its contents, and how to get started with your own theme.
 include::attributes.asciidoc[]
+include::revision.asciidoc[]
 :navinfo2:
 :icons!:
 :iconsfont:   font-awesome
@@ -82,7 +83,7 @@ AsciiDoc-Bootstrap backend v4 standard distribution included these following tem
 with pre-compiled CSS (uncompressed and/or minified) and default behavior :
 
 * Admonition blocks used Font-Awesome icons font
-* Support both Glyphicon, Font-Awesome and Ionicons icons font
+* Support both Glyphicon, Font-Awesome, Ionicons and Octicons icons font
 
 ifdef::basebackend-docbook[]
 
@@ -175,6 +176,8 @@ file structure and contents.
   │   ├── asciidoc.js
   │   ├── html5shiv.js
   │   ├── html5shiv.min.js
+  │   ├── jquery.bootstrapThemeSwitcher.js
+  │   ├── jquery.cookie.js
   │   ├── jquery.js
   │   ├── jquery.min.js
   │   ├── jquery.ui.totop.js

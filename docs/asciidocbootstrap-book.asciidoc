@@ -1,6 +1,7 @@
 = AsciiDoc-Bootstrap Book
 :description: The Complete Guide
 include::attributes.asciidoc[]
+include::revision.asciidoc[]
 
 [preface]
 --

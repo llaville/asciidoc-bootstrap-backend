@@ -5,6 +5,20 @@ include::attributes.asciidoc[]
 :navinfo1:
 :jumbotron:
 
+== Version 4.4.0 _(2015-04-04)_
+
+.Additions and changes:
+* Ability to add an icon (iconfont) in the header of a panel component
+* Responsive-option in image inline macro was removed (see https://github.com/llaville/asciidoc-bootstrap-backend/issues/15[GH-15])
+* Add `align` option in image block macro to center image in a div
+* Upgrade Bootstrap to version 3.3.4
+* Upgrade Bootswatch themes (Flatly, Readable, Cerulean, United, Sandstone) to version 3.3.4
+
+.Bug fixes:
+* Fixed theme switcher usage.
+* Fixed render of Panel without title.
+See commit https://github.com/llaville/asciidoc-bootstrap-backend/commit/7a8f39e0994926821aa0c225c77785465ade6a8a[7a8f39e]
+
 == Version 4.3.0 _(2015-02-05)_
 
 .Additions and changes:

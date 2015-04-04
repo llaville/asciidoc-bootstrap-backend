@@ -12,9 +12,15 @@
 
 [role="cover"]
 --
-image:icons/font-awesome/file-text-o.png[alt="Text File",icon="file-text-o",iconsfont="font-awesome",size="9x"]
-image:icons/font-awesome/html5.png[alt="HTML 5",icon="html5",iconsfont="font-awesome",size="4x"]
-image:icons/font-awesome/css3.png[alt="CSS 3",icon="css3",iconsfont="font-awesome",size="4x"]
+[subs="none"]
+++++++++++++++++++++++++++++++++++++++
+<span class="fa-stack">
+    <span class="fa fa-stack-1x iconsfont-2x" style="bottom: -0.9em; left: 0.4em; font-family:helvetica">A</span>
+    <span class="fa fa-stack-1x iconsfont-2x" style="bottom: -2.3em; left: 1.1em; font-family:helvetica; font-weight:bold">B</span>
+    <i class="fa fa-square-o fa-stack-1x iconsfont-4x" style="bottom: -1.2em; left: 0.4em; color:#6F5499;"></i>
+    <i class="fa fa-file-o iconsfont-9x" style="color:#D1D1D1;"></i>
+</span>
+++++++++++++++++++++++++++++++++++++++
 --
 
 [role="bg-info"]
