@@ -1,0 +1,14 @@
+
+a.toc-top-link {
+    right: 0.5em;
+    position: absolute;
+}
+.mm-menu {
+    width: 70%;
+}
+.mm-listview .mm-next::before {
+    border-left-style: none;
+}
+.jumbotron .toc-top-link {
+    display: none;
+}

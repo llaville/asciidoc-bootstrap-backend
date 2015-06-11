@@ -1,11 +1,12 @@
 = My Blog
 :author: Laurent Laville
+:iconsfont!:
 
 == Here are my posts
 
-[role="blog",cols="3,8",halign="right"]
-.Posted on 2013-11-17 [small clearfix]#Last updated {docdate} {doctime}#
---
+[role="col-md-9 blog"]
+[quote]
+____
 [big]*Lorem ipsum*
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum dui id lectus viverra placerat.
@@ -18,11 +19,15 @@ a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt c
 Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
 Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
 Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
---
+____
+[role="col-md-3 blog"]
+Posted on 2013-11-17
+[small clearfix]#Last updated {docdate} {doctime}#
 
-[role="blog",cols="3,8",halign="right"]
-.Posted on 2013-11-15 [small clearfix]#Last updated 2013-11-15 14:21:00 Paris, Madrid# 
---
+
+[role="col-md-9 blog"]
+[quote]
+____
 [big]*Eye of the Tiger*
 
 image:images/tiger.png[role="pull-right"]
@@ -37,4 +42,7 @@ a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt c
 Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
 Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
 Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
---
+____
+[role="col-md-3 blog"]
+Posted on 2013-11-15
+[small clearfix]#Last updated 2013-11-15 14:21:00 Paris, Madrid#

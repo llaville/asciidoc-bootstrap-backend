@@ -1,0 +1,31 @@
+@import url(user.css);
+
+body#blog {
+    background-color: #d3d3d3;
+}
+
+blockquote.blog {
+  margin-bottom: 21px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+}
+
+blockquote.blog div.paragraph:nth-child(1) {
+  color: #ff0000;
+  font-size: 100%;
+}
+
+blockquote.blog div.paragraph {
+    font-size: 16px;
+}
+
+div.blog > p {
+    font-weight: bold;
+}
+div.blog > p > span {
+    font-weight: normal;
+}

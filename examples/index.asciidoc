@@ -1,36 +1,57 @@
 = {title}
-:title:       Example Templates for Asciidoc-Bootstrap
-:description: Gallery of useful examples to easily get started with and extend Bootstrap backend for Asciidoc
-
-:span3:   col-md-3
-:span5:   col-md-5
-:options: responsive
+:title:       AsciiDoc-Bootstrap Gallery
+:description: Gallery of useful examples to easily get started with and extend Bootstrap backend for AsciiDoc
 
 
-== Navbar examples
-
-[role="lead"]
-Basic templates for showcasing how the navbar works.
-
-image::images/screenshots/bs2default-navbar-default-jumbotron-toc1.png[link="navbar-default.html",title="Default",role="thumbnail",style="{span3}",options="{options}"]
-image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static.html",title="Static",role="thumbnail",style="{span3}",options="{options}"]
-image::images/screenshots/bs2default-navbar-fixed-jumbotron-toc2.png[link="navbar-fixed.html",title="Fixed",role="thumbnail",style="{span3}",options="{options}"]
-
-
-== Table Of Contents examples
+== Table Of Contents
 
 [role="lead"]
 Basic templates for showcasing how the TOC (Table Of Contents) works.
 
-image::images/screenshots/bs2default-toc1-hero.png[link="toc1.html",title="TOC 1",role="thumbnail",style="{span5}",options="{options}"]
-image::images/screenshots/bs2flatly-toc2-hero.png[link="toc2.html",title="TOC 2",role="thumbnail",style="{span5}",options="{options}"]
+[role="col-md-4"]
+====
+image::images/screenshots/toc1-sample.png[link="toc1.html",title="TOC 1",role="thumbnail",options="align,responsive"]
+
+We will learn how to add a table of contents at start of your AsciiDoc document
+====
+
+[role="col-md-4"]
+====
+image::images/screenshots/toc2-sample2.png[link="toc2.html",title="TOC 2",role="thumbnail",options="align,responsive"]
+
+We will learn how to add a table of contents in the left/right hand margin of an article or book document.
+====
+
+[role="col-md-4"]
+====
+image::images/screenshots/toc3-sample2.png[link="toc3.html",title="TOC 3",role="thumbnail",options="align,responsive"]
+
+We will learn how to add a table of contents in the off-canvas menu.
+====
 
 
-== Open Blocks examples
+== Open Blocks
 
 [role="lead"]
 Basic templates for showcasing how the open blocks can be used to display a blog page or a releases list.
 
-image::images/screenshots/bs2flatly-blog1.png[link="blog1.html",title="Blog",role="thumbnail",style="{span3}",options="{options}"]
-image::images/screenshots/bs2flatly-blog2.png[link="blog2.html",title="Blog Panel",role="thumbnail",style="{span3}",options="{options}"]
-image::images/screenshots/bs2flatly-release1.png[link="release1.html",title="Release",role="thumbnail",style="{span3}",options="{options}"]
+[role="col-md-4"]
+====
+image::images/screenshots/blog1-sample.png[link="blog1.html",title="Blog",role="thumbnail",options="align,responsive"]
+
+We will learn how to display content like a blog page with 2 columns
+====
+
+[role="col-md-4"]
+====
+image::images/screenshots/blog2-sample.png[link="blog2.html",title="Blog Panel",role="thumbnail",options="align,responsive"]
+
+We will learn how to implement another design that look like a blog page with 2 columns
+====
+
+[role="col-md-4"]
+====
+image::images/screenshots/releases-sample.png[link="release1.html",title="Release",role="thumbnail",options="align,responsive"]
+
+We will learn how to display content like GitHub project releases
+====

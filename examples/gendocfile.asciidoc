@@ -1,0 +1,35 @@
+
+To generate this page, invoke the following command:
+[source,bash]
+----
+$ asciidoc -b bootstrap -f /path/to/examples/bootstrap3.conf /path/to/examples/{docfile}
+----
+
+With this configuration file called `bootstrap3.conf`
+..........................
+[attributes]
+linkcss
+numbered
+tocmmenu
+toclevels=2
+lang=en
+jumbotron
+jumbotron-fullwidth
+totop
+stylesheet=user.css
+iconsfont=font-awesome
+theme=readable
+themeswitcher
+themeswitcher-cookiethemename=adocbsexamples.bootstrapTheme.name
+themeswitcher-cookiethemecss=adocbsexamples.bootstrapTheme.css
+navbar=fixed
+navinfo1
+footer!
+footer-fullwidth
+..........................
+
+And custom user stylesheet called `user.css`
+[source,css]
+----
+include::user.css[]
+----

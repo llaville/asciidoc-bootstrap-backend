@@ -1,11 +1,16 @@
 = My Project
 :author: Laurent Laville
+:iconsfont!:
 
 == Here are my releases
 
-[role="timeline",cols="3,8"]
-.[medium label label-warning]#Pre-release# [clearfix]*Released on: 2013-11-17*
---
+[role="col-md-3 timeline"]
+[medium label label-warning]#Pre-release#
+[clearfix]*Released on: 2013-11-17*
+
+[role="col-md-9 timeline"]
+[quote]
+____
 [big]*Version 3.1.0RC1*
 
 This is the first release candidate for upcoming 3.1.0 release.
@@ -13,17 +18,22 @@ This is the first release candidate for upcoming 3.1.0 release.
 link:bootstrap-3.1.0RC1.zip["AsciiDoc-Bootstrap 3.1.0RC1",role="primary"]
 link:source-3.1.0RC1.zip["Source code (zip)",role="info"]
 link:source-3.1.0RC1.tgz["Source code (tar.gz)",role="info"]
---
+____
 
-[role="timeline",cols="3,8"]
-.[medium label label-success]#Latest Release# [clearfix]*Released on: 2013-11-14*
---
+
+[role="col-md-3 timeline"]
+[medium label label-success]#Latest Release#
+[clearfix]*Released on: 2013-11-14*
+
+[role="col-md-9 timeline"]
+[quote]
+____
 [big]*Version 3.0.1*
 
 ** [medium]*Changelog*
 
 *** add new attribute `bootstrap-backend-version` (latest version) and include it in the generator meta tag
-*** uses Bootstrap 3 template as default engine (attribute `bsver` sets on value 3) 
+*** uses Bootstrap 3 template as default engine (attribute `bsver` sets on value 3)
 
 ** [medium]*Bug fixes*
 
@@ -34,4 +44,4 @@ link:source-3.1.0RC1.tgz["Source code (tar.gz)",role="info"]
 link:bootstrap-3.0.1.zip["AsciiDoc-Bootstrap 3.0.1",role="primary"]
 link:source-3.0.1.zip["Source code (zip)",role="info"]
 link:source-3.0.1.tgz["Source code (tar.gz)",role="info"]
---
+____

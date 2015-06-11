@@ -1,0 +1,31 @@
+@import url(user.css);
+
+span.medium { font-size: 1.4em; }
+
+.title .label-warning {
+    padding: 10px;
+}
+
+div.timeline > p {
+    text-align: right;
+    float: right;
+    margin: 0;
+}
+
+blockquote.timeline > .attribution, blockquote.timeline > small {
+    text-align: right;
+    color: #d3d3d3;
+}
+
+blockquote.timeline {
+    margin-bottom: 0;
+}
+
+blockquote.timeline div.paragraph:nth-child(2) {
+    margin: 0.5em 0;
+    font-size: 100%;
+}
+
+blockquote.timeline div.paragraph {
+    font-size: 12px;
+}

@@ -1,11 +1,16 @@
 = My Blog
 :author: Laurent Laville
+:iconsfont!:
 
 == Here are my posts
 
-[role="timeline",cols="3,8",citetitle="Last updated {docdate} {doctime}",attribution="{author}"]
-.[label label-default]#November 17, 2013# [small clearfix]#tags: demo#
---
+[role="col-md-3 timeline"]
+[label label-default]#November 17, 2013#
+[small clearfix]#tags: demo#
+
+[role="col-md-9 timeline"]
+[quote,{author},Last updated {docdate} {doctime}]
+____
 [big]*Lorem ipsum*
 
 Why not attribuate this article by `citetitle` and `attribution` attributes.
@@ -20,11 +25,17 @@ a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt c
 Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
 Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
 Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
---
+____
 
-[role="timeline",cols="3,8"]
-.[medium label label-warning]#November 15, 2013# [small clearfix]_posted by {author}_ image:images/books.png[]
---
+
+[role="col-md-3 timeline"]
+[medium label label-warning]#November 15, 2013#
+[small clearfix]_posted by {author}_
+image:./images/books.png[]
+
+[role="col-md-9 timeline"]
+[quote]
+____
 [big]*Blog illustration*
 
 Why not illustrate this article by an image using inline macro.
@@ -39,4 +50,4 @@ a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt c
 Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
 Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
 Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
---
+____
