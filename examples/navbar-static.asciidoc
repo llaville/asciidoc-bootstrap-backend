@@ -1,13 +1,7 @@
 = {title}
 :title:       Static Navbar
 :description: In this tutorial, we will learn how to add a static navbar with your Asciidoc document
-:doctitle:    Example Template for Asciidoc-Bootstrap - {title}
-include::../docs/attributes.asciidoc[]
-:footer!:
-:navinfo2:
-
-:span11:  col-md-11
-:options: responsive
+:doctitle:    Example for Asciidoc-Bootstrap - {title}
 
 
 == Static navbar
@@ -17,38 +11,45 @@ A static navbar against a default navbar is different by it's initial position, 
 
 Both navbars (static and default) scrolls away with the page.
 
-.Example of Asciidoc document
-..........................
-= My Document
+Example of Asciidoc document. See source text
+footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/demo.asciidoc].
 
-== Here are my first table of contents
-
-=== Why not another chapter
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum dui id lectus viverra placerat.
-Sed arcu ipsum, posuere et scelerisque ac, eleifend id turpis. Ut vitae velit congue,
-sollicitudin nisi eu, vestibulum lorem. Praesent lectus turpis, ullamcorper vehicula volutpat interdum,
-vestibulum condimentum elit. Aliquam erat volutpat. Donec vulputate, dolor vitae molestie convallis,
-lacus elit auctor ipsum, sed pharetra augue justo id nisl. Vivamus imperdiet neque ac nunc malesuada,
-nec semper mauris viverra. Morbi venenatis ornare dictum. In pulvinar pellentesque felis,
-a bibendum mauris tempus interdum. Vestibulum vehicula diam id dolor tincidunt consequat.
-Fusce quis enim ultrices metus tincidunt malesuada. Vestibulum at placerat dolor.
-Aliquam venenatis aliquam mi sit amet cursus. Donec condimentum dolor ut posuere condimentum.
-Vivamus viverra nisl massa. Quisque turpis mauris, ultricies at vehicula nec, ultricies dictum tellus.
-..........................
 
 == Result with flatly theme
 
-Enter the new command:
-[role="ssh"]
+Invoke the following command:
+[source,bash]
 ----
-$ asciidoc -b bootstrap -a bsver=2 -a theme=flatly -a navbar=static -a brand="My Project" -a jumbotron -a toc2 -a numbered /path/to/examples/navbar-static.asciidoc
+$ asciidoc -b bootstrap -f /path/to/examples/demo4.conf -o navbar-static-sample.html -a navbar=static -a theme=flatly /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.
 
-image::images/screenshots/bs2flatly-navbar-static-jumbotron-toc2.png[link="navbar-static-sample.html",title="My first static navbar",role="thumbnail",style="{span11}",options="{options}"]
+image::images/screenshots/navbar-static-sample.png[link="navbar-static-sample.html",title="My first static navbar",role="thumbnail",options="align,responsive"]
 
-== About _this document_
-link:howto.html[How to] build the source code
-footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/navbar-static.asciidoc].
+== About options @to generate documents@
+
+We reused and group all common attributes to generate documents in a standard asciidoc configuration file called `demo4.conf`.
+..........................
+[attributes]
+linkcss
+numbered
+lang=en
+jumbotron
+jumbotron-fullwidth!
+totop
+iconsfont=font-awesome
+footer!
+footer-fullwidth!
+brand="My Project"
+tocmmenu
+stylesheet=user2.css
+..........................
+
+With custom user stylesheet called `user2.css`
+[source,css]
+----
+include::user2.css[]
+----
+
+include::gendocfile.asciidoc[]

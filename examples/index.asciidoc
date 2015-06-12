@@ -55,3 +55,30 @@ image::images/screenshots/releases-sample.png[link="release1.html",title="Releas
 
 We will learn how to display content like GitHub project releases
 ====
+
+
+== Navbar
+
+[role="lead"]
+Basic templates for showcasing how the navbar works.
+
+[role="col-md-4"]
+====
+image::images/screenshots/navbar-default-sample.png[link="navbar-default-sample.html",title="Default",role="thumbnail",options="align,responsive"]
+
+We will learn how to add a standard navbar with your AsciiDoc document
+====
+
+[role="col-md-4"]
+====
+image::images/screenshots/navbar-static-sample.png[link="navbar-static-sample.html",title="Static",role="thumbnail",options="align,responsive"]
+
+We will learn how to add a static navbar with your AsciiDoc document
+====
+
+[role="col-md-4"]
+====
+image::images/screenshots/navbar-fixed-sample.png[link="navbar-fixed-sample.html",title="Fixed",role="thumbnail",options="align,responsive"]
+
+We will learn how to add a fixed navbar at top of your AsciiDoc document
+====
