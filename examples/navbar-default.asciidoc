@@ -23,7 +23,12 @@ Otherwise you will see an empty navbar.
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo4.conf -o navbar-default-sample.html -a navbar=default /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo4.conf
+  -o navbar-default-sample.html
+  -a navbar=default
+  /path/to/examples/demo.asciidoc
 ----
 
 NOTE: A navbar without links is useless. It's for demo purpose only.

@@ -1,9 +1,14 @@
 
-To generate this page, invoke the following command:
+To build this `{docfile}` footnote:[{rawbaseurl}/docs/panels.asciidoc]
+invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/bootstrap3.conf /path/to/examples/{docfile}
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/bootstrap3.conf
+  /path/to/examples/{docfile}
 ----
+NOTE: See footnote:[http://asciidoc.org/userguide.html#X60] for `docfile` attribute.
 
 With this configuration file called `bootstrap3.conf`
 ..........................

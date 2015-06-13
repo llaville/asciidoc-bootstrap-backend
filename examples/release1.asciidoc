@@ -1,6 +1,6 @@
 = {title}
 :title:       Release
-:description: In this tutorial, we will learn how to display content like GitHub project releases 
+:description: In this tutorial, we will learn how to display content like GitHub project releases
 :doctitle:    Example for Asciidoc-Bootstrap - {title}
 
 
@@ -23,7 +23,11 @@ include::releases.css[]
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/releases.conf -o releases-sample.html /path/to/examples/releases.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/releases.conf
+  -o releases-sample.html
+  /path/to/examples/releases.asciidoc
 ----
 
 And here are the final result that you should get.

@@ -12,7 +12,7 @@ A basic TOC start at top of your AsciiDoc document.
 Example of Asciidoc document. See source text
 footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/demo.asciidoc].
 
-You will used the standard `toc` attribute of AsciiDoc.
+NOTE: You will used the standard `toc` attribute of AsciiDoc.
 See http://asciidoc.org/userguide.html#X91[]
 
 == Result with flatly theme
@@ -20,7 +20,13 @@ See http://asciidoc.org/userguide.html#X91[]
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo.conf -o toc1-sample2.html -a toc -a theme=flatly /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo.conf
+  -o toc1-sample2.html
+  -a toc
+  -a theme=flatly
+  /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.
@@ -32,7 +38,12 @@ image::images/screenshots/toc1-sample2.png[link="toc1-sample2.html",title="My fi
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo.conf -o toc1-sample.html -a toc /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo.conf
+  -o toc1-sample.html
+  -a toc
+  /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.

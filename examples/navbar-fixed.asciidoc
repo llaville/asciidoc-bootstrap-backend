@@ -17,7 +17,12 @@ footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/exam
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo4.conf -o navbar-fixed-sample.html -a navbar=fixed /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo4.conf
+  -o navbar-fixed-sample.html
+  -a navbar=fixed
+  /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.

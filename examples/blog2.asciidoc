@@ -4,7 +4,7 @@
 :doctitle:    Example for Asciidoc-Bootstrap - {title}
 
 
-== Blog Panel Design 
+== Blog Panel Design
 
 [role="lead"]
 A blog panel design is an advanced layout with two columns.
@@ -28,7 +28,11 @@ include::blog2.css[]
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo3.conf -o blog2-sample.html /path/to/examples/demo3.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo3.conf
+  -o blog2-sample.html
+  /path/to/examples/demo3.asciidoc
 ----
 
 And here are the final result that you should get.

@@ -12,7 +12,7 @@ This TOC is located in the left or right side of the main content of the documen
 Example of Asciidoc document. See source text
 footnote:[https://raw.github.com/llaville/asciidoc-bootstrap-backend/master/examples/demo.asciidoc].
 
-You will used the standard `toc2` attribute of AsciiDoc.
+NOTE: You will used the standard `toc2` attribute of AsciiDoc.
 See http://asciidoc.org/userguide.html#X91[]
 
 == Result with flatly theme
@@ -23,7 +23,14 @@ With this theme we will put a TOC in right margin of the document
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo.conf -o toc2-sample2.html -a toc2 -a toc-placement=right -a theme=flatly /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo.conf
+  -o toc2-sample2.html
+  -a toc2
+  -a toc-placement=right
+  -a theme=flatly
+  /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.
@@ -38,7 +45,11 @@ With this theme we will put a TOC in left margin of the document (default behavi
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo.conf -o toc2-sample.html -a toc2 /path/to/examples/demo.asciidoc
+$ asciidoc
+ -b bootstrap
+ -f /path/to/examples/demo.conf
+ -o toc2-sample.html
+ -a toc2 /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.

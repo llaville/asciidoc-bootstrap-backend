@@ -22,7 +22,14 @@ With this theme we will put a TOC in right margin of the document
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo.conf -o toc3-sample2.html -a tocmmenu -a stylesheet=user.css -a theme=flatly /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo.conf
+  -o toc3-sample2.html
+  -a tocmmenu
+  -a stylesheet=user.css
+  -a theme=flatly
+  /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.
@@ -37,7 +44,13 @@ With this theme we will put a TOC in left margin of the document (default behavi
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo.conf -o toc3-sample.html -a tocmmenu -a stylesheet=user.css /path/to/examples/demo.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo.conf
+  -o toc3-sample.html
+  -a tocmmenu
+  -a stylesheet=user.css
+  /path/to/examples/demo.asciidoc
 ----
 
 And here are the final result that you should get.

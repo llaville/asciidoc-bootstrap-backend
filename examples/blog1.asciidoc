@@ -4,7 +4,7 @@
 :doctitle:    Example for Asciidoc-Bootstrap - {title}
 
 
-== Basic Blog 
+== Basic Blog
 
 [role="lead"]
 A basic blog layout with two columns: on left the post dates, and on right the post content.
@@ -16,12 +16,12 @@ In first post, we used :
 
 * `role` attribute to customize css rules
 * `citetitle` and `attribution` attributes to identify sources of article.
-* asciidoc text formatting, for left column to show post date and possible tags. 
+* asciidoc text formatting, for left column to show post date and possible tags.
 
 In second post, we used also :
 
 * `role` attribute to customize css rules
-* asciidoc text formatting, for left column to show post date and 
+* asciidoc text formatting, for left column to show post date and
 the image inline macro to illustrate article by a thumbnail.
 
 We used additional css rules added by file +blog1.css+ to give such design.
@@ -35,7 +35,11 @@ include::blog1.css[]
 Invoke the following command:
 [source,bash]
 ----
-$ asciidoc -b bootstrap -f /path/to/examples/demo2.conf -o blog1-sample.html /path/to/examples/demo2.asciidoc
+$ asciidoc
+  -b bootstrap
+  -f /path/to/examples/demo2.conf
+  -o blog1-sample.html
+  /path/to/examples/demo2.asciidoc
 ----
 
 And here are the final result that you should get.
