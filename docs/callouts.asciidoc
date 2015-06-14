@@ -35,7 +35,7 @@ Here is an example that don't use images but Bootstrap badges :
  11/16/97  17:17      61,865,984  pagefile.sys
   2/13/94   6:21           9,349  WINA20.386     \<3>
  -----------------------------------------------------
-
+[role="listing"]
  \<1> This directory holds MS-DOS.
  \<2> System startup code for DOS.
  \<3> Some sort of Windows 3.1 hack.
@@ -58,11 +58,25 @@ which renders:
 11/16/97  17:17      61,865,984  pagefile.sys
  2/13/94   6:21           9,349  WINA20.386     <3>
 ----
+[role="listing"]
 <1> This directory holds MS-DOS.
 <2> System startup code for DOS.
 <3> Some sort of Windows 3.1 hack.
 
 TIP: If you want to customize this bullet icons look like, please add a `.callout`
 CSS rule in a custom stylesheet, and apply it with +-a stylesheet=<your_stylesheet>+.
+
+[TIP]
+==========
+If you want to customize this specific callout list, add a `role` (e.g: _listing_),
+and the following CSS rule in a custom stylesheet.
+
+[source,css]
+----
+.colist.arabic.listing > ul {
+    list-style: none;
+}
+----
+==========
 
 IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
