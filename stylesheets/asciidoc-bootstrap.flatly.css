@@ -12094,9 +12094,6 @@ MIT License: https://github.com/driftyco/ionicons
 .octicon-zap:before {
   content: '\26A1';
 }
-body.navbarfixed {
-  padding-top: 60px;
-}
 .section {
   clear: both;
 }
@@ -12109,17 +12106,17 @@ h3[id] {
   margin-top: -21px;
   padding-top: 21px;
 }
-body.navbarfixed h1[id],
-body.navbarfixed h2[id],
-body.navbarfixed h3[id] {
-  margin-top: -81px;
-  padding-top: 81px;
-}
 .navbar-static-top {
   margin-bottom: 0;
 }
 .container .jumbotron {
   margin-top: 30px;
+}
+.container .jumbotron-navbar-fixed-top {
+  margin-top: 90px;
+}
+.jumbotron .container {
+  margin-top: 60px;
 }
 .alert h3 {
   color: inherit;
