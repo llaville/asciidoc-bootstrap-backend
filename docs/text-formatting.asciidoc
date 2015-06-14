@@ -3,7 +3,7 @@
 :description: http://asciidoc.org/userguide.html#_text_formatting
 include::attributes.asciidoc[]
 :navinfo2:
-:jumbotron:
+
 
 == Quoted text
 

@@ -3,7 +3,6 @@
 :description: http://asciidoc.org/userguide.html#_document_structure
 include::attributes.asciidoc[]
 :navinfo2:
-:jumbotron:
 
 
 == Backend Attributes

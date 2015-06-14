@@ -3,10 +3,6 @@
 :description: http://asciidoc.org/userguide.html#_macros
 include::attributes.asciidoc[]
 :navinfo2:
-:icons!:
-:imagesdir:   ./images
-:iconsfont:   font-awesome
-:jumbotron:
 
 
 == Linking to Local Documents

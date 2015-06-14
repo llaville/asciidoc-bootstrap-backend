@@ -3,9 +3,7 @@
 :description: Using Font-Awesome Icons Font
 include::attributes.asciidoc[]
 :navinfo2:
-:icons!:
-:iconsfont:   font-awesome
-:jumbotron:
+
 
 [role="lead"]
 To use http://fontawesome.io[Font-Awesome] icons font rather than PNG images,

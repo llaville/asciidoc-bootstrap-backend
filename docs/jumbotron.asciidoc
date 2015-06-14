@@ -3,19 +3,7 @@
 :description: http://getbootstrap.com/components/#jumbotron
 include::attributes.asciidoc[]
 :navinfo2:
-:iconsfont:   font-awesome
-:jumbotron:
-:toc2!:
 
-
-[panel]
-.{toc-title}
---
-* xref:_basic_example[Basic example]
-* xref:_common_jumbotron[Common Jumbotron]
-* xref:_specific_jumbotron[Specific Jumbotron]
-* xref:_combined_common_and_specific_jumbotron[Combined Common and Specific Jumbotron]
---
 
 [role="lead"]
 A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.

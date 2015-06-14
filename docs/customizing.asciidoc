@@ -3,8 +3,7 @@
 :description: Build your own version that will match your needs
 include::attributes.asciidoc[]
 :navinfo2:
-:iconsfont:   font-awesome
-:jumbotron:
+
 
 ifdef::basebackend-docbook[]
 [partintro]
@@ -118,7 +117,10 @@ just remove or comment 23.
 The AsciiDoc `theme` attribute is used to select an alternative CSS stylesheet.
 
 E.g
-
+[source,bash]
 ----
-$ asciidoc.py -b bootstrap -a theme=united {docfile}
+$ asciidoc
+  -b bootstrap
+  -a theme=united
+  {docfile}
 ----

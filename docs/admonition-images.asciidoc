@@ -29,9 +29,9 @@ copy the CSS rules in a new CSS file (free name), and build your page ( AsciiDoc
 IMPORTANT: *Your custom stylesheet MUST be located in the `{stylesdir}`.*
 
 E.g:
-
+[source,bash]
 ----
-$ asciidoc.py
+$ asciidoc
   -b bootstrap
   -a linkcss
   -a stylesdir=./stylesheets
@@ -48,15 +48,3 @@ $ asciidoc.py
 ----
 include::../stylesheets/admonition-images.css[]
 ----
-
-ifdef::basebackend-html[]
-
-See results in live with :
-
-* Bootstrap link:admonition-images-custom.default.html[default] theme.
-* Bootswatch link:admonition-images-custom.flatly.html[flatly] theme.
-* Bootstrap link:admonition-images-custom.readable.html[readable] theme.
-* Bootstrap link:admonition-images-custom.cerulean.html[cerulean] theme.
-* Bootstrap link:admonition-images-custom.united.html[united] theme.
-
-endif::basebackend-html[]

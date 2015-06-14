@@ -5,9 +5,9 @@ include::revision.asciidoc[]
 include::attributes.asciidoc[]
 :toc!:
 :toc2!:
+:tocmmenu!:
 :navbar!:
 :themeswitcher!:
-:jumboinfo:
 
 
 == Releases
