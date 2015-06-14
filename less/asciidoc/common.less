@@ -1,9 +1,5 @@
 //
 
-body.navbarfixed {
-    padding-top: @navbar-body-padding;
-}
-
 .section {
     clear: both;
 }
@@ -19,11 +15,6 @@ h1[id], h2[id], h3[id] {
     padding-top: @navbar-margin-bottom;
 }
 
-body.navbarfixed h1[id], body.navbarfixed h2[id], body.navbarfixed h3[id] {
-    margin-top: -(@navbar-margin-bottom + @navbar-body-padding);
-    padding-top: (@navbar-margin-bottom + @navbar-body-padding);
-}
-
 // Navbar alignments
 
 .navbar-static-top {
@@ -35,6 +26,17 @@ body.navbarfixed h1[id], body.navbarfixed h2[id], body.navbarfixed h3[id] {
 .container {
     .jumbotron {
         margin-top: @jumbotron-padding;
+    }
+}
+.container {
+    .jumbotron-navbar-fixed-top {
+        margin-top: @jumbotron-padding + @navbar-height;
+    }
+}
+
+.jumbotron {
+    .container {
+        margin-top: @navbar-height;
     }
 }
 
