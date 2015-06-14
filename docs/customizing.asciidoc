@@ -1,5 +1,5 @@
-= Customizing AsciiDoc-Bootstrap
-:doctitle:    Customizing AsciiDoc-Bootstrap
+= Customizing
+:doctitle:    Customizing
 :description: Build your own version that will match your needs
 include::attributes.asciidoc[]
 :navinfo2:
@@ -11,7 +11,7 @@ ifdef::basebackend-docbook[]
 endif::basebackend-docbook[]
 
 [role="lead"]
-Release v4.0.0 included the default Bootstrap theme and four more free themes
+Release v4.x included the default Bootstrap theme and few other free themes
 from http://bootswatch.com/[Bootswatch] template provider.
 
 If all those skins does not match your needs, you can either :
