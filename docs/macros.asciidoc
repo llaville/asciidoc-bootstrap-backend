@@ -87,9 +87,6 @@ ifdef::basebackend-bootstrap[]
 link:get-started.html["Start Tour",role="info",icon="glyphicon-play-circle"]
 endif::[]
 
-WARNING: Icons are named with prefix *glyphicon* on [label label-info]#Bootstrap 3#,
-and with prefix *icon* on [label label-info]#Bootstrap 2#.
-
 And finally, choose what side you want to put your icon.
 
 ====
@@ -102,9 +99,6 @@ Renders:
 ifdef::basebackend-bootstrap[]
 link:get-started.html["Whats wrong",role="danger",icon="glyphicon-remove-circle",options="right,white"]
 endif::[]
-
-IMPORTANT: On [label label-info]#Bootstrap 2# icon color are black by default.
-So add *white* option to change it. This option is useless on [label label-info]#Bootstrap 3#.
 
 == Images
 
@@ -119,21 +113,19 @@ The contents of the image file `<target>` is displayed.
 - The optional 'options' attribute with value *responsive* provides a way for [label label-info]#Bootstrap 3#
 to fluid IMG size. Images are not responsive by default.
 
-NOTE: It was not the case in [label label-info]#Bootstrap 2#. So this attribute is useless for this version.
-
 ====
 ----
-image::screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+image::screenshots/navbar-default-sample.png[role="thumbnail",options="align,responsive"]
 ----
 ====
 Renders:
 
 ifdef::basebackend-bootstrap[]
-image::screenshots/bs2default-navbar-default-jumbotron-toc2.png[options="responsive"]
+image::screenshots/navbar-default-sample.png[role="thumbnail",options="align,responsive"]
 endif::basebackend-bootstrap[]
 
 ifdef::basebackend-docbook[]
-image:screenshots/bs2default-navbar-default-jumbotron-toc2.png[scale="50"]
+image:screenshots/navbar-default-sample.png[scale="50"]
 endif::basebackend-docbook[]
 
 Try several resolution and see what happens with or without responsive option.
