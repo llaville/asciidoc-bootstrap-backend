@@ -1,10 +1,8 @@
 = {title}
 :title:       Backend Attributes
-:description: 
+:description:
 include::attributes.asciidoc[]
 :navinfo2:
-:iconsfont:   font-awesome
-:jumbotron:
 
 
 [role="lead"]
@@ -38,6 +36,7 @@ navinfo2
 | pygments-style
 | Change the Pygments style. Default theme is `emacs` with a variant background: the one provided by AsciiDoc.
 | rssref       | Specify an URL of RSS feed to be linked with output document.
+| tocmmenu     | Add off-canvas menu style for the Table Of Contents.
 | toc-placement
 | When set to _auto_ (the default value) asciidoc bootstrap backend will place the table of contents in the document header,
 unless `toc2` attribute was specificed. In this last case, the table of contents will be placed in _left_ side of the document.
