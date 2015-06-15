@@ -3,7 +3,17 @@
 :description: Summary of versions changes
 include::attributes.asciidoc[]
 :navinfo1:
-:jumbotron:
+
+== Version 4.5.0 _(2015-06-15)_
+
+.Additions and changes:
+* Add Bootswatch Darkly theme to standard distribution
+* Add Off-canvas menu style for the Table Of Contents (new attribute `tocmmenu`)
++
+CAUTION: Standalone document is not supported (used `linkcss` combined with `tocmmenu`)
+
+.Bug fixes:
+* https://github.com/llaville/asciidoc-bootstrap-backend/issues/16[GH-16] : Fixed subtitle syntax issue (`= title @subtitle@`).
 
 == Version 4.4.0 _(2015-04-04)_
 
