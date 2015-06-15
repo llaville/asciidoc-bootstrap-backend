@@ -6,6 +6,7 @@
 :theme:       united
 :themeswitcher!:
 :stylesheet:  cover.css
+:jumbotron!:
 
 
 == AsciiDoc-Bootstrap 4
