@@ -98,6 +98,7 @@ unfloat::[]
 [label label-success]#Icon Fonts#:: are accepted via the image inline macro for better compatibility with other backends. [label label-danger]#Icon inline macro was dropped#
 [label label-success]#Octicons#:: icons font support was added. [label label-warning]#4.1.0#
 [label label-success]#Themes#:: switcher with JQuery plugin [label label-warning]#4.3.0#
+[label label-success]#TOCmmenu#:: off-canvas menu for Table Of Contents with JQuery plugin [label label-warning]#4.5.0#
 
 == Open Source
 
